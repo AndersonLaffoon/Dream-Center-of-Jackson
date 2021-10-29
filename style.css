@@ -34,12 +34,14 @@ footer {
   color: black;
 }
 .carousel-indicators [data-bs-target] {
-  height: 15px;
-  width: 15px;
+  height: 16px;
+  width: 16px;
   background-image: url(img/heart.svg);
   background-repeat: no-repeat;
 }
 .carousel-indicators .active{
+  height: 16px;
+  width: 16px;
   background-image: url(img/heart-fill.svg);
   background-repeat: no-repeat;
 }
@@ -47,5 +49,4 @@ footer {
 .mt- {
   margin-top: 130px;
 }
-.click{
-  
+.click
