@@ -39,7 +39,7 @@ footer {
   background-image: url(img/heart.svg);
   background-repeat: no-repeat;
 }
-.carousel-indicators.active [data-bs-target]{
+.carousel-indicators .active{
   background-image: url(img/heart-fill.svg);
   background-repeat: no-repeat;
 }
