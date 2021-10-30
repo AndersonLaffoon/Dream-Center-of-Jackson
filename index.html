@@ -1,185 +1,348 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("pink");
+        } else {
+          $("nav").removeClass("pink");
+        }
+      });
+    </script>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>The Dream Center of Jackson</title>
+  </head>
 
-  <link rel="stylesheet" href="style.css">
-
-  <title>The Dream Center of Jackson</title>
-
-</head>
-
-<body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-transparent">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/dreamcenterlogo.png" alt="Dream Center Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="about_us.html">About Us</a>
-          <a class="nav-link" href="testimonies.html">Mission</a>
-          <a class="nav-link" href="news.html">Take Action</a>
-          <a class="nav-link" href="help.html">News</a>
-          <a class="nav-link" href="contact.html">Contact</a>
-          <a class="nav-link" href="contact.html"><button type="button" class="btn btn-success">Donate</button></a>
-
-
-        </div>
-      </div>
-    </div>
-  </nav>
-  <section>
-    <div id="carouselExampleIndicators" class=" carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2500">
-          <img src="img/dreamcenter.png" class="d-block w-100" alt="Dream Center">
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="carousel-text">The Dream Center of Jackson</h1>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="
+          navbar navbar-expand-lg navbar-dark
+          fixed-top
+          navbar-transparent navbar-scroll
+        "
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/dreamcenterlogo.png" alt="Dream Center Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto navbar-nav-scroll">
+              <li class="nav-item">
+                <a class="nav-link" href="about_us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mission.html">Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="take_action.html">Take Action</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                    /></svg
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.paypal.com/donate?token=d0zkbkm9YoxlsRA-rY-06MQWxk82VnyOjHFZjWFUByvPKWEQkzBqBjcQw_ZoPObsmoxkKS3hlMWFCg8J"
+                  ><button type="button" class="btn btn-success btn-sm">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-paypal"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061zM6.543 8.82l-.845 5.213v.001l-.208 1.32c-.01.066.04.123.105.123H8.14c.173 0 .32-.125.348-.296v-.005l.026-.129.48-3.043.03-.164a.873.873 0 0 1 .862-.734h.38c1.201 0 2.24-.244 3.043-.815.797-.567 1.39-1.477 1.663-2.874.229-1.175.096-2.087-.45-2.71a2.126 2.126 0 0 0-.548-.438l-.003.016c-.645 3.312-2.853 4.456-5.672 4.456H6.864a.695.695 0 0 0-.321.079z"
+                      />
+                    </svg>
+                    Donate
+                  </button></a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2500">
-          <img src="img/help.jpg" class="d-block w-100" alt="Help">
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="carousel-text">The Dream Center of Jackson</h1>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Carousel -->
+      <section>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img
+                src="img/dreamcenter.png"
+                class="d-block w-100"
+                alt="Dream Center"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="carousel-text">The Dream Center of Jackson</h1>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="img/help.jpg" class="d-block w-100" alt="Help" />
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="carousel-text">The Dream Center of Jackson</h1>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="img/staff.jpeg" class="d-block w-100" alt="Staff" />
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="carousel-text">The Dream Center of Jackson</h1>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2500">
-          <img src="img/staff.jpeg" class="d-block w-100" alt="Staff">
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="carousel-text">The Dream Center of Jackson</h1>
+      </section>
+      <!-- Carousel -->
+    </header>
+
+    <section class="mt-5">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4">
+            <h1>Welcome</h1>
+            <p>
+              Welcome to The Dream Center Of Jackson! Here, house families and
+              individuals who have experienced crisis in their lives such as;
+              loss of employment, housing or other life-controlling problems
+              that rendered them homeless.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <img src="img/staff.jpeg" width="400" />
+          </div>
+          <div class="col-md-4">
+            <h1>What We Do</h1>
+            <p>
+              We are a lighthouse and a beacon of hope to all women and women
+              with children who have a strong desire to change their way of life
+              by implementing Biblical principles so that the cycle of chronic
+              homelessness shall be broken.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="mt-5">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-4">
-          <h1>Welcome</h1>
-          <p>Welcome to The Dream Center Of Jackson! Here,
-            house families and individuals who have experienced crisis in their lives such as;
-            loss of employment, housing or other life-controlling problems that rendered them homeless.</p>
-        </div>
-
-
-        <div class="col-md-4">
-          <img src="img/staff.jpeg" width="400">
-        </div>
-        <div class="col-md-4">
-          <h1>What We Do</h1>
-          <p>We are a lighthouse and a beacon of hope to all women and women with children who have a strong
-            desire to change their way of life by implementing Biblical principles so that the cycle of chronic
-            homelessness shall be broken.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="icons mt-5">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-4">
-          <a class="ilink" href="help.html"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
-              class="bi bi-emoji-smile" viewBox="0 0 16 16">
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-              <path
-                d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
-            </svg>
-          </a>
-          <h4> Ways To Help</h4>
-        </div>
-        <div class="col-md-4">
-          <a class="ilink" href="news.html"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
-              class="bi bi-newspaper" viewBox="0 0 16 16">
-              <path
-                d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z" />
-              <path
-                d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z" />
-            </svg>
-          </a>
-          <h4>Articles</h4>
-        </div>
-        <div class="col-md-4">
-          <a class="ilink" href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
-              class="bi bi-telephone" viewBox="0 0 16 16">
-              <path
-                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-            </svg>
-          </a>
-          <h4>Contact Us</h4>
-        </div>
-
-      </div>
-  </section>
-
-  <footer>
-    <div class="container-fluid gradient">
-      <div class="row text-center">
-        <div class="col-md-4 my-auto">
-          <h4>Social Media</h4>
-          <a class="socials" href="https://www.facebook.com/pages/Dream-Center-of-Jackson/268142701317">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook"
-              viewBox="0 0 16 16">
-              <path
-                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-            </svg>
-          </a>
-
-          <a class="socials" href="https://www.youtube.com/watch?v=D1vpc5LSVHE&list=PLbfeFFqJoLDGUpsS3KSIRb51E8TdMAnl0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-youtube"
-              viewBox="0 0 16 16">
-              <path
-                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-            </svg>
-          </a>
-
-          <a class="socials" href="https://twitter.com/DreamCenter2003">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-twitter"
-              viewBox="0 0 16 16">
-              <path
-                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-            </svg>
-          </a>
-
-        </div>
-        <div class="col-md-4 my-auto">
-          <img src="img/dreamcenterlogo.png">
-        </div>
-        <div class="col-md-4 my-auto">
-          <h4>Address</h4>
-<a class="ilink" href="https://www.google.com/maps/place/Dream+Center+of+Jackson/@35.6543171,-88.8278137,17z/data=!3m1!4b1!4m5!3m4!1s0x887ea6d61bcdafbd:0x37e837db17429f88!8m2!3d35.6542974!4d-88.8260386">1970 N. Highland, Ste. E
-  Jackson, TN 38305</a>
-
-          
+    </section>
+    <section class="icons mt-5">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4">
+            <a class="ilink" href="help.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                fill="currentColor"
+                class="bi bi-emoji-smile"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"
+                />
+              </svg>
+            </a>
+            <h4>Ways To Help</h4>
+          </div>
+          <div class="col-md-4">
+            <a class="ilink" href="news.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                fill="currentColor"
+                class="bi bi-newspaper"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"
+                />
+                <path
+                  d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"
+                />
+              </svg>
+            </a>
+            <h4>Articles</h4>
+          </div>
+          <div class="col-md-4">
+            <a class="ilink" href="contact.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                fill="currentColor"
+                class="bi bi-telephone"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                />
+              </svg>
+            </a>
+            <h4>Contact Us</h4>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
+    <footer>
+      <div class="container-fluid gradient">
+        <div class="row text-center">
+          <div class="col-md-4 my-auto">
+            <h4>Social Media</h4>
+            <a
+              class="socials"
+              href="https://www.facebook.com/pages/Dream-Center-of-Jackson/268142701317"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
+              </svg>
+            </a>
 
+            <a
+              class="socials"
+              href="https://www.youtube.com/watch?v=D1vpc5LSVHE&list=PLbfeFFqJoLDGUpsS3KSIRb51E8TdMAnl0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="currentColor"
+                class="bi bi-youtube"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                />
+              </svg>
+            </a>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-</body>
+            <a class="socials" href="https://twitter.com/DreamCenter2003">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="currentColor"
+                class="bi bi-twitter"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="col-md-4 my-auto">
+            <img src="img/dreamcenterlogo.png" />
+          </div>
+          <div class="col-md-4 my-auto">
+            <h4>Address</h4>
+            <a
+              class="ilink"
+              href="https://www.google.com/maps/place/Dream+Center+of+Jackson/@35.6543171,-88.8278137,17z/data=!3m1!4b1!4m5!3m4!1s0x887ea6d61bcdafbd:0x37e837db17429f88!8m2!3d35.6542974!4d-88.8260386"
+              >1970 N. Highland, Ste. E Jackson, TN 38305</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -10,11 +10,7 @@ footer {
 
 .gradient {
   background: rgb(255, 255, 255);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(94, 128, 255, 1) 100%
-  );
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, #4286ed 100%);
 }
 .carousel img {
   object-position: center;
@@ -34,19 +30,36 @@ footer {
   color: black;
 }
 .carousel-indicators [data-bs-target] {
-  height: 16px;
-  width: 16px;
   background-image: url(img/heart.svg);
-  background-repeat: no-repeat;
 }
-.carousel-indicators .active{
-  height: 16px;
-  width: 16px;
+.carousel-indicators > button.active {
   background-image: url(img/heart-fill.svg);
+}
+.carousel-indicators > button.active,
+.carousel-indicators [data-bs-target] {
+  height: 3rem;
+  width: 3rem;
   background-repeat: no-repeat;
+  background-color: transparent;
+  color: #4286ed;
+  filter: invert(42%) sepia(97%) saturate(492%) hue-rotate(180deg)
+    brightness(96%) contrast(92%);
+}
+h1,
+carousel-text {
+  margin-bottom: 3rem;
+}
+.carousel-indicators > button:hover {
+  background-image: url(img/heart-fill.svg);
 }
 
 .mt- {
   margin-top: 130px;
 }
-.click
+
+nav.pink {
+  background-color: #ed5ab1;
+}
+.btn-success {
+  background-color: #42ed37;
+}
