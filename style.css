@@ -27,7 +27,7 @@ html {
     brightness(96%) contrast(92%);
 }
 .carousel-caption {
-  margin-bottom: 25rem;
+  margin-bottom: 40vh;
 }
 .carousel-item > img {
   filter: brightness(40%) blur(0.4rem);
@@ -101,6 +101,7 @@ a.nav-link {
 .navbar > .container {
   flex-wrap: nowrap;
 }
+
 .braden {
   background-color: grey;
   padding: 1rem;
