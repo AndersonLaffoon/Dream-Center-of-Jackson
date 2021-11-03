@@ -8,45 +8,39 @@ html {
   height: 100vh;
 }
 
-
 .carousel-text {
   color: #527aad;
 }
-
 
 .carousel-indicators [data-bs-target] {
   background-image: url(icons/heart.svg);
 }
 
-
-.carousel-indicators>button.active {
+.carousel-indicators > button.active {
   background-image: url(icons/heart-fill.svg);
 }
 
-
-.carousel-indicators>button.active,
+.carousel-indicators > button.active,
 .carousel-indicators [data-bs-target] {
   height: 3em;
   width: 3em;
   background-repeat: no-repeat;
   background-color: transparent;
   color: #527aad;
-  filter: invert(42%) sepia(97%) saturate(492%) hue-rotate(180deg) brightness(96%) contrast(92%);
+  filter: invert(42%) sepia(97%) saturate(492%) hue-rotate(180deg)
+    brightness(96%) contrast(92%);
 }
-
 
 .carousel-caption {
   margin-bottom: 40vh;
 }
 
-
-.carousel-item>img {
+.carousel-item > img {
   filter: brightness(40%) blur(0.4rem);
   transform: scale(1.1);
 }
 
-
-.carousel-indicators>button:hover {
+.carousel-indicators > button:hover {
   background-image: url(icons/heart-fill.svg);
 }
 
@@ -54,7 +48,6 @@ html {
   background-color: #42ed37;
   border-color: #42ed37;
 }
-
 
 .btn-success:hover,
 .btn-success:visited,
@@ -70,34 +63,28 @@ html {
   padding: 3rem 0px;
 }
 
-
 .white {
   color: white;
 }
-
 
 a,
 a:hover {
   color: inherit;
 }
 
-
 .white a:hover {
   filter: brightness(75%);
 }
-
 
 .navbar {
   padding: 1.25rem 0rem;
   transition: all 0.4s ease-in-out;
 }
 
-
 .affix {
   padding: 0.5rem 0rem;
   background-color: #ed5ab1;
 }
-
 
 .parallax {
   background-image: url(img/braden.jpg);
@@ -108,36 +95,28 @@ a:hover {
   background-size: cover;
 }
 
-
 .white-logo {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(293deg) brightness(102%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%)
+    hue-rotate(293deg) brightness(102%) contrast(101%);
 }
-
 
 .blue-logo {
-  filter: brightness(0) saturate(100%) invert(46%) sepia(44%) saturate(463%) hue-rotate(173deg) brightness(92%) contrast(96%);
+  filter: brightness(0) saturate(100%) invert(46%) sepia(44%) saturate(463%)
+    hue-rotate(173deg) brightness(92%) contrast(96%);
 }
-
 
 a.nav-link {
   font-size: 1.5rem;
   text-decoration: none;
 }
 
-
-.collapse {
+.navbar-collapse {
   margin-top: 2.563rem;
   margin-bottom: 0.188rem;
 }
 
-
 .navbar-toggler {
   margin-top: 2.5rem;
-}
-
-
-.navbar>.container {
-  flex-wrap: nowrap;
 }
 
 .braden {
@@ -146,11 +125,13 @@ a.nav-link {
   border-radius: 2rem;
 }
 
-
 .carousel-inner {
   color: #fff;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
-.navbar-collapse {
+.pink {
+  background-color: #ed5ab1;
+  transition: all 0.4s ease-in-out;
 }
+
