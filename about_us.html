@@ -17,17 +17,24 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
     />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/09b1c20ed3.js" crossorigin="anonymous"></script>
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <script type="text/javascript">
       $(window).scroll(function () {
         if ($(document).scrollTop() > 50) {
-          $(".navbar").addClass("affix");
+          $("#navbar").addClass("affix");
           console.log("OK");
         } else {
-          $(".navbar").removeClass("affix");
+          $("#navbar").removeClass("affix");
         }
+      });
+      $(document).ready(function () {
+        $("button").click(function () {
+          $(".navbar").toggleClass("pink");
+        });
       });
     </script>
     <!-- CSS Stylesheet -->
@@ -45,31 +52,32 @@
           fixed-top
           navbar-transparent navbar-scroll
         "
+        id="navbar"
       >
-        <div class="container" id="addFlexWrap">
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="img/dreamcenterlogo.png"
-              alt="Dream Center Logo"
-              class="blue-logo img-fluid"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="container">
+          <div class="d-flex w-100 justify-content-between">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="img/dreamcenterlogo.png"
+                alt="Dream Center Logo"
+                class="blue-logo img-fluid"
+              />
+            </a>
+
+            <button
+              class="navbar-toggler mb-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto navbar-nav-scroll">
+            <ul class="navbar-nav ms-auto navbar-nav-scroll text-end">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="about_us.html"
-                  >About Us</a
-                >
+                <a class="nav-link" href="about_us.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="reviews.html"
@@ -110,7 +118,8 @@
                 <a
                   class="nav-link"
                   href="https://www.paypal.com/donate?token=d0zkbkm9YoxlsRA-rY-06MQWxk82VnyOjHFZjWFUByvPKWEQkzBqBjcQw_ZoPObsmoxkKS3hlMWFCg8J"
-                  ><button type="button" class="btn btn-success btn-sm">
+                >
+                  <button type="button" class="btn btn-success btn-sm">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -221,12 +230,12 @@
           </div>
 
           <div class="col-md-6">
-            <img src="img/subwai.jpg" />
+            <img src="img/subwai.jpg" class="img-fluid"/>
           </div>
         </div>
         <div class="row mt-5">
           <div class="col-md-6">
-            <img src="img/subwai.jpg" />
+            <img src="img/subwai.jpg"  class="img-fluid"/>
           </div>
           <div class="col-md-6">
             <h1>Our Mission</h1>

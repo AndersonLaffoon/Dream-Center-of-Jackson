@@ -108,6 +108,7 @@ a:hover {
 a.nav-link {
   font-size: 1.5rem;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .navbar-collapse {
@@ -116,7 +117,7 @@ a.nav-link {
 }
 
 .navbar-toggler {
-  margin-top: 2.5rem;
+  margin-top: 2.75rem;
 }
 
 .braden {
