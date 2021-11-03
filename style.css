@@ -135,4 +135,8 @@ a.nav-link {
   background-color: #ed5ab1;
   transition: all 0.4s ease-in-out;
 }
-
+.fas {
+  border-radius: 100%;
+  background-color: lightgray;
+  padding: 1.25rem;
+}
