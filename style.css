@@ -58,7 +58,7 @@ html {
   color: white;
 }
 
-.footer {
+footer {
   background-color: #527aad;
   padding: 3rem 0px;
 }
@@ -83,7 +83,7 @@ a:hover {
 
 .affix {
   padding: 0.5rem 0rem;
-  background-color: #ed5ab1;
+  background-color: orange;
 }
 
 .parallax {
@@ -132,7 +132,7 @@ a.nav-link {
 }
 
 .pink {
-  background-color: #ed5ab1;
+  background-color: orange;
   transition: all 0.4s ease-in-out;
 }
 
@@ -146,9 +146,24 @@ a.nav-link {
   color: white;
 }
 
-a.nav-link.active, a.nav-link:hover {
+a.nav-link.active,
+a.nav-link:hover,
+a.dropdown-item:hover {
   text-decoration: underline;
-  text-decoration-thickness: 4px;
   text-decoration-color: #527aad;
   text-underline-offset: 3px;
+}
+a.nav-link.active,
+a.nav-link:hover {
+  text-decoration-thickness: 4px;
+}
+
+a.dropdown-item:hover {
+  text-decoration-thickness: 2px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.navbar-bg-hover:hover, .active{
+  background-color: blue;
 }
