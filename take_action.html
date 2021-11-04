@@ -71,14 +71,14 @@
               class="navbar-toggler mb-auto"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
+              data-bs-target="#navbarNavCollapse"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
 
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto navbar-nav-scroll text-end">
+          <div class="collapse navbar-collapse" id="navbarNavCollapse">
+            <ul class="navbar-nav ms-auto navbar-nav-scroll text-end align-items-center">
               <li class="nav-item">
                 <a class="nav-link" href="about_us.html">About Us</a>
               </li>
@@ -88,7 +88,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="take_action.html">Take Action</a>
+                <a class="nav-link active" href="take_action.html">Take Action</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="events.html">Events</a>
@@ -99,43 +99,41 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-search"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                    />
-
-                    />
-                  </svg></a
-                >
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  ><i class="bi bi-search"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-item">
+                      <!-- <form class="d-flex">
+                        <input
+                          class="form-control me-2"
+                          type="search"
+                          placeholder="Search"
+                        />
+                      </form> -->
+                      <script
+                        async
+                        src="https://cse.google.com/cse.js?cx=fabcc81d58f18389d"
+                      ></script>
+                      <div class="gcse-search"></div
+                    ></a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
                   href="https://www.paypal.com/donate?token=d0zkbkm9YoxlsRA-rY-06MQWxk82VnyOjHFZjWFUByvPKWEQkzBqBjcQw_ZoPObsmoxkKS3hlMWFCg8J"
                 >
-                  <button type="button" class="btn btn-success btn-sm">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-paypal"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061zM6.543 8.82l-.845 5.213v.001l-.208 1.32c-.01.066.04.123.105.123H8.14c.173 0 .32-.125.348-.296v-.005l.026-.129.48-3.043.03-.164a.873.873 0 0 1 .862-.734h.38c1.201 0 2.24-.244 3.043-.815.797-.567 1.39-1.477 1.663-2.874.229-1.175.096-2.087-.45-2.71a2.126 2.126 0 0 0-.548-.438l-.003.016c-.645 3.312-2.853 4.456-5.672 4.456H6.864a.695.695 0 0 0-.321.079z"
-                      />
-                    </svg>
+                  <button type="button" class="btn btn-success btn-lg">
+                    <i class="bi bi-paypal"></i>
                     Donate
                   </button></a
                 >
@@ -215,6 +213,11 @@
         <div class="row my-4">
           <div class="col-md-4">
             <h1>We Need Help</h1>
+            <p>
+              We are looking for Help. 
+              Below are some of the ways you can helps us and the women and children here at the Dream Center. 
+              Anything you do to help is greatly appreciated. 
+            </p>
           </div>
           <div class="col-md-8">
             <img src="img/subwai.jpg" />
@@ -228,7 +231,7 @@
             <i class="fas fa-hands-helping fa-4x mb-3 text-success"></i>
             <h4>Volunteer</h4>
             <p>
-              up to volunteer today. You won’t find a more rewarding way to help
+              Want to volunteer today? You won’t find a more rewarding way to help
               others.
             </p>
           </div>
@@ -276,30 +279,122 @@
             <i class="fas fa-bed fa-4x mb-4 text-danger"></i>
             <h4>Adopt-A-Room</h4>
             <p>
-              We need rooms.$12,000 builds one family room in our new facility,
+              We need rooms. $12,000 builds one family room in our new facility,
               making it possible to house more individuals in comfort.
             </p>
           </div>
         </div>
       </div>
-      <h2 class="text-center">Donate online</h2>
-      <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-primary" type="button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="35"
-            fill="currentColor"
-            class="bi bi-paypal"
-            viewBox="0 0 16 16"
+    </section>
+
+    <section class="bg-primary p-2">
+      <div class="container">
+        <div class="row text-center my-4">
+          <h2 class="text-center text-white">Donate online</h2>
+          <a
+            href="https://www.paypal.com/donate?token=d0zkbkm9YoxlsRA-rY-06MQWxk82VnyOjHFZjWFUByvPKWEQkzBqBjcQw_ZoPObsmoxkKS3hlMWFCg8J"
           >
-            <path
-              fill-rule="evenodd"
-              d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061zM6.543 8.82l-.845 5.213v.001l-.208 1.32c-.01.066.04.123.105.123H8.14c.173 0 .32-.125.348-.296v-.005l.026-.129.48-3.043.03-.164a.873.873 0 0 1 .862-.734h.38c1.201 0 2.24-.244 3.043-.815.797-.567 1.39-1.477 1.663-2.874.229-1.175.096-2.087-.45-2.71a2.126 2.126 0 0 0-.548-.438l-.003.016c-.645 3.312-2.853 4.456-5.672 4.456H6.864a.695.695 0 0 0-.321.079z"
-            />
-          </svg>
-          Click Here to Donate
-        </button>
+            <button class="btn btn-success" type="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="bi bi-paypal"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061zM6.543 8.82l-.845 5.213v.001l-.208 1.32c-.01.066.04.123.105.123H8.14c.173 0 .32-.125.348-.296v-.005l.026-.129.48-3.043.03-.164a.873.873 0 0 1 .862-.734h.38c1.201 0 2.24-.244 3.043-.815.797-.567 1.39-1.477 1.663-2.874.229-1.175.096-2.087-.45-2.71a2.126 2.126 0 0 0-.548-.438l-.003.016c-.645 3.312-2.853 4.456-5.672 4.456H6.864a.695.695 0 0 0-.321.079z"
+                />
+              </svg>
+              Click Here To Donate
+            </button>
+          </a>
+        </div>
+        <div class="row my-4">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Your Online Donations are Secure
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  We use PayPal to accept online donations. PayPal is one of the
+                  largest companies that securely facilitates online giving for
+                  many different causes. Click the button above to go to PayPal
+                  to donate. Of course, we are happy to meet you in person if
+                  you want to discuss specifics. Just give us a call at (731)
+                  512-0095.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Our Donor Privacy Policy
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  The Dream Center of Jackson is committed to respecting the
+                  privacy of our donors. We have developed this privacy policy
+                  to inform you of the way donor information is used and to
+                  reassure you that donor information will not be shared with
+                  any third party.
+
+                  <p class="mt-1">The Dream Center will use contact information
+                  of donors for the following purposes only:</p>
+                  <ul>
+                    <li>Distribute receipts for donations</li>
+                    <li>Send thank you notes to donors</li>
+                    <li>
+                      Inform donors about upcoming fundraising activities and
+                      events
+                    </li>
+                  </ul>
+                  The Dream Center will not sell, rent or lease your personal
+                  information to other organizations. We assure you that the
+                  identity of all our donors will be kept confidential. It is
+                  not our desire to send unwanted mail to our donors. Please
+                  contact us if you wish to be removed from our mailing list.
+
+                  <p class="mt-2">
+                    If you have comments or questions about our donor privacy
+                    policy, please send us and e-mail at
+                    info@dreamcenterjackson.com or call us at 731-512-0095.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

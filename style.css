@@ -135,8 +135,20 @@ a.nav-link {
   background-color: #ed5ab1;
   transition: all 0.4s ease-in-out;
 }
+
 .fas {
   border-radius: 100%;
   background-color: lightgray;
   padding: 1.25rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+a.nav-link.active, a.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: #527aad;
+  text-underline-offset: 3px;
 }
