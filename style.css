@@ -5,7 +5,7 @@ html {
 .carousel img {
   object-position: center;
   overflow: hidden;
-  height: 100vh;
+  height: 95vh;
 }
 
 .carousel-text {
@@ -32,7 +32,7 @@ html {
 }
 
 .carousel-caption {
-  margin-bottom: 40vh;
+  margin-bottom: 25vh;
 }
 
 .carousel-item > img {
@@ -83,7 +83,7 @@ a:hover {
 
 .affix {
   padding: 0.5rem 0rem;
-  background-color: orange;
+  background-color: #97afce;
 }
 
 .parallax {
@@ -132,7 +132,7 @@ a.nav-link {
 }
 
 .pink {
-  background-color: orange;
+  background-color: #97afce;
   transition: all 0.4s ease-in-out;
 }
 
@@ -165,5 +165,5 @@ a.dropdown-item:hover {
   display: block;
 }
 .navbar-bg-hover:hover, .active{
-  background-color: blue;
+  background-color: #314968;
 }
