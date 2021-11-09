@@ -12,6 +12,7 @@ html {
   color: #527aad;
 }
 
+
 .carousel-indicators [data-bs-target] {
   background-image: url(icons/heart.svg);
 }
@@ -36,7 +37,7 @@ html {
 }
 
 .carousel-item > img {
-  filter: brightness(40%) blur(0.4rem);
+  filter: brightness(75%) blur(0.2rem);
   transform: scale(1.1);
 }
 
@@ -175,4 +176,6 @@ a.dropdown-item:hover {
   height: 100vh;
 }
 
-
+.primary-bg {
+  background-color: #7595bd;
+}
