@@ -5,7 +5,7 @@ html {
 .carousel img {
   object-position: center;
   overflow: hidden;
-  height: 95vh;
+  height: 100vh;
 }
 
 .carousel-text {
@@ -60,7 +60,6 @@ html {
 
 footer {
   background-color: #527aad;
-  padding: 3rem 0px;
 }
 
 .white {
@@ -88,7 +87,7 @@ a:hover {
 
 .parallax {
   background-image: url(img/braden.jpg);
-  min-height: 80rem;
+  min-height: 40rem;
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
@@ -106,8 +105,7 @@ a:hover {
 }
 
 a.nav-link {
-  font-size: 1.5rem;
-  text-decoration: none;
+  font-size: 1.1rem;
   white-space: nowrap;
 }
 
@@ -167,3 +165,14 @@ a.dropdown-item:hover {
 .navbar-bg-hover:hover, .active{
   background-color: #314968;
 }
+.hero {
+  position: relative;
+  filter: brightness(60%);
+  background-image: url(img/subwai.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+
