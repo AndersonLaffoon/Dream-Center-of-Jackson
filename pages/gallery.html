@@ -26,17 +26,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <script type="text/javascript">
-      $(window).scroll(function () {
-        if ($(document).scrollTop() > 50) {
-          $("#navbar").addClass("affix");
-          console.log("OK");
-        } else {
-          $("#navbar").removeClass("affix");
-        }
-      });
+      // $(window).scroll(function () {
+      //  if ($(document).scrollTop() > 50) {
+      //    $("#navbar").addClass("affix");
+      //    console.log("OK");
+      //  } else {
+      //     $("#navbar").removeClass("affix");
+      //  }
+      //});
       $(document).ready(function () {
         $("button").click(function () {
-          $(".navbar").toggleClass("pink");
+          $(".navbar").toggleClass("toggler-bg");
         });
       });
     </script>
@@ -52,14 +52,14 @@
       <nav
         class="
           navbar navbar-expand-xl navbar-dark
-          fixed-top
-          navbar-transparent navbar-scroll
+          absolute-top
+          transparent navbar-scroll
         "
         id="navbar"
       >
         <div class="container-fluid">
           <div class="d-flex w-100 justify-content-between">
-            <a class="navbar-brand ms-4" href="../index.html">
+            <a class="navbar-brand ms-5" href="../index.html">
               <img
                 src="../img/dreamcenterlogo.png"
                 alt="Dream Center Logo"

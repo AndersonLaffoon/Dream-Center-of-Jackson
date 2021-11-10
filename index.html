@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,30 +18,31 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
     />
     <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/09b1c20ed3.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <script type="text/javascript">
-      $(window).scroll(function () {
-        if ($(document).scrollTop() > 50) {
-          $("#navbar").addClass("affix");
-          console.log("OK");
-        } else {
-          $("#navbar").removeClass("affix");
-        }
-      });
+      // $(window).scroll(function () {
+      //  if ($(document).scrollTop() > 50) {
+      //    $("#navbar").addClass("affix");
+      //    console.log("OK");
+      //  } else {
+      //     $("#navbar").removeClass("affix");
+      //  }
+      //});
       $(document).ready(function () {
         $("button").click(function () {
-          $(".navbar").toggleClass("pink");
+          $(".navbar").toggleClass("toggler-bg");
         });
       });
     </script>
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    
     <title>The Dream Center of Jackson</title>
   </head>
 
@@ -52,16 +52,17 @@
       <nav
         class="
           navbar navbar-expand-xl navbar-dark
-          fixed-top
-          navbar-transparent navbar-scroll
+          absolute-top
+          transparent
+          navbar-scroll
         "
         id="navbar"
       >
         <div class="container-fluid">
           <div class="d-flex w-100 justify-content-between">
-            <a class="navbar-brand ms-4" href="index.html">
+            <a class="navbar-brand ms-5" href="index.html">
               <img
-                src="../img/dreamcenterlogo.png"
+                src="img/dreamcenterlogo.png"
                 alt="Dream Center Logo"
                 class="blue-logo img-fluid"
               />
@@ -73,7 +74,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavCollapse"
             >
-              <span class="navbar-toggler-icon"></span>
+              <i class="fas fa-bars"></i>
             </button>
           </div>
 
@@ -353,7 +354,7 @@
             ></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="8000">
+            <div class="carousel-item active" data-bs-interval="10000">
               <img
                 src="img/NewDreamCenter.jpg"
                 class="d-block w-100"
@@ -361,10 +362,12 @@
               />
               <div class="carousel-caption d-block carousel-text">
                 <h1>The Dream Center of Jackson</h1>
-                <p class="fs-3">Building Lives, Restoring Hope, Renewing Dreams.</p>
+                <p class="fs-3">
+                  Building Lives, Restoring Hope, Renewing Dreams.
+                </p>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="8000">
+            <div class="carousel-item" data-bs-interval="10000">
               <img src="img/help.jpg" class="d-block w-100" alt="Help" />
               <div class="carousel-caption d-block carousel-text">
                 <h1>Ways to Give</h1>
@@ -377,7 +380,7 @@
                 </button>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="8000">
+            <div class="carousel-item" data-bs-interval="10000">
               <img src="img/staff.jpeg" class="d-block w-100" alt="Staff" />
               <div class="carousel-caption d-block carousel-text">
                 <h1>Visit Our Gallery</h1>
@@ -397,15 +400,16 @@
           <div class="col-md-4">
             <h1>Welcome</h1>
             <p>
-              Welcome to The Dream Center Of Jackson! Here, we house families and
-              individuals who have experienced crisis in their lives such as;
-              loss of employment, housing or other life-controlling problems
+              Welcome to The Dream Center Of Jackson! Here, we house families
+              and individuals who have experienced crisis in their lives such
+              as; loss of employment, housing or other life-controlling problems
               that rendered them homeless.
             </p>
-            <hr>
+            <hr />
             <h1>What We Do</h1>
             <p>
-              We help women and children with life controlling issues. We heal women and children with the power of Christ.
+              We help women and children with life controlling issues. We heal
+              women and children with the power of Christ.
             </p>
           </div>
           <div class="col-md-4">

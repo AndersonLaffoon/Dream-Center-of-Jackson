@@ -110,12 +110,11 @@ a.nav-link {
   white-space: nowrap;
 }
 
-.navbar-collapse {
+ .navbar-collapse {
   margin-top: 2.563rem;
-  margin-bottom: 0.188rem;
 }
 
-.navbar-toggler {
+ .navbar-toggler {
   margin-top: 2.75rem;
 }
 
@@ -130,12 +129,12 @@ a.nav-link {
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
-.pink {
+.toggler-bg {
   background-color: #97afce;
   transition: all 0.4s ease-in-out;
 }
 
-.fas {
+.fas.help-icons {
   border-radius: 100%;
   background-color: lightgray;
   padding: 1.25rem;
@@ -178,4 +177,11 @@ a.dropdown-item:hover {
 
 .primary-bg {
   background-color: #7595bd;
+}
+.absolute-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }

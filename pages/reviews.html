@@ -26,17 +26,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <script type="text/javascript">
-      $(window).scroll(function () {
-        if ($(document).scrollTop() > 50) {
-          $("#navbar").addClass("affix");
-          console.log("OK");
-        } else {
-          $("#navbar").removeClass("affix");
-        }
-      });
+      // $(window).scroll(function () {
+      //  if ($(document).scrollTop() > 50) {
+      //    $("#navbar").addClass("affix");
+      //    console.log("OK");
+      //  } else {
+      //     $("#navbar").removeClass("affix");
+      //  }
+      //});
       $(document).ready(function () {
         $("button").click(function () {
-          $(".navbar").toggleClass("pink");
+          $(".navbar").toggleClass("toggler-bg");
         });
       });
     </script>
@@ -52,14 +52,13 @@
       <nav
         class="
           navbar navbar-expand-xl navbar-dark
-          fixed-top
-          navbar-transparent navbar-scroll
+          absolute-top transparent navbar-scroll
         "
         id="navbar"
       >
         <div class="container-fluid">
           <div class="d-flex w-100 justify-content-between">
-            <a class="navbar-brand ms-4" href="../index.html">
+            <a class="navbar-brand ms-5" href="../index.html">
               <img
                 src="../img/dreamcenterlogo.png"
                 alt="Dream Center Logo"
@@ -323,7 +322,17 @@
 
       <!-- Hero -->
       <section>
-        <h1 class="d-flex justify-content-center align-items-center hero text-primary">6 Inch Subway Steak & Cheeses.</h1>
+        <h1
+          class="
+            d-flex
+            justify-content-center
+            align-items-center
+            hero
+            text-primary
+          "
+        >
+          6 Inch Subway Steak & Cheeses.
+        </h1>
       </section>
       <!-- Hero -->
     </header>
@@ -448,30 +457,29 @@
         <hr />
         <div class="row my-4">
           <h3>Vernetta's Story</h3>
-          <iframe
-            width="560"
-            height="315"
-            class="mt-3"
-            src="https://www.youtube.com/embed/XsmqwT8E99w"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div class="ratio ratio-16x9 mt-3">
+            <iframe
+              class=""
+              src="https://www.youtube.com/embed/XsmqwT8E99w"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
         <hr />
         <div class="row my-4">
           <h3>Aimee's Story</h3>
-          <iframe
-            width="560"
-            height="315"
-            class="mt-3"
-            src="https://www.youtube.com/embed/hyeswBZnCtk"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div class="ratio ratio-16x9 mt-3">
+            <iframe
+              src="https://www.youtube.com/embed/hyeswBZnCtk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
         <hr />
       </div>
@@ -666,8 +674,8 @@
       </div>
     </section>
 
-     <!-- Footer -->
-     <footer>
+    <!-- Footer -->
+    <footer>
       <div class="container text-center py-4 white">
         <div class="row">
           <div>

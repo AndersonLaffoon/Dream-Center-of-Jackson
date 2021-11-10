@@ -26,17 +26,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <script type="text/javascript">
-      $(window).scroll(function () {
-        if ($(document).scrollTop() > 50) {
-          $("#navbar").addClass("affix");
-          console.log("OK");
-        } else {
-          $("#navbar").removeClass("affix");
-        }
-      });
+      // $(window).scroll(function () {
+      //  if ($(document).scrollTop() > 50) {
+      //    $("#navbar").addClass("affix");
+      //    console.log("OK");
+      //  } else {
+      //     $("#navbar").removeClass("affix");
+      //  }
+      //});
       $(document).ready(function () {
         $("button").click(function () {
-          $(".navbar").toggleClass("pink");
+          $(".navbar").toggleClass("toggler-bg");
         });
       });
     </script>
@@ -52,14 +52,14 @@
       <nav
         class="
           navbar navbar-expand-xl navbar-dark
-          fixed-top
-          navbar-transparent navbar-scroll
+          absolute-top
+          transparent navbar-scroll
         "
         id="navbar"
       >
         <div class="container-fluid">
           <div class="d-flex w-100 justify-content-between">
-            <a class="navbar-brand ms-4" href="../index.html">
+            <a class="navbar-brand ms-5" href="../index.html">
               <img
                 src="../img/dreamcenterlogo.png"
                 alt="Dream Center Logo"
@@ -349,7 +349,7 @@
         </div>
         <div class="row my-4">
           <div class="col-md-4">
-            <i class="fas fa-hands-helping fa-4x mb-3 text-success"></i>
+            <i class="fas fa-hands-helping fa-4x mb-3 text-success help-icons"></i>
             <h4>Volunteer</h4>
             <p>
               Want to volunteer today? You won’t find a more rewarding way to
@@ -358,7 +358,7 @@
           </div>
 
           <div class="col-md-4">
-            <i class="fas fa-utensils fa-4x mb-4 text-secondary"></i>
+            <i class="fas fa-utensils fa-4x mb-4 text-secondary help-icons"></i>
             <h4>Food Donations</h4>
             <p>
               Donate food to the Dream Center. We ask for fresh fruits,
@@ -367,7 +367,7 @@
           </div>
 
           <div class="col-md-4">
-            <i class="fas fa-pray fa-4x mb-4 text-primary"></i>
+            <i class="fas fa-pray fa-4x mb-4 text-primary help-icons"></i>
             <h4>Prayers</h4>
             <p>
               A simple prayer can go a long way. Please pray that God will
@@ -377,7 +377,7 @@
         </div>
         <div class="row my-4">
           <div class="col-md-4">
-            <i class="fas fa-wrench fa-4x mb-4 text-dark"></i>
+            <i class="fas fa-wrench fa-4x mb-4 text-dark help-icons"></i>
             <h4>Skilled Labor</h4>
             <p>
               We need help to keep the building in good condition. Electricians,
@@ -387,7 +387,7 @@
           </div>
 
           <div class="col-md-4">
-            <i class="fas fa-tshirt fa-4x mb-4 text-info"></i>
+            <i class="fas fa-tshirt fa-4x mb-4 text-info help-icons"></i>
             <h4>Clothing Donations</h4>
             <p>
               Donate clothing to those in need at the Dream Center. New and
@@ -397,7 +397,7 @@
           </div>
 
           <div class="col-md-4">
-            <i class="fas fa-bed fa-4x mb-4 text-danger"></i>
+            <i class="fas fa-bed fa-4x mb-4 text-danger help-icons"></i>
             <h4>Adopt-A-Room</h4>
             <p>
               We need rooms. $12,000 builds one family room in our new facility,

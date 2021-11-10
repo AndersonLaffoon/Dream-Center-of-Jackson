@@ -26,17 +26,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <script type="text/javascript">
-      $(window).scroll(function () {
-        if ($(document).scrollTop() > 50) {
-          $("#navbar").addClass("affix");
-          console.log("OK");
-        } else {
-          $("#navbar").removeClass("affix");
-        }
-      });
+      // $(window).scroll(function () {
+      //  if ($(document).scrollTop() > 50) {
+      //    $("#navbar").addClass("affix");
+      //    console.log("OK");
+      //  } else {
+      //     $("#navbar").removeClass("affix");
+      //  }
+      //});
       $(document).ready(function () {
         $("button").click(function () {
-          $(".navbar").toggleClass("pink");
+          $(".navbar").toggleClass("toggler-bg");
         });
       });
     </script>
@@ -52,14 +52,15 @@
       <nav
         class="
           navbar navbar-expand-xl navbar-dark
-          fixed-top
-          navbar-transparent navbar-scroll
+          absolute-top
+          transparent
+          navbar-scroll
         "
         id="navbar"
       >
         <div class="container-fluid">
           <div class="d-flex w-100 justify-content-between">
-            <a class="navbar-brand ms-4" href="../index.html">
+            <a class="navbar-brand ms-5" href="../index.html">
               <img
                 src="../img/dreamcenterlogo.png"
                 alt="Dream Center Logo"
@@ -323,17 +324,18 @@
 
       <!-- Hero -->
       <section>
-        <h1
+        <div
           class="
             d-flex
             justify-content-center
             align-items-center
             hero
             text-primary
+            fs-1
           "
         >
           6 Inch Subway Steak & Cheeses.
-        </h1>
+        </div>
       </section>
       <!-- Hero -->
     </header>
@@ -351,7 +353,7 @@
           ></iframe>
         </div>
       </div>
-      <div class="container">
+      <div class="container my-3">
         <div class="row">
           <div class="col-md-3">
             <h1>
@@ -394,37 +396,35 @@
             <p>Give us a call at (731) 512-0095</p>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h1>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="45"
-                  height="45"
-                  fill="currentColor"
-                  class="bi bi-envelope"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
-                  />
-                </svg>
-                Email Us
-              </h1>
-              <p>
-                Your contact information will be held in the strict confidence.
-                Please use the form below to send us a message. Thank you!
-              </p>
-            </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h1>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="45"
+                fill="currentColor"
+                class="bi bi-envelope"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                />
+              </svg>
+              Email Us
+            </h1>
+            <p>
+              Your contact information will be held in the strict confidence.
+              Please use the form below to send us a message. Thank you!
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="container mt-5">
+      <div class="container my-3">
         <form id="contact-form" method="post" action="contact.php" role="form">
           <div class="messages"></div>
 
@@ -514,8 +514,8 @@
       </div>
     </section>
 
-     <!-- Footer -->
-     <footer>
+    <!-- Footer -->
+    <footer>
       <div class="container text-center py-4 white">
         <div class="row">
           <div>
