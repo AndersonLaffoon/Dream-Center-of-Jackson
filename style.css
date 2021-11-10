@@ -45,20 +45,6 @@ html {
   background-image: url(icons/heart-fill.svg);
 }
 
-.btn-success {
-  background-color: #42ed37;
-  border-color: #42ed37;
-}
-
-.btn-success:hover,
-.btn-success:visited,
-.btn-success:active {
-  filter: brightness(75%);
-  background-color: #42ed37;
-  border-color: #42ed37;
-  color: white;
-}
-
 footer {
   background-color: #527aad;
 }

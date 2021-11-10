@@ -1,0 +1,22 @@
+{
+  "name": "dream-center-of-jackson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CorwinBridges/Dream-Center-of-Jackson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CorwinBridges/Dream-Center-of-Jackson/issues"
+  },
+  "homepage": "https://github.com/CorwinBridges/Dream-Center-of-Jackson#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
