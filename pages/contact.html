@@ -58,7 +58,7 @@
       >
         <div class="container-fluid">
           <div class="d-flex w-100 justify-content-between">
-            <a class="navbar-brand ms-5" href="../index.html">
+            <a class="navbar-brand ms-md-5 ms-sm-3 ms-1" href="../index.html">
               <img
                 src="../img/dreamcenterlogo.png"
                 alt="Dream Center Logo"
@@ -339,7 +339,7 @@
     </header>
 
     <section>
-      <div class="container-fluid">
+      <div class="container-fluid mt-2">
         <div class="row">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.921036118999!2d-88.82781368474193!3d35.65431708020057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887ea6d61bcdafbd%3A0x37e837db17429f88!2sDream%20Center%20of%20Jackson!5e0!3m2!1sen!2sus!4v1636038585436!5m2!1sen!2sus"
@@ -358,8 +358,7 @@
               <i class="bi bi-geo-alt"></i>
               Find Us At
             </h1>
-
-            <p>1970 N. Highland Ave. Suite E Jackson, TN 38305</p>
+            <a href="https://goo.gl/maps/eyRodYin54wmuZ1T6">1970 N. Highland Ave. Suite E Jackson, TN 38305</a>
           </div>
           <div class="col-md-3">
             <h1>
@@ -455,7 +454,7 @@
                   <div class="help-block with-errors"></div>
                 </div>
               </div>
-              <div class="col-md-12">
+              <div class="col-md-12 mt-2">
                 <input
                   type="submit"
                   class="btn btn-primary btn-send"
@@ -480,7 +479,7 @@
       <div class="container text-center py-4 white">
         <div class="row">
           <div>
-            <a href="index.html">
+            <a href="../index.html">
               <img
                 src="../img/dreamcenterlogo.png"
                 alt="Dream Center Logo"
@@ -520,14 +519,8 @@
             <h5>VISIT US:</h5>
 
             <p>
-              <a
-                href="https://www.google.com/maps/place/Dream+Center+of+Jackson/@35.6543171,-88.8278137,17z/data=!3m1!4b1!4m5!3m4!1s0x887ea6d61bcdafbd:0x37e837db17429f88!8m2!3d35.6542974!4d-88.8260386"
-              >
-                <b
-                  >1970 N Highland Ave, Ste E. <br />
-                  Jackson, TN 38305</b
-                >
-              </a>
+              1970 N Highland Ave, Ste E. <br />
+                Jackson, TN 38305
               <a
                 href="https://www.google.com/maps/dir//Dream+Center+of+Jackson,+1970+N+Highland+Ave,+Jackson,+TN+38305"
               >
@@ -567,6 +560,33 @@
       </div>
     </footer>
     <!-- Footer -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="text-white p-3 rounded-circle bg-primary"><i class="fas fa-chevron-up fa-lg"></i></button>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
