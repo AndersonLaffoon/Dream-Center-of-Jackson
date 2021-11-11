@@ -6,4 +6,9 @@ gallery pages
 format navbar links
 make pages responsive to mobile devices
 get images of staff and board if possible
-fix toggler button bg color
+fix toggler dropdown hover
+fix searchbar
+make socials rounded circle bg
+
+add transition to toggler dropdowns
+button delay toggler and remove bg when width is xl+

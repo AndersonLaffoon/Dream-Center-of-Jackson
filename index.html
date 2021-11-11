@@ -17,6 +17,25 @@
       src="https://kit.fontawesome.com/09b1c20ed3.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -30,9 +49,16 @@
       //  }
       //});
       $(document).ready(function () {
-        $("button").click(function () {
-          $(".navbar-toggler").toggleClass("toggler-bg");
+        $("button.navbar-toggler").click(function () {
+          $("nav").toggleClass("toggler-bg");
         });
+      });
+      $("button").click(function () {
+        console.log("clicked...waiting...");
+
+        setTimeout(function () {
+          alert("Called after delay.");
+        }, 5000);
       });
     </script>
     <!-- CSS Stylesheet -->
@@ -53,7 +79,7 @@
         "
         id="navbar"
       >
-        <div class="container-fluid">
+        <div class="container-xxl">
           <div class="d-flex w-100 justify-content-between">
             <a class="navbar-brand ms-md-5 ms-sm-3 ms-1" href="index.html">
               <img
@@ -73,13 +99,16 @@
             </button>
           </div>
 
-          <div class="collapse navbar-collapse text-white" id="navbarNavCollapse">
+          <div
+            class="collapse navbar-collapse text-white"
+            id="navbarNavCollapse"
+          >
             <ul
               class="
                 navbar-nav
                 ms-auto
                 navbar-nav-scroll
-                text-end
+                text-center
                 align-items-center
               "
             >
@@ -363,28 +392,35 @@
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="10000">
-              <img src="img/help.jpg" class="d-block w-100 img-fluid" alt="Help" />
+              <img
+                src="img/help.jpg"
+                class="d-block w-100 img-fluid"
+                alt="Help"
+              />
               <div class="carousel-caption d-block carousel-text">
                 <h1>Ways to Give</h1>
                 <p class="fs-3">
                   Giving to the Dream Center is easy and rewarding! <br />
                   Find out more about giving here!
                 </p>
-                <a 
-                href="pages/take_action.html">
-                <button type="button" class="btn btn-primary">
-                  Learn More
-                </button>
-              </a>
+                <a href="pages/take_action.html">
+                  <button type="button" class="btn btn-primary">
+                    Learn More
+                  </button>
+                </a>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="10000">
-              <img src="img/staff.jpeg" class="d-block w-100 img-fluid" alt="Staff" />
+              <img
+                src="img/staff.jpeg"
+                class="d-block w-100 img-fluid"
+                alt="Staff"
+              />
               <div class="carousel-caption d-block carousel-text">
                 <h1>Visit Our Gallery</h1>
                 <p class="fs-3">See what we've been up to!</p>
                 <a href="pages/gallery.html">
-                <button type="button" class="btn btn-primary">Explore</button>
+                  <button type="button" class="btn btn-primary">Explore</button>
                 </a>
               </div>
             </div>
@@ -471,7 +507,7 @@
 
             <p>
               1970 N Highland Ave, Ste E. <br />
-                Jackson, TN 38305
+              Jackson, TN 38305
               <a
                 href="https://www.google.com/maps/dir//Dream+Center+of+Jackson,+1970+N+Highland+Ave,+Jackson,+TN+38305"
               >
@@ -515,7 +551,18 @@
       onclick="topFunction()"
       id="myBtn"
       title="Go to top"
-      class="text-white p-3 rounded-circle bg-primary"
+      class="
+        text-white
+        p-3
+        rounded-circle
+        bg-primary
+        position-fixed
+        bottom-0
+        end-0
+        mb-4
+        me-4
+        border-0
+      "
     >
       <i class="fas fa-chevron-up fa-lg"></i>
     </button>

@@ -149,6 +149,14 @@ a.dropdown-item:hover {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+.dropdown-menu {
+  transition: all 0.4s ease-in;
+}
+
+.dropdown {m
+}
+
 .navbar-bg-hover:hover, .active{
   background-color: #314968;
 }
@@ -174,21 +182,10 @@ a.dropdown-item:hover {
 }
 #myBtn {
   display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
   z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-#myBtn:hover {
-  background-color: #555;
 }
 
 .carousel.slide.carousel-fade.pointer-event {
   height: 100vh;
 }
+

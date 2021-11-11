@@ -33,8 +33,8 @@
       //  }
       //});
       $(document).ready(function () {
-        $("button").click(function () {
-          $(".navbar-toggler").toggleClass("toggler-bg");
+        $("button.navbar-toggler").click(function () {
+          $("nav").toggleClass("toggler-bg");
         });
       });
     </script>
@@ -55,7 +55,7 @@
         "
         id="navbar"
       >
-        <div class="container-fluid">
+        <div class="container-xxl">
           <div class="d-flex w-100 justify-content-between">
             <a class="navbar-brand ms-md-5 ms-sm-3 ms-1" href="../../index.html">
               <img
@@ -66,12 +66,12 @@
             </a>
 
             <button
-              class="navbar-toggler mb-auto"
+              class="navbar-toggler mb-auto text-white border-white"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavCollapse"
             >
-              <span class="navbar-toggler-icon"></span>
+              <i class="fas fa-bars"></i>
             </button>
           </div>
 
@@ -494,7 +494,7 @@
       </div>
     </footer>
     <!-- Footer -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top" class="text-white p-3 rounded-circle bg-primary"><i class="fas fa-chevron-up fa-lg"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="text-white p-3 rounded-circle bg-primary position-fixed bottom-0 end-0 mb-4 me-4 border-0"><i class="fas fa-chevron-up fa-lg"></i></button>
     <script>
       //Get the button
       var mybutton = document.getElementById("myBtn");
