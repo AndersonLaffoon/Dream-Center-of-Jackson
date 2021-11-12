@@ -9,11 +9,6 @@
   height: 100vh;
 }
 
-.carousel-text {
-  color: #527aad;
-}
-
-
 .carousel-indicators [data-bs-target] {
   background-image: url(icons/heart.svg);
 }
@@ -22,10 +17,14 @@
   background-image: url(icons/heart-fill.svg);
 }
 
+.carousel-indicators > button:hover {
+  background-image: url(icons/heart-fill.svg);
+}
+
 .carousel-indicators > button.active,
 .carousel-indicators [data-bs-target] {
-  height: 3em;
-  width: 3em;
+  height: 2em;
+  width: 2em;
   background-repeat: no-repeat;
   background-color: transparent;
   color: #527aad;
@@ -33,21 +32,9 @@
     brightness(96%) contrast(92%);
 }
 
-.carousel-caption {
-  margin-bottom: 25vh;
-}
-
 .carousel-item > img {
   filter: brightness(75%) blur(0.2rem);
   transform: scale(1.1);
-}
-
-.carousel-indicators > button:hover {
-  background-image: url(icons/heart-fill.svg);
-}
-
-footer {
-  background-color: #527aad;
 }
 
 .white {
@@ -61,16 +48,6 @@ a:hover {
 
 .white a:hover {
   filter: brightness(75%);
-}
-
-.navbar {
-  padding: 1.25rem 0rem;
-  transition: all 0.4s ease-in-out;
-}
-
-.affix {
-  padding: 0.5rem 0rem;
-  background-color: #97afce;
 }
 
 .parallax {
@@ -116,8 +93,6 @@ a.nav-link {
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
-
-
 .fas.help-icons {
   border-radius: 100%;
   background-color: lightgray;
@@ -151,7 +126,7 @@ a.dropdown-item:hover {
   transition: all 0.4s ease-in;
 }
 
-.dropdown {m
+.dropdown {
 }
 
 .navbar-bg-hover:hover, .active{
@@ -188,9 +163,21 @@ a.dropdown-item:hover {
   height: 100vh;
 }
 
-@media (max-width: 1200px){
+/* !!!I need to change to style for F layout!!! */
+.carousel-caption {
+  margin-bottom: 25vh;
+}
+
+nav {
+  transition: all 0.35s ease-in-out;
+}
+
+@media (max-width: 1199px){
   .toggler-bg {
     background-color: #97afce;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  .navbar-collapse {
+    margin-top: 0;
   }
 }
