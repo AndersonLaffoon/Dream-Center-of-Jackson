@@ -1,4 +1,4 @@
- html {
+  html {
   font-size: 1em;
 }
 
@@ -97,11 +97,11 @@ a.nav-link {
   white-space: nowrap;
 }
 
- .navbar-collapse {
+  .navbar-collapse {
   margin-top: 2.563rem;
 }
 
- .navbar-toggler {
+  .navbar-toggler {
   margin-top: 3.75rem;
 }
 
@@ -116,10 +116,7 @@ a.nav-link {
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
-.toggler-bg {
-  background-color: #97afce;
-  transition: all 0.4s ease-in-out;
-}
+
 
 .fas.help-icons {
   border-radius: 100%;
@@ -160,6 +157,7 @@ a.dropdown-item:hover {
 .navbar-bg-hover:hover, .active{
   background-color: #314968;
 }
+
 .hero {
   position: relative;
   filter: brightness(60%);
@@ -173,6 +171,7 @@ a.dropdown-item:hover {
 .primary-bg {
   background-color: #7595bd;
 }
+
 .absolute-top {
   position: absolute;
   top: 0;
@@ -189,3 +188,9 @@ a.dropdown-item:hover {
   height: 100vh;
 }
 
+@media (max-width: 1200px){
+  .toggler-bg {
+    background-color: #97afce;
+    transition: all 0.4s ease-in-out;
+  }
+}
