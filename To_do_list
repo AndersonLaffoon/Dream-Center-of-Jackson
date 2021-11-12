@@ -1,14 +1,25 @@
 
-add stats
+
+!!! take action page
+add why help the dream center?
+add impact/stats & services
 add partners
 add companies logo that donated
-gallery pages
-format navbar links
+
 make pages responsive to mobile devices
 get images of staff and board if possible
-fix toggler dropdown hover
 fix searchbar
 make socials rounded circle bg
 
-add transition to toggler dropdowns
-button delay toggler and remove bg when width is xl+
+!!!navbar
+format navbar links to other pages (add ids to sections)
+fix toggler dropdown hover
+add slidedown transition to toggler dropdowns
+make a.link margins bigger
+
+!!!gallery pages
+format gallery cards (make responsive)
+format images in gallery (make responsive)
+when clicked on image, enlarge it
+
+ask Mommy Laffoon for FAQS
