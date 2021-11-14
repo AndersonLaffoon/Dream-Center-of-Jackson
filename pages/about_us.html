@@ -1,742 +1,729 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="../sass/custom.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
-    />
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/09b1c20ed3.js" crossorigin="anonymous"></script>
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="../js/script.js"></script>
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="../style.css" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>About Us</title>
-  </head>
+  <!-- Bootstrap CSS -->
+  <link href="../sass/custom.css" rel="stylesheet" />
+  <!-- Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/09b1c20ed3.js" crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="../style.css" />
 
-  <body>
-    <header>
-      <!-- Navbar -->
-      <nav
-        class="
+  <title>About Us</title>
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="
           navbar navbar-expand-xl navbar-dark
           absolute-top
-          transparent 
-          navbar-scroll 
+          transparent
+          navbar-scroll
           py-3
-        "
-        id="navbar"
-      >
-        <div class="container-xxl">
-          <div class="d-flex w-100 justify-content-between">
-            <a class="navbar-brand ms-md-5 ms-sm-3 ms-1" href="../index.html">
-              <img
-                src="../img/dreamcenterlogo.png"
-                alt="Dream Center Logo"
-                class="blue-logo img-fluid"
-              />
-            </a>
+        " id="navbar">
+      <div class="container-xxl">
+        <div class="d-flex w-100 justify-content-between">
+          <a class="navbar-brand ms-md-5 ms-sm-3 ms-1" href="../index.html">
+            <img src="../img/dreamcenterlogo.png" alt="Dream Center Logo" class="blue-logo img-fluid" />
+          </a>
 
-            <button
-              class="navbar-toggler mb-auto text-white border-white"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavCollapse"
-            >
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
+          <button class="navbar-toggler mb-auto text-white border-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavCollapse">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
 
-          <div class="collapse navbar-collapse" id="navbarNavCollapse">
-            <ul class="navbar-nav ms-auto navbar-nav-scroll text-end align-items-center">
-              <li class="nav-item dropdown">
-                <a href="about_us.html" class="nav-link dropdown-toggle navbar-bg-hover active" id="navbarDropdown" role="button">About Us</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#" class="dropdown-item">
-                      Our History
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item">
-                      Our Mission
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item">
-                      Our Services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item">
-                      Our Staff
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item">
-                      Our Board Members
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link navbar-bg-hover dropdown-toggle" id="navbarDropdown" role="button" href="reviews.html">Testimonies & Reviews</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="reviews.html#OurTestimonies" class="dropdown-item">
-                      Our Testimonies
-                    </a>
-                  </li>
-                  <li>
-                    <a href="reviews.html#OurVideoTestimonies" class="dropdown-item">
-                      Our Video Testimonies
-                    </a>
-                  </li>
-                  <li>
-                    <a href="reviews.html#OurReviews" class="dropdown-item">
-                      Our Reviews
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link navbar-bg-hover dropdown-toggle" id="navbarDropdown" role="button" href="take_action.html">Take Action</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="take_action.html" class="dropdown-item">
-                      How to Help
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item">
-                      Who We Help
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item">
-                      Our Donor Privacy Policy
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link navbar-bg-hover dropdown-toggle" id="navbarDropdown" role="button" href="events.html">Events</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#" class="dropdown-item">
-                      Friendsgiving 5K
-                    </a>
-                  </li>
-                  <li>
-                    <a href="events.html#" class="dropdown-item">
-                      Night in the Caribbean
-                    </a>
-                  </li>
-                  <li>
-                    <a href="events.html#" class="dropdown-item">
-                      Valentine’s Auction
-                    </a>
-                  </li>
-                  <li>
-                    <a href="events.html#" class="dropdown-item">
-                      6th Annual Dream Center Golf Tournament
-                    </a>
-                  </li>
-                  <li>
-                    <a href="events.html#" class="dropdown-item">
-                      That’s Amore Italian Dinner/Art Auction
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link navbar-bg-hover dropdown-toggle"
-                  id="navbarDropdown"
-                  role="button"
-                  href="gallery.html"
-                  >Gallery</a
-                >
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="../pages/gallery/thats_amore.html" class="dropdown-item">
-                      That's Amore Art Auction
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/cardboard_boat_regatta.html" class="dropdown-item">
-                      Cardboard Boat Regatta
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/night_in_the_caribbean.html" class="dropdown-item">
-                      Night in the Caribbean
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/bunny_run_5k.html" class="dropdown-item">
-                      Bunny Run 5K
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/running_for_a_dream_5k.html" class="dropdown-item">
-                      Running for a Dream 5K
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/self_portrait.html" class="dropdown-item">
-                      Self Portrait of Youth
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/easter.html" class="dropdown-item">
-                      Easter
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/volunteer.html" class="dropdown-item">
-                      Volunteer
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/golf_tournament.html" class="dropdown-item">
-                      Golf Tournament
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link navbar-bg-hover">Contact</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  href="#"
-                  class="nav-link dropdown-toggle"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  ><i class="bi bi-search"></i
-                ></a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#" class="dropdown-item">
-                      <!-- <form class="d-flex">
+        <div class="collapse navbar-collapse" id="navbarNavCollapse">
+          <ul class="
+                navbar-nav
+                ms-auto
+                navbar-nav-scroll
+                text-end
+                align-items-center
+              ">
+            <li class="nav-item dropdown">
+              <a href="about_us.html" class="nav-link dropdown-toggle navbar-bg-hover active" id="navbarDropdown"
+                role="button">About Us</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item"> Our History </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"> Our Mission </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"> Our Services </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"> Our Staff </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"> Our Board Members </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-bg-hover dropdown-toggle" id="navbarDropdown" role="button"
+                href="reviews.html">Testimonies & Reviews</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="reviews.html#OurTestimonies" class="dropdown-item">
+                    Our Testimonies
+                  </a>
+                </li>
+                <li>
+                  <a href="reviews.html#OurVideoTestimonies" class="dropdown-item">
+                    Our Video Testimonies
+                  </a>
+                </li>
+                <li>
+                  <a href="reviews.html#OurReviews" class="dropdown-item">
+                    Our Reviews
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-bg-hover dropdown-toggle" id="navbarDropdown" role="button"
+                href="take_action.html">Take Action</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="take_action.html" class="dropdown-item">
+                    How to Help
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"> Who We Help </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">
+                    Our Donor Privacy Policy
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-bg-hover dropdown-toggle" id="navbarDropdown" role="button"
+                href="events.html">Events</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item"> Friendsgiving 5K </a>
+                </li>
+                <li>
+                  <a href="events.html#" class="dropdown-item">
+                    Night in the Caribbean
+                  </a>
+                </li>
+                <li>
+                  <a href="events.html#" class="dropdown-item">
+                    Valentine’s Auction
+                  </a>
+                </li>
+                <li>
+                  <a href="events.html#" class="dropdown-item">
+                    6th Annual Dream Center Golf Tournament
+                  </a>
+                </li>
+                <li>
+                  <a href="events.html#" class="dropdown-item">
+                    That’s Amore Italian Dinner/Art Auction
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-bg-hover dropdown-toggle" id="navbarDropdown" role="button"
+                href="gallery.html">Gallery</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../pages/gallery/thats_amore.html" class="dropdown-item">
+                    That's Amore Art Auction
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/cardboard_boat_regatta.html" class="dropdown-item">
+                    Cardboard Boat Regatta
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/night_in_the_caribbean.html" class="dropdown-item">
+                    Night in the Caribbean
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/bunny_run_5k.html" class="dropdown-item">
+                    Bunny Run 5K
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/running_for_a_dream_5k.html" class="dropdown-item">
+                    Running for a Dream 5K
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/self_portrait.html" class="dropdown-item">
+                    Self Portrait of Youth
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/easter.html" class="dropdown-item">
+                    Easter
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/volunteer.html" class="dropdown-item">
+                    Volunteer
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/golf_tournament.html" class="dropdown-item">
+                    Golf Tournament
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link navbar-bg-hover">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown"><i class="bi bi-search"></i></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item">
+                    <!-- <form class="d-flex">
                         <input
                           class="form-control me-2"
                           type="search"
                           placeholder="Search"
                         />
                       </form> -->
-                      <script
-                        async
-                        src="https://cse.google.com/cse.js?cx=fabcc81d58f18389d"
-                      ></script>
-                      <div class="gcse-search"></div
-                    ></a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="https://www.paypal.com/donate?token=TIxK4K0SfCOhuWaZoz4PFrBda0PgUJMvJZI8QodDNIGjVrXIyj7J7aG3tExTGy0TV8w8MEairessjCsz"
-                >
+                    <script async src="https://cse.google.com/cse.js?cx=fabcc81d58f18389d"></script>
+                    <div class="gcse-search"></div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="https://www.paypal.com/donate?token=TIxK4K0SfCOhuWaZoz4PFrBda0PgUJMvJZI8QodDNIGjVrXIyj7J7aG3tExTGy0TV8w8MEairessjCsz">
                 <button type="button" class="btn btn-success text-white">
                   <i class="fab fa-paypal fa-lg"></i>
                   Donate
-                </button></a
-                >
-              </li>
-            </ul>
-          </div>
+                </button></a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- Navbar -->
+      </div>
+    </nav>
+    <!-- Navbar -->
 
-      <!-- Hero -->
-      <section>
-        <h1 class="d-flex justify-content-center align-items-center hero text-primary">6 Inch Subway Steak & Cheeses.</h1>
-      </section>
-      <!-- Hero -->
-    </header>
-
+    <!-- Hero -->
     <section>
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="text-center">About Us</h1>
-            <p>
-              We house families and individuals who have experienced crisis in
-              their lives such as; loss of employment, housing or other
-              life-controlling problems that rendered them homeless. Each
-              potential resident must have a strong desire to change and develop
-              a new way of life. We help our residents in many areas of
-              achieving success.We prepare individuals who did not finish high
-              school to take the high school equivalence test and become more
-              productive citizens in our local community with higher paying
-              jobs. We assist them in finding gainful employment with local
-              established companies, financial recovery classes, and much more.
-              It is our goal to prepare families and individuals to become
-              financially strong, emotionally balanced and self efficient in
-              every way.
-            </p>
-          </div>
-
-          <div class="col-md-6">
-            <img src="../img/subwai.jpg" class="img-fluid text-center"/>
-          </div> 
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-6">
-            <img src="../img/subwai.jpg" class="img-fluid text-center"/>
-          </div>
-          <div class="col-md-6">
-            <h1 class="text-center">Our History</h1>
-            <p>On May 4, 2003, an F4 tornado struck the Jackson area.  Due to this event, many families and individuals were left without a home.  
-              We obtained an old hospital that had been mostly vacant for several years.  
-              Now the victims of this tornado had a temporary place to stay.  
-              We handed out food and supplies daily in the devastated Jackson neighborhoods.  
-              During this period we housed up to 60 individuals and families nightly.
-              They stayed with us until they found permanent housing or had their own homes renovated or rebuilt.
-              In the 14 years since we recognize there is still a need and we are continuing to fill that need.  
-              We are a faith-based educational ministry for women and women with children.  We rebuild lives, restore hope, and renew dreams.  
-              The women we serve have experienced crisis and/or loss in their lives.
-              We provide all of the basic needs for our women.
-              We assist with job readiness, resume building, finding gainful employment, and any other service that will prepare the women to achieve success.  
-              All classes are mandatory. Finance, nutrition, parenting, and Bible study are just some of the classes we offer.</P>
-              <p>We have a mandate by God to help, support, love, and minister to these women through their tough times by instilling hope and applying Christian principles.</p>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-6">
-            <h1 class="text-center">Our Mission</h1>
-            <p>THIS SANDWICH HAS 243 CONFIRMED KILLS</p>
-          </div>
-          <div class="col-md-6">
-            <img src="../img/subwai.jpg"  class="img-fluid text-center"/>
-          </div>
-        </div>
-      </div>
-      
-        <div class="container">
-          <div class="row mt-5 ">
-            <div class="col-md-6">
-              <img src="../img/subwai.jpg" class="img-fluid text-center"/>
-            </div>
-            <div class="col-md-6">
-              <h1 class="text-center">Who We Help</h1>
-              <p>The Dream Center was located in a converted hospital and was able to house approximately 50 residents. 
-                 Since relocating we are now serving approximately 20-23 women and children. To reside at the Dream Center, 
-                 the women must have an intense desire to address their issues, change their lives, and transition back into society. 
-                As such, we offer GED classes, job readiness, transportation, addiction-recovery programs, financial self-sufficiency classes, parenting, chapel and other classes.</p>
-
-              <p>One very unique aspect of the Dream Center is that we house mothers and children 
-                (boys must be under the age of 17). We are blessed each day watching children grow and learn what the love of Christ truly is.</p>
-
-              <p>Even more important than the financial freedom we provide to our residents is the spiritual coaching we are able to give. Residents must attend on-site chapel daily in the morning, 
-                evenings and attend a church on Sunday morning. Our addiction recovery program is a Christ-centered system aimed at addressing the root cause of life-controlling issues 
-                (people seeking to fill the hole in their hearts with something other than God). 
-                It is amazing to see the broken and lost women who have nowhere to turn come to the Dream Center and end up finding an unexpected blessing – to be introduced to Jesus’ love.</p>
-    
-            </div>
-        </div>
-        
-      </div>
+      <h1 class="
+            d-flex
+            justify-content-center
+            align-items-center
+            hero
+            text-primary
+          ">
+        6 Inch Subway Steak & Cheeses.
+      </h1>
     </section>
+    <!-- Hero -->
+  </header>
 
-
-
-    <section>
-      <div class="container">
-        <h1 class="mt-2">Our Staff</h1>
-        <div class="row mt-4">
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Gail Gustafson</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Executive Director</h6>
-                <p class="card-text">Info Here.</p>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Susan Smith</h5>
-                <h6 class="card-subtitle mb-2 text-muted"> Director of Client Services</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Stephanie Laffoon</h5>
-                <h6 class="card-subtitle mb-2 text-muted"> Capital Campaign</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                
-              </div>
-            </div>
-          </div>
+  <section>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="text-center">About Us</h1>
+          <p>
+            We house families and individuals who have experienced crisis in
+            their lives such as; loss of employment, housing or other
+            life-controlling problems that rendered them homeless. Each
+            potential resident must have a strong desire to change and develop
+            a new way of life. We help our residents in many areas of
+            achieving success.We prepare individuals who did not finish high
+            school to take the high school equivalence test and become more
+            productive citizens in our local community with higher paying
+            jobs. We assist them in finding gainful employment with local
+            established companies, financial recovery classes, and much more.
+            It is our goal to prepare families and individuals to become
+            financially strong, emotionally balanced and self efficient in
+            every way.
+          </p>
         </div>
-        <div class="row mt-4">
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Leslie Faulkner</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Client Services</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Robin Apelgren</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Media Director</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                
-              </div>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+        <div class="col-md-6">
+          <img src="../img/subwai.jpg" class="img-fluid text-center" />
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <img src="../img/subwai.jpg" class="img-fluid text-center" />
+        </div>
+        <div class="col-md-6">
+          <h1 class="text-center">Our History</h1>
+          <p>
+            On May 4, 2003, an F4 tornado struck the Jackson area. Due to this
+            event, many families and individuals were left without a home. We
+            obtained an old hospital that had been mostly vacant for several
+            years. Now the victims of this tornado had a temporary place to
+            stay. We handed out food and supplies daily in the devastated
+            Jackson neighborhoods. During this period we housed up to 60
+            individuals and families nightly. They stayed with us until they
+            found permanent housing or had their own homes renovated or
+            rebuilt. In the 14 years since we recognize there is still a need
+            and we are continuing to fill that need. We are a faith-based
+            educational ministry for women and women with children. We rebuild
+            lives, restore hope, and renew dreams. The women we serve have
+            experienced crisis and/or loss in their lives. We provide all of
+            the basic needs for our women. We assist with job readiness,
+            resume building, finding gainful employment, and any other service
+            that will prepare the women to achieve success. All classes are
+            mandatory. Finance, nutrition, parenting, and Bible study are just
+            some of the classes we offer.
+          </p>
+          <p>
+            We have a mandate by God to help, support, love, and minister to
+            these women through their tough times by instilling hope and
+            applying Christian principles.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h1 class="text-center">Our Mission</h1>
+          <p>THIS SANDWICH HAS 243 CONFIRMED KILLS</p>
+        </div>
+        <div class="col-md-6">
+          <img src="../img/subwai.jpg" class="img-fluid text-center" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <img src="../img/subwai.jpg" class="img-fluid text-center" />
+        </div>
+        <div class="col-md-6">
+          <h1 class="text-center">Who We Help</h1>
+          <p>
+            The Dream Center was located in a converted hospital and was able
+            to house approximately 50 residents. Since relocating we are now
+            serving approximately 20-23 women and children. To reside at the
+            Dream Center, the women must have an intense desire to address
+            their issues, change their lives, and transition back into
+            society. As such, we offer GED classes, job readiness,
+            transportation, addiction-recovery programs, financial
+            self-sufficiency classes, parenting, chapel and other classes.
+          </p>
+
+          <p>
+            One very unique aspect of the Dream Center is that we house
+            mothers and children (boys must be under the age of 17). We are
+            blessed each day watching children grow and learn what the love of
+            Christ truly is.
+          </p>
+
+          <p>
+            Even more important than the financial freedom we provide to our
+            residents is the spiritual coaching we are able to give. Residents
+            must attend on-site chapel daily in the morning, evenings and
+            attend a church on Sunday morning. Our addiction recovery program
+            is a Christ-centered system aimed at addressing the root cause of
+            life-controlling issues (people seeking to fill the hole in their
+            hearts with something other than God). It is amazing to see the
+            broken and lost women who have nowhere to turn come to the Dream
+            Center and end up finding an unexpected blessing – to be
+            introduced to Jesus’ love.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h1 class="mt-2">Our Staff</h1>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Meredith Gatlin</h5>
+              <h5 class="card-title">Gail Gustafson</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                Executive Director
+              </h6>
+              <p class="card-text">Info Here.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Susan Smith</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                Director of Client Services
+              </h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Stephanie Laffoon</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Capital Campaign</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Leslie Faulkner</h5>
               <h6 class="card-subtitle mb-2 text-muted">Client Services</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
           </div>
         </div>
-    </section>
-      
-          
 
-    <section>
-      <div class="container">
-        <h1>Our Board Members</h1>
-        <div class="row mt-4">
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Melanie Luckey</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Robin Apelgren</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Media Director</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
-
           </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Meredith Gatlin</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Client Services</h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Jennifer Weems</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+  <section>
+    <div class="container">
+      <h1>Our Board Members</h1>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Melanie Luckey</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
-
           </div>
-
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Tim Gaffney</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-
-          </div>
-
         </div>
 
-        <div class="row mt-4">
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Gary Daugherty</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Jennifer Weems</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
-
           </div>
-
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Carroll Griffin</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Amy Matthis</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-
-          </div>
-
         </div>
 
-        <div class="row mt-4">
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dub Oliver</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Tim Gaffney</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
-
           </div>
-
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Alan Teel</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-            
-
-          </div>
-
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Alicia Williams</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-
-          </div>
-
         </div>
-
-        <div class="row mt-4">
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Ryan Blake</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Jackie Newsome</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Ronnie Smith</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
       </div>
 
-    </section>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Gary Daugherty</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Footer -->
-      <footer class="bg-dream">
-      <div class="container text-center py-4 white mt-5">
-        <div class="row">
-          <div>
-            <a href="../index.html">
-              <img
-                src="../img/dreamcenterlogo.png"
-                alt="Dream Center Logo"
-                class="img-fluid white-logo pb-4"
-              />
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Carroll Griffin</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Amy Matthis</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Dub Oliver</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Alan Teel</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Alicia Williams</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Ryan Blake</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Jackie Newsome</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Ronnie Smith</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dream">
+    <div class="container text-center py-4 white mt-5">
+      <div class="row">
+        <div>
+          <a href="../index.html">
+            <img src="../img/dreamcenterlogo.png" alt="Dream Center Logo" class="img-fluid white-logo pb-4" />
+          </a>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-evenly">
+        <hr />
+        <div class="col-sm-3">
+          <i class="bi bi-phone-fill fs-3"></i>
+          <h5>CONNECT WITH US:</h5>
+
+          <p class="icons d-flex justify-content-evenly">
+            <a href="https://www.facebook.com/pages/Dream-Center-of-Jackson/268142701317">
+              <i class="bi bi-facebook fs-3"></i>
             </a>
-          </div>
+            <a href="https://www.instagram.com/dreamcenterjackson/?hl=bn">
+              <i class="bi bi-instagram fs-3"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UC6GrE0gd3-lmARKtZgfAlkw">
+              <i class="bi bi-youtube fs-3"></i>
+            </a>
+            <a href="https://twitter.com/DreamCenter2003">
+              <i class="bi bi-twitter fs-3"></i>
+            </a>
+          </p>
         </div>
-        <div class="row d-flex justify-content-evenly">
-          <hr />
-          <div class="col-sm-3">
-            <i class="bi bi-phone-fill fs-3"></i>
-            <h5>CONNECT WITH US:</h5>
 
-            <p class="icons d-flex justify-content-evenly">
-              <a
-                href="https://www.facebook.com/pages/Dream-Center-of-Jackson/268142701317"
-              >
-                <i class="bi bi-facebook fs-3"></i>
-              </a>
-              <a href="https://www.instagram.com/dreamcenterjackson/?hl=bn">
-                <i class="bi bi-instagram fs-3"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UC6GrE0gd3-lmARKtZgfAlkw"
-              >
-                <i class="bi bi-youtube fs-3"></i>
-              </a>
-              <a href="https://twitter.com/DreamCenter2003">
-                <i class="bi bi-twitter fs-3"></i>
-              </a>
-            </p>
-          </div>
+        <div class="col-lg-3">
+          <div><i class="bi bi-geo-alt-fill fs-3"></i></div>
+          <h5>VISIT US:</h5>
 
-          <div class="col-lg-3">
-            <div><i class="bi bi-geo-alt-fill fs-3"></i></div>
-            <h5>VISIT US:</h5>
-
-            <p>
-              1970 N Highland Ave, Ste E. <br />
-                Jackson, TN 38305
-              <a
-                href="https://www.google.com/maps/dir//Dream+Center+of+Jackson,+1970+N+Highland+Ave,+Jackson,+TN+38305"
-              >
-                <br /><b>Get Directions</b>
-              </a>
-            </p>
-          </div>
-
-          <div class="col-lg-3">
-            <div><i class="bi bi-clock-fill fs-3"></i></div>
-            <h5>HOURS:</h5>
-
-            <p>Mon - Sat : 8AM - 5PM</p>
-          </div>
-
-          <div class="col-lg-3">
-            <div><i class="bi bi-chat-fill fs-3"></i></div>
-            <h5>CONTACT US:</h5>
-
-            <p>
-              <a href="mailto:info@dreamcenterjackson.com">
-                <b>info@dreamcenterjackson.com</b>
-              </a>
-              <a href="tel:7315120095"> <br /><b>(731) 512-0095</b></a>
-            </p>
-          </div>
+          <p>
+            1970 N Highland Ave, Ste E. <br />
+            Jackson, TN 38305
+            <a href="https://www.google.com/maps/dir//Dream+Center+of+Jackson,+1970+N+Highland+Ave,+Jackson,+TN+38305">
+              <br /><b>Get Directions</b>
+            </a>
+          </p>
         </div>
-        <div class="row">
-          <hr />
+
+        <div class="col-lg-3">
+          <div><i class="bi bi-clock-fill fs-3"></i></div>
+          <h5>HOURS:</h5>
+
+          <p>Mon - Sat : 8AM - 5PM</p>
+        </div>
+
+        <div class="col-lg-3">
+          <div><i class="bi bi-chat-fill fs-3"></i></div>
+          <h5>CONTACT US:</h5>
+
+          <p>
+            <a href="mailto:info@dreamcenterjackson.com">
+              <b>info@dreamcenterjackson.com</b>
+            </a>
+            <a href="tel:7315120095"> <br /><b>(731) 512-0095</b></a>
+          </p>
         </div>
       </div>
-      <div
-        class="p-4 text-center text-white fs-6"
-        style="background-color: #314968"
-      >
-        © 6 Inch Subway Steak & Cheeses
+      <div class="row">
+        <hr />
       </div>
-    </footer>
-    <!-- Footer -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top" class="text-white p-3 rounded-circle bg-primary position-fixed bottom-0 end-0 mb-4 me-4 border-0"><i class="fas fa-chevron-up fa-lg"></i></button>
-    <script>
-      //Get the button
-      var mybutton = document.getElementById("myBtn");
+    </div>
+    <div class="p-4 text-center text-white fs-6" style="background-color: #314968">
+      © 6 Inch Subway Steak & Cheeses
+    </div>
+  </footer>
+  <!-- Footer -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top" class="
+        text-white
+        p-3
+        rounded-circle
+        bg-primary
+        position-fixed
+        bottom-0
+        end-0
+        mb-4
+        me-4
+        border-0
+      ">
+    <i class="fas fa-chevron-up fa-lg"></i>
+  </button>
+  <script src="../js/backtotop.js"></script>
 
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
-      };
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>

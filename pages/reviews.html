@@ -1,643 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="../sass/custom.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
-    />
-    <!-- Font Awesome Icons -->
-    <script
-      src="https://kit.fontawesome.com/09b1c20ed3.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../favicon/favicon-16x16.png"
-    />
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="../js/script.js"></script>
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="../style.css" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Testimonies & Reviews</title>
-  </head>
+  <!-- Bootstrap CSS -->
+  <link href="../sass/custom.css" rel="stylesheet" />
+  <!-- Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/09b1c20ed3.js" crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="../style.css" />
 
-  <body>
-    <header>
-      <!-- Navbar -->
-      <nav
-        class="
+  <title>Testimonies & Reviews</title>
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="
           navbar navbar-expand-xl navbar-dark
-          absolute-top 
-          transparent 
-          navbar-scroll 
+          absolute-top
+          transparent
+          navbar-scroll
           py-3
-        "
-        id="navbar"
-      >
-        <div class="container-xxl">
-          <div class="d-flex w-100 justify-content-between">
-            <a class="navbar-brand ms-md-5 ms-sm-3 ms-1" href="../index.html">
-              <img
-                src="../img/dreamcenterlogo.png"
-                alt="Dream Center Logo"
-                class="blue-logo img-fluid"
-              />
-            </a>
+        " id="navbar">
+      <div class="container-xxl">
+        <div class="d-flex w-100 justify-content-between">
+          <a class="navbar-brand ms-md-5 ms-sm-3 ms-1" href="../index.html">
+            <img src="../img/dreamcenterlogo.png" alt="Dream Center Logo" class="blue-logo img-fluid" />
+          </a>
 
-            <button
-              class="navbar-toggler mb-auto text-white border-white"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavCollapse"
-            >
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
+          <button class="navbar-toggler mb-auto text-white border-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavCollapse">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
 
-          <div class="collapse navbar-collapse" id="navbarNavCollapse">
-            <ul
-              class="
+        <div class="collapse navbar-collapse" id="navbarNavCollapse">
+          <ul class="
                 navbar-nav
                 ms-auto
                 navbar-nav-scroll
                 text-end
                 align-items-center
-              "
-            >
-              <li class="nav-item dropdown">
-                <a
-                  href="about_us.html"
-                  class="nav-link dropdown-toggle navbar-bg-hover"
-                  id="navbarDropdown"
-                  role="button"
-                  >About Us</a
-                >
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#" class="dropdown-item"> Our History </a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item"> Our Mission </a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item"> Our Services </a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item"> Our Staff </a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item"> Our Board Members </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link navbar-bg-hover dropdown-toggle active"
-                  id="navbarDropdown"
-                  role="button"
-                  href="reviews.html"
-                  >Testimonies & Reviews</a
-                >
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="reviews.html#OurTestimonies" class="dropdown-item">
-                      Our Testimonies
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="reviews.html#OurVideoTestimonies"
-                      class="dropdown-item"
-                    >
-                      Our Video Testimonies
-                    </a>
-                  </li>
-                  <li>
-                    <a href="reviews.html#OurReviews" class="dropdown-item">
-                      Our Reviews
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link navbar-bg-hover dropdown-toggle"
-                  id="navbarDropdown"
-                  role="button"
-                  href="take_action.html"
-                  >Take Action</a
-                >
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="take_action.html" class="dropdown-item">
-                      How to Help
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item"> Who We Help </a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item">
-                      Our Donor Privacy Policy
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link navbar-bg-hover dropdown-toggle"
-                  id="navbarDropdown"
-                  role="button"
-                  href="events.html"
-                  >Events</a
-                >
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#" class="dropdown-item"> Friendsgiving 5K </a>
-                  </li>
-                  <li>
-                    <a href="events.html#" class="dropdown-item">
-                      Night in the Caribbean
-                    </a>
-                  </li>
-                  <li>
-                    <a href="events.html#" class="dropdown-item">
-                      Valentine’s Auction
-                    </a>
-                  </li>
-                  <li>
-                    <a href="events.html#" class="dropdown-item">
-                      6th Annual Dream Center Golf Tournament
-                    </a>
-                  </li>
-                  <li>
-                    <a href="events.html#" class="dropdown-item">
-                      That’s Amore Italian Dinner/Art Auction
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link navbar-bg-hover dropdown-toggle"
-                  id="navbarDropdown"
-                  role="button"
-                  href="gallery.html"
-                  >Gallery</a
-                >
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="../pages/gallery/thats_amore.html" class="dropdown-item">
-                      That's Amore Art Auction
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/cardboard_boat_regatta.html" class="dropdown-item">
-                      Cardboard Boat Regatta
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/night_in_the_caribbean.html" class="dropdown-item">
-                      Night in the Caribbean
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/bunny_run_5k.html" class="dropdown-item">
-                      Bunny Run 5K
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/running_for_a_dream_5k.html" class="dropdown-item">
-                      Running for a Dream 5K
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/self_portrait.html" class="dropdown-item">
-                      Self Portrait of Youth
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/easter.html" class="dropdown-item">
-                      Easter
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/volunteer.html" class="dropdown-item">
-                      Volunteer
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../pages/gallery/golf_tournament.html" class="dropdown-item">
-                      Golf Tournament
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link navbar-bg-hover"
-                  >Contact</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  href="#"
-                  class="nav-link dropdown-toggle"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  ><i class="bi bi-search"></i
-                ></a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#" class="dropdown-item">
-                      <!-- <form class="d-flex">
+              ">
+            <li class="nav-item dropdown">
+              <a href="about_us.html" class="nav-link dropdown-toggle navbar-bg-hover" id="navbarDropdown"
+                role="button">About Us</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item"> Our History </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"> Our Mission </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"> Our Services </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"> Our Staff </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"> Our Board Members </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-bg-hover dropdown-toggle active" id="navbarDropdown" role="button"
+                href="reviews.html">Testimonies & Reviews</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="reviews.html#OurTestimonies" class="dropdown-item">
+                    Our Testimonies
+                  </a>
+                </li>
+                <li>
+                  <a href="reviews.html#OurVideoTestimonies" class="dropdown-item">
+                    Our Video Testimonies
+                  </a>
+                </li>
+                <li>
+                  <a href="reviews.html#OurReviews" class="dropdown-item">
+                    Our Reviews
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-bg-hover dropdown-toggle" id="navbarDropdown" role="button"
+                href="take_action.html">Take Action</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="take_action.html" class="dropdown-item">
+                    How to Help
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"> Who We Help </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">
+                    Our Donor Privacy Policy
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-bg-hover dropdown-toggle" id="navbarDropdown" role="button"
+                href="events.html">Events</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item"> Friendsgiving 5K </a>
+                </li>
+                <li>
+                  <a href="events.html#" class="dropdown-item">
+                    Night in the Caribbean
+                  </a>
+                </li>
+                <li>
+                  <a href="events.html#" class="dropdown-item">
+                    Valentine’s Auction
+                  </a>
+                </li>
+                <li>
+                  <a href="events.html#" class="dropdown-item">
+                    6th Annual Dream Center Golf Tournament
+                  </a>
+                </li>
+                <li>
+                  <a href="events.html#" class="dropdown-item">
+                    That’s Amore Italian Dinner/Art Auction
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-bg-hover dropdown-toggle" id="navbarDropdown" role="button"
+                href="gallery.html">Gallery</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../pages/gallery/thats_amore.html" class="dropdown-item">
+                    That's Amore Art Auction
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/cardboard_boat_regatta.html" class="dropdown-item">
+                    Cardboard Boat Regatta
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/night_in_the_caribbean.html" class="dropdown-item">
+                    Night in the Caribbean
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/bunny_run_5k.html" class="dropdown-item">
+                    Bunny Run 5K
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/running_for_a_dream_5k.html" class="dropdown-item">
+                    Running for a Dream 5K
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/self_portrait.html" class="dropdown-item">
+                    Self Portrait of Youth
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/easter.html" class="dropdown-item">
+                    Easter
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/volunteer.html" class="dropdown-item">
+                    Volunteer
+                  </a>
+                </li>
+                <li>
+                  <a href="../pages/gallery/golf_tournament.html" class="dropdown-item">
+                    Golf Tournament
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link navbar-bg-hover">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown"><i class="bi bi-search"></i></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item">
+                    <!-- <form class="d-flex">
                         <input
                           class="form-control me-2"
                           type="search"
                           placeholder="Search"
                         />
                       </form> -->
-                      <script
-                        async
-                        src="https://cse.google.com/cse.js?cx=fabcc81d58f18389d"
-                      ></script>
-                      <div class="gcse-search"></div
-                    ></a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="https://www.paypal.com/donate?token=TIxK4K0SfCOhuWaZoz4PFrBda0PgUJMvJZI8QodDNIGjVrXIyj7J7aG3tExTGy0TV8w8MEairessjCsz"
-                >
+                    <script async src="https://cse.google.com/cse.js?cx=fabcc81d58f18389d"></script>
+                    <div class="gcse-search"></div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="https://www.paypal.com/donate?token=TIxK4K0SfCOhuWaZoz4PFrBda0PgUJMvJZI8QodDNIGjVrXIyj7J7aG3tExTGy0TV8w8MEairessjCsz">
                 <button type="button" class="btn btn-success text-white">
                   <i class="fab fa-paypal fa-lg"></i>
                   Donate
-                </button></a
-                >
-              </li>
-            </ul>
-          </div>
+                </button></a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- Navbar -->
+      </div>
+    </nav>
+    <!-- Navbar -->
 
-      <!-- Hero -->
-      <section>
-        <h1
-          class="
+    <!-- Hero -->
+    <section>
+      <h1 class="
             d-flex
             justify-content-center
             align-items-center
             hero
             text-primary
-          "
-        >
-          6 Inch Subway Steak & Cheeses.
-        </h1>
-      </section>
-      <!-- Hero -->
-    </header>
-
-    <!-- Written Testimonies -->
-    <section id="OurTestimonies">
-      <div class="container my-5">
-        <div class="row text-center">
-          <h1 class="">Our Testimonies</h1>
-        </div>
-        <hr />
-        <div class="my-4">
-          <h3>Brandie P's Testimony</h3>
-          <h6>November 10, 2015</h6>
-          <p>
-            I came to The Dream Center in October 2014. I was homeless and
-            unemployed. The guy I was living with had spent our rent money and I
-            didn’t have a place to go. So my son and I went to the Dream Center.
-            I was admitted and in less than a week I decided to leave. Big
-            mistake, after being back on the streets a few days, I called Ms.
-            Gail and asked to come back to the Center. She graciously allowed me
-            and my son to return. This time I stayed.
-          </p>
-          <p>
-            Since being at The Dream Center I have enrolled in college, I am in
-            the work/study program. I am the first from my family to attend
-            college. My son is tutored each day by the tutors who come to the
-            Center. His grades have improved.
-          </p>
-          <p>
-            I have surrendered my life to God and now have a real relationship
-            with Jesus Christ. My son and I have been baptized. God has opened
-            so many doors for me through The Dream Center. I thank God for
-            leading me to the Center so I could learn more about Him and lead a
-            better life for me and my son.
-          </p>
-          <p>
-            I just want to thank Ms. Gail and her staff for all they have done
-            for us.
-          </p>
-        </div>
-        <hr />
-        <div class="my-4">
-          <h3>Rose M's Testimony</h3>
-          <h6>November 6, 2015</h6>
-
-          <p>
-            I wanted to find a thank you card that says what I’m feeling but I
-            couldn’t so I’m just going to share my thanks, through my testimony.
-          </p>
-          <p>
-            I was at The Dream Center for a total of 8 months. When I arrived at
-            the Center in February of 2015 I was broken mentally and
-            spiritually. I had come from Indianapolis to Tennessee to be with
-            the man I had been in a relationship with for three years. But once
-            I moved here I discovered he was not the person I wanted to be with.
-            Everything he had done for me I thought it was out of love for me,
-            but I soon found out what it really was, a form of mental abuse. I
-            could see it becoming a physically abusive situation, so I Googled
-            women’s shelters in Jackson and found the Dream Center.
-          </p>
-          <p>
-            I had just started working for a temp company in January. I could
-            have gone back to Indianapolis but I would have been unemployed and
-            would have had to stay with someone.
-          </p>
-          <p>
-            I arrived at the Dream Center for my interview and met with Ms.
-            Gail, I love you Ms. Gail. After telling her my story and being
-            questioned as if by the police she said one thing that I will always
-            remember, she said God sent me here for a reason. Upon entering the
-            Center, I felt that I was o.k. A broken heart will heal, I thought I
-            was very strong minded, independent, etc.
-          </p>
-          <p>
-            I kept my temp job and did what was required of me chapel, chores,
-            donations, etc. But through my journey I realized that God Loves Me,
-            Rose!
-          </p>
-          <p>
-            I appreciate Ms. Pam for having one on one Bible lessons with me
-            before 8am on the days I was off. I wasn’t able to attend church on
-            Sundays due to work so I always felt like I wasn’t getting it. But
-            Ms. Pam would always say to me to pray and ask God to reveal His
-            word to me. I had a problem with patience and just being still.
-          </p>
-          <p>
-            Ms. Phyllis welcomed me from day one with her bubbly personality,
-            her warmth and comfort. She would motivate me so even on a bad day;
-            she would talk about the Bible to me.
-          </p>
-          <p>
-            Most of all I want to thank Ms. Susan for being so encouraging to
-            me. She never strayed from her faith. She always talked the talk and
-            walked the walk of her faith. Thank God for the 180 class because it
-            was through those classes and doing the homework that I began to be
-            open and honest with myself. That is when my connection with God
-            became marvelous. The weights I had been carrying were removed.
-            Peace, love, joy, gratefulness, entered my life. THANK GOD I’M FREE!
-            God gave me revelations about the way my boyfriend treated me was
-            the same way I had been doing to other men for years and this broke
-            me. I asked for forgiveness from God. Whenever I see anyone I hurt I
-            will truly apologize. Thank you Jesus.
-          </p>
-          <p>
-            Once I totally and truly surrendered to God I have been set free. I
-            have crossed over to a new world. No more of only giving Him pieces
-            of me. He has all of me.
-          </p>
-        </div>
-        <hr />
-      </div>
+          ">
+        6 Inch Subway Steak & Cheeses.
+      </h1>
     </section>
-    <!-- Written Testimonies -->
+    <!-- Hero -->
+  </header>
 
-    <!-- Video Testimonies-->
-    <section id="OurVideoTestimonies">
-      <div class="container my-5">
-        <div class="row text-center">
-          <h1>Our Video Testimonies</h1>
-        </div>
-        <hr />
-        <div class="row my-4">
-          <h3>Vernetta's Story</h3>
-          <div class="ratio ratio-16x9 mt-3">
-            <iframe
-              class=""
-              src="https://www.youtube.com/embed/XsmqwT8E99w"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <hr />
-        <div class="row my-4">
-          <h3>Aimee's Story</h3>
-          <div class="ratio ratio-16x9 mt-3">
-            <iframe
-              src="https://www.youtube.com/embed/hyeswBZnCtk"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <hr />
+  <!-- Written Testimonies -->
+  <section id="OurTestimonies">
+    <div class="container my-5">
+      <div class="row text-center">
+        <h1 class="">Our Testimonies</h1>
       </div>
-    </section>
-    <!-- Video Testimonies-->
+      <hr />
+      <div class="my-4">
+        <h3>Brandie P's Testimony</h3>
+        <h6>November 10, 2015</h6>
+        <p>
+          I came to The Dream Center in October 2014. I was homeless and
+          unemployed. The guy I was living with had spent our rent money and I
+          didn’t have a place to go. So my son and I went to the Dream Center.
+          I was admitted and in less than a week I decided to leave. Big
+          mistake, after being back on the streets a few days, I called Ms.
+          Gail and asked to come back to the Center. She graciously allowed me
+          and my son to return. This time I stayed.
+        </p>
+        <p>
+          Since being at The Dream Center I have enrolled in college, I am in
+          the work/study program. I am the first from my family to attend
+          college. My son is tutored each day by the tutors who come to the
+          Center. His grades have improved.
+        </p>
+        <p>
+          I have surrendered my life to God and now have a real relationship
+          with Jesus Christ. My son and I have been baptized. God has opened
+          so many doors for me through The Dream Center. I thank God for
+          leading me to the Center so I could learn more about Him and lead a
+          better life for me and my son.
+        </p>
+        <p>
+          I just want to thank Ms. Gail and her staff for all they have done
+          for us.
+        </p>
+      </div>
+      <hr />
+      <div class="my-4">
+        <h3>Rose M's Testimony</h3>
+        <h6>November 6, 2015</h6>
 
-    <!-- Reviews-->
-    <section id="OurReviews">
-      <div class="container my-5">
-        <div class="row text-center">
-          <h1>Our Reviews</h1>
+        <p>
+          I wanted to find a thank you card that says what I’m feeling but I
+          couldn’t so I’m just going to share my thanks, through my testimony.
+        </p>
+        <p>
+          I was at The Dream Center for a total of 8 months. When I arrived at
+          the Center in February of 2015 I was broken mentally and
+          spiritually. I had come from Indianapolis to Tennessee to be with
+          the man I had been in a relationship with for three years. But once
+          I moved here I discovered he was not the person I wanted to be with.
+          Everything he had done for me I thought it was out of love for me,
+          but I soon found out what it really was, a form of mental abuse. I
+          could see it becoming a physically abusive situation, so I Googled
+          women’s shelters in Jackson and found the Dream Center.
+        </p>
+        <p>
+          I had just started working for a temp company in January. I could
+          have gone back to Indianapolis but I would have been unemployed and
+          would have had to stay with someone.
+        </p>
+        <p>
+          I arrived at the Dream Center for my interview and met with Ms.
+          Gail, I love you Ms. Gail. After telling her my story and being
+          questioned as if by the police she said one thing that I will always
+          remember, she said God sent me here for a reason. Upon entering the
+          Center, I felt that I was o.k. A broken heart will heal, I thought I
+          was very strong minded, independent, etc.
+        </p>
+        <p>
+          I kept my temp job and did what was required of me chapel, chores,
+          donations, etc. But through my journey I realized that God Loves Me,
+          Rose!
+        </p>
+        <p>
+          I appreciate Ms. Pam for having one on one Bible lessons with me
+          before 8am on the days I was off. I wasn’t able to attend church on
+          Sundays due to work so I always felt like I wasn’t getting it. But
+          Ms. Pam would always say to me to pray and ask God to reveal His
+          word to me. I had a problem with patience and just being still.
+        </p>
+        <p>
+          Ms. Phyllis welcomed me from day one with her bubbly personality,
+          her warmth and comfort. She would motivate me so even on a bad day;
+          she would talk about the Bible to me.
+        </p>
+        <p>
+          Most of all I want to thank Ms. Susan for being so encouraging to
+          me. She never strayed from her faith. She always talked the talk and
+          walked the walk of her faith. Thank God for the 180 class because it
+          was through those classes and doing the homework that I began to be
+          open and honest with myself. That is when my connection with God
+          became marvelous. The weights I had been carrying were removed.
+          Peace, love, joy, gratefulness, entered my life. THANK GOD I’M FREE!
+          God gave me revelations about the way my boyfriend treated me was
+          the same way I had been doing to other men for years and this broke
+          me. I asked for forgiveness from God. Whenever I see anyone I hurt I
+          will truly apologize. Thank you Jesus.
+        </p>
+        <p>
+          Once I totally and truly surrendered to God I have been set free. I
+          have crossed over to a new world. No more of only giving Him pieces
+          of me. He has all of me.
+        </p>
+      </div>
+      <hr />
+    </div>
+  </section>
+  <!-- Written Testimonies -->
+
+  <!-- Video Testimonies-->
+  <section id="OurVideoTestimonies">
+    <div class="container my-5">
+      <div class="row text-center">
+        <h1>Our Video Testimonies</h1>
+      </div>
+      <hr />
+      <div class="row my-4">
+        <h3>Vernetta's Story</h3>
+        <div class="ratio ratio-16x9 mt-3">
+          <iframe class="" src="https://www.youtube.com/embed/XsmqwT8E99w" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
-        <hr />
-        <div class="row my-4">
-          <h3>Dave Banks</h3>
-          <h6>
-            <span
-              ><i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i
-            ></span>
-            6 months ago
-          </h6>
-          <p>
-            Such an amazing organization with amazing people!!! They are doing
-            wonderful things to not only make Jackson a better place, but the
-            world as a whole a better place.
-          </p>
-          <p class="text-muted">
-            <a href="https://goo.gl/maps/pQQNfRtThwZDEHYc8"
-              >From Google Reviews</a
-            >
-          </p>
+      </div>
+      <hr />
+      <div class="row my-4">
+        <h3>Aimee's Story</h3>
+        <div class="ratio ratio-16x9 mt-3">
+          <iframe src="https://www.youtube.com/embed/hyeswBZnCtk" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
-        <hr />
-        <div class="row my-4">
-          <h3>Jim Mack</h3>
-          <h6>
-            <span
-              ><i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i
-            ></span>
-            2 months ago
-          </h6>
-          <p>A great woman's ministry</p>
-          <p class="text-muted">
-            <a href="https://goo.gl/maps/3iq4VcYbERtjyfig9"
-              >From Google Reviews</a
-            >
-          </p>
-        </div>
-        <hr />
-        <div class="row my-4">
-          <h3>Catherine Robinson</h3>
-          <h6>
-            <span
-              ><i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i
-            ></span>
-            2 months ago
-          </h6>
-          <p>Always helping those in need</p>
-          <p class="text-muted">
-            <a href="https://goo.gl/maps/L249gUvRBWtADN9A8"
-              >From Google Reviews</a
-            >
-          </p>
-        </div>
-        <hr />
-        <div class="row my-4">
-          <h3>Whitney Martin</h3>
-          <h6>
-            <span
-              ><i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i
-            ></span>
-            2 years ago
-          </h6>
-          <p>
-            The DreamCenter is an absolutely wonderful place filled with Godly
-            women. They do their best to take care of each and every woman and
-            child there. I was there for 9 months and I’m forever grateful for
-            what they did for my baby and me. I learned about God and was
-            changed forever from that experience. I was safe, the housing was
-            beautiful and I left there with God on my side and a relationship
-            with Him that I’ll always carry with me.
-          </p>
-          <p class="text-muted">
-            <a href="https://goo.gl/maps/uXSw1VA74mieCkQ49"
-              >From Google Reviews</a
-            >
-          </p>
-        </div>
-        <hr />
-        <div class="row my-4">
-          <h3>Sherry Overton</h3>
-          <h6>
-            <span
-              ><i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i
-            ></span>
-            2 years ago
-          </h6>
-          <p>
-            The dream center taught me how to become a self sufficient women to
-            make it on her own
-          </p>
-          <p class="text-muted">
-            <a href="https://goo.gl/maps/Bhn2mjtcycLUFuXw8"
-              >From Google Reviews</a
-            >
-          </p>
-        </div>
-        <hr />
-        <div class="row my-4">
-          <h3>Arethia Millsap</h3>
-          <h6>
-            <span
-              ><i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i
-            ></span>
-            3 years ago
-          </h6>
-          <p>Very loving and helpful!</p>
-          <p class="text-muted">
-            <a href="https://goo.gl/maps/LuhfvWqxt8ZFtuvn9"
-              >From Google Reviews</a
-            >
-          </p>
-        </div>
-        <hr />
-        <div class="row my-4">
-          <h3>Donna Sparks</h3>
-          <h6>
-            <span
-              ><i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i
-            ></span>
-            A year ago
-          </h6>
-          <p>Love this ministry!</p>
-          <p class="text-muted">
-            <a href="https://goo.gl/maps/CDhKuX1DYVydCo8P8"
-              >From Google Reviews</a
-            >
-          </p>
-        </div>
-        <hr />
-        <!--Review Skeleton
+      </div>
+      <hr />
+    </div>
+  </section>
+  <!-- Video Testimonies-->
+
+  <!-- Reviews-->
+  <section id="OurReviews">
+    <div class="container my-5">
+      <div class="row text-center">
+        <h1>Our Reviews</h1>
+      </div>
+      <hr />
+      <div class="row my-4">
+        <h3>Dave Banks</h3>
+        <h6>
+          <span><i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i></span>
+          6 months ago
+        </h6>
+        <p>
+          Such an amazing organization with amazing people!!! They are doing
+          wonderful things to not only make Jackson a better place, but the
+          world as a whole a better place.
+        </p>
+        <p class="text-muted">
+          <a href="https://goo.gl/maps/pQQNfRtThwZDEHYc8">From Google Reviews</a>
+        </p>
+      </div>
+      <hr />
+      <div class="row my-4">
+        <h3>Jim Mack</h3>
+        <h6>
+          <span><i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i></span>
+          2 months ago
+        </h6>
+        <p>A great woman's ministry</p>
+        <p class="text-muted">
+          <a href="https://goo.gl/maps/3iq4VcYbERtjyfig9">From Google Reviews</a>
+        </p>
+      </div>
+      <hr />
+      <div class="row my-4">
+        <h3>Catherine Robinson</h3>
+        <h6>
+          <span><i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i></span>
+          2 months ago
+        </h6>
+        <p>Always helping those in need</p>
+        <p class="text-muted">
+          <a href="https://goo.gl/maps/L249gUvRBWtADN9A8">From Google Reviews</a>
+        </p>
+      </div>
+      <hr />
+      <div class="row my-4">
+        <h3>Whitney Martin</h3>
+        <h6>
+          <span><i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i></span>
+          2 years ago
+        </h6>
+        <p>
+          The DreamCenter is an absolutely wonderful place filled with Godly
+          women. They do their best to take care of each and every woman and
+          child there. I was there for 9 months and I’m forever grateful for
+          what they did for my baby and me. I learned about God and was
+          changed forever from that experience. I was safe, the housing was
+          beautiful and I left there with God on my side and a relationship
+          with Him that I’ll always carry with me.
+        </p>
+        <p class="text-muted">
+          <a href="https://goo.gl/maps/uXSw1VA74mieCkQ49">From Google Reviews</a>
+        </p>
+      </div>
+      <hr />
+      <div class="row my-4">
+        <h3>Sherry Overton</h3>
+        <h6>
+          <span><i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i></span>
+          2 years ago
+        </h6>
+        <p>
+          The dream center taught me how to become a self sufficient women to
+          make it on her own
+        </p>
+        <p class="text-muted">
+          <a href="https://goo.gl/maps/Bhn2mjtcycLUFuXw8">From Google Reviews</a>
+        </p>
+      </div>
+      <hr />
+      <div class="row my-4">
+        <h3>Arethia Millsap</h3>
+        <h6>
+          <span><i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i></span>
+          3 years ago
+        </h6>
+        <p>Very loving and helpful!</p>
+        <p class="text-muted">
+          <a href="https://goo.gl/maps/LuhfvWqxt8ZFtuvn9">From Google Reviews</a>
+        </p>
+      </div>
+      <hr />
+      <div class="row my-4">
+        <h3>Donna Sparks</h3>
+        <h6>
+          <span><i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i></span>
+          A year ago
+        </h6>
+        <p>Love this ministry!</p>
+        <p class="text-muted">
+          <a href="https://goo.gl/maps/CDhKuX1DYVydCo8P8">From Google Reviews</a>
+        </p>
+      </div>
+      <hr />
+      <!--Review Skeleton
         <div class="row my-4">
           <h3>*NAME*</h3>
           <h6>
@@ -660,127 +545,101 @@
         <hr>
 
         -->
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-dream">
-      <div class="container text-center py-4 white">
-        <div class="row">
-          <div>
-            <a href="../index.html">
-              <img
-                src="../img/dreamcenterlogo.png"
-                alt="Dream Center Logo"
-                class="img-fluid white-logo pb-4"
-              />
+  <!-- Footer -->
+  <footer class="bg-dream">
+    <div class="container text-center py-4 white">
+      <div class="row">
+        <div>
+          <a href="../index.html">
+            <img src="../img/dreamcenterlogo.png" alt="Dream Center Logo" class="img-fluid white-logo pb-4" />
+          </a>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-evenly">
+        <hr />
+        <div class="col-sm-3">
+          <i class="bi bi-phone-fill fs-3"></i>
+          <h5>CONNECT WITH US:</h5>
+
+          <p class="icons d-flex justify-content-evenly">
+            <a href="https://www.facebook.com/pages/Dream-Center-of-Jackson/268142701317">
+              <i class="bi bi-facebook fs-3"></i>
             </a>
-          </div>
+            <a href="https://www.instagram.com/dreamcenterjackson/?hl=bn">
+              <i class="bi bi-instagram fs-3"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UC6GrE0gd3-lmARKtZgfAlkw">
+              <i class="bi bi-youtube fs-3"></i>
+            </a>
+            <a href="https://twitter.com/DreamCenter2003">
+              <i class="bi bi-twitter fs-3"></i>
+            </a>
+          </p>
         </div>
-        <div class="row d-flex justify-content-evenly">
-          <hr />
-          <div class="col-sm-3">
-            <i class="bi bi-phone-fill fs-3"></i>
-            <h5>CONNECT WITH US:</h5>
 
-            <p class="icons d-flex justify-content-evenly">
-              <a
-                href="https://www.facebook.com/pages/Dream-Center-of-Jackson/268142701317"
-              >
-                <i class="bi bi-facebook fs-3"></i>
-              </a>
-              <a href="https://www.instagram.com/dreamcenterjackson/?hl=bn">
-                <i class="bi bi-instagram fs-3"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UC6GrE0gd3-lmARKtZgfAlkw"
-              >
-                <i class="bi bi-youtube fs-3"></i>
-              </a>
-              <a href="https://twitter.com/DreamCenter2003">
-                <i class="bi bi-twitter fs-3"></i>
-              </a>
-            </p>
-          </div>
+        <div class="col-lg-3">
+          <div><i class="bi bi-geo-alt-fill fs-3"></i></div>
+          <h5>VISIT US:</h5>
 
-          <div class="col-lg-3">
-            <div><i class="bi bi-geo-alt-fill fs-3"></i></div>
-            <h5>VISIT US:</h5>
-
-            <p>
-              1970 N Highland Ave, Ste E. <br />
-                Jackson, TN 38305
-              <a
-                href="https://www.google.com/maps/dir//Dream+Center+of+Jackson,+1970+N+Highland+Ave,+Jackson,+TN+38305"
-              >
-                <br /><b>Get Directions</b>
-              </a>
-            </p>
-          </div>
-
-          <div class="col-lg-3">
-            <div><i class="bi bi-clock-fill fs-3"></i></div>
-            <h5>HOURS:</h5>
-
-            <p>Mon - Sat : 8AM - 5PM</p>
-          </div>
-
-          <div class="col-lg-3">
-            <div><i class="bi bi-chat-fill fs-3"></i></div>
-            <h5>CONTACT US:</h5>
-
-            <p>
-              <a href="mailto:info@dreamcenterjackson.com">
-                <b>info@dreamcenterjackson.com</b>
-              </a>
-              <a href="tel:7315120095"> <br /><b>(731) 512-0095</b></a>
-            </p>
-          </div>
+          <p>
+            1970 N Highland Ave, Ste E. <br />
+            Jackson, TN 38305
+            <a href="https://www.google.com/maps/dir//Dream+Center+of+Jackson,+1970+N+Highland+Ave,+Jackson,+TN+38305">
+              <br /><b>Get Directions</b>
+            </a>
+          </p>
         </div>
-        <div class="row">
-          <hr />
+
+        <div class="col-lg-3">
+          <div><i class="bi bi-clock-fill fs-3"></i></div>
+          <h5>HOURS:</h5>
+
+          <p>Mon - Sat : 8AM - 5PM</p>
+        </div>
+
+        <div class="col-lg-3">
+          <div><i class="bi bi-chat-fill fs-3"></i></div>
+          <h5>CONTACT US:</h5>
+
+          <p>
+            <a href="mailto:info@dreamcenterjackson.com">
+              <b>info@dreamcenterjackson.com</b>
+            </a>
+            <a href="tel:7315120095"> <br /><b>(731) 512-0095</b></a>
+          </p>
         </div>
       </div>
-      <div
-        class="p-4 text-center text-white fs-6"
-        style="background-color: #314968"
-      >
-        © 6 Inch Subway Steak & Cheeses
+      <div class="row">
+        <hr />
       </div>
-    </footer>
-    <!-- Footer -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top" class="text-white p-3 rounded-circle bg-primary position-fixed bottom-0 end-0 mb-4 me-4 border-0"><i class="fas fa-chevron-up fa-lg"></i></button>
-    <script>
-      //Get the button
-      var mybutton = document.getElementById("myBtn");
+    </div>
+    <div class="p-4 text-center text-white fs-6" style="background-color: #314968">
+      © 6 Inch Subway Steak & Cheeses
+    </div>
+  </footer>
+  <!-- Footer -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top" class="
+        text-white
+        p-3
+        rounded-circle
+        bg-primary
+        position-fixed
+        bottom-0
+        end-0
+        mb-4
+        me-4
+        border-0
+      ">
+    <i class="fas fa-chevron-up fa-lg"></i>
+  </button>
+  <script src="../js/backtotop.js"></script>
 
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
-      };
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>

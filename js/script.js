@@ -3,7 +3,3 @@ $(function () {
         $("nav").toggleClass("toggler-bg");
       });
 });
-
-// when .collapse.show exists
-// make background-color of nav blue
-// 
