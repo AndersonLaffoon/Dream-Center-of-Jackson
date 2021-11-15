@@ -22,8 +22,11 @@ make a.link margins bigger
 !!! gallery pages
 format gallery cards (make responsive)
 format images in gallery (make responsive)
-make zoom in & out and fullscreen buttons work & style colors
+make zoom in & out buttons work & style colors (.lightbox)
 add numbers to images ie #/20
+
+!!! event page
+modal form for 5K
 
 !!!contact page
 make contact form work

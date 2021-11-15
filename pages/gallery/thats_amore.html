@@ -348,9 +348,12 @@
   <div class="modal fade h-auto" id="modalGallery" tabindex="-1">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content border-0 bg-transparent">
-        <div class="modal-header border-0 justify-content-end" data-bs-dismiss="modal">
-          <button type="button" class="bg-none border-0">
+        <div class="modal-header border-0 justify-content-end">
+          <button type="button" class="bg-none border-0" onclick="openFullscreen();">
             <i class="fas fa-expand fa-lg lightbox"></i>
+          </button>
+          <button type="button" class="bg-none border-0" onclick="closeFullscreen();">
+            <i class="fas fa-compress fa-lg lightbox"></i>
           </button>
           <button type="button" class="bg-none border-0">
             <i class="fas fa-search-plus fa-lg lightbox"></i>
@@ -369,7 +372,7 @@
               <div class="carousel-item active bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/subwai.jpg" alt="6 incher" />
+                  <img src="../../img/subwai.jpg" alt="6 incher"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>

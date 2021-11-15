@@ -193,7 +193,7 @@ nav {
 }
 
 #galleryCarousel {
-  height: 90vh;
+  height: 85vh;
   overflow: hidden;
 }
 
@@ -201,7 +201,7 @@ nav {
   object-fit: contain;
   object-position: center;
   overflow: hidden;
-  height: 90vh;
+  height: 85vh;
 }
 
 .flex-1 {
@@ -209,19 +209,18 @@ nav {
 }
 
 .vh-90 {
-  height: 90vh;
+  height: 85vh;
 }
 
 .modal-header,
 .modal-footer {
   height: 5vh;
+  overflow: hidden;
 }
 
 .fas.lightbox {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
-
-
 
 /* * {
   transition: 0.3s;
