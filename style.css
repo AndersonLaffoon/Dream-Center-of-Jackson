@@ -1,186 +1,228 @@
-  html {
-    font-size: 1em;
-  }
+html {
+  font-size: 1em;
+}
 
-  .carousel img {
-    object-fit: cover;
-    object-position: center;
-    overflow: hidden;
-    height: 100vh;
-  }
+/* utility */
+html.sr .load-hidden {
+  visibility: hidden;
+}
 
-  .carousel-indicators [data-bs-target] {
-    background-image: url(icons/heart.svg);
-  }
+.carousel img.main-carousel {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 100vh;
+}
 
-  .carousel-indicators>button.active {
-    background-image: url(icons/heart-fill.svg);
-  }
+.carousel-indicators [data-bs-target] {
+  background-image: url(icons/heart.svg);
+}
 
-  .carousel-indicators>button:hover {
-    background-image: url(icons/heart-fill.svg);
-  }
+.carousel-indicators>button.active {
+  background-image: url(icons/heart-fill.svg);
+}
 
-  .carousel-indicators>button.active,
-  .carousel-indicators [data-bs-target] {
-    height: 2em;
-    width: 2em;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    color: #527aad;
-    filter: invert(42%) sepia(97%) saturate(492%) hue-rotate(180deg) brightness(96%) contrast(92%);
-  }
+.carousel-indicators>button:hover {
+  background-image: url(icons/heart-fill.svg);
+}
 
-  .carousel-item>img {
-    filter: brightness(75%) blur(0.2rem);
-    transform: scale(1.1);
-  }
+.carousel-indicators>button.active,
+.carousel-indicators [data-bs-target] {
+  height: 2em;
+  width: 2em;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  color: #527aad;
+  filter: invert(42%) sepia(97%) saturate(492%) hue-rotate(180deg) brightness(96%) contrast(92%);
+}
 
-  .white {
-    color: white;
-  }
+.carousel-item>img.main-carousel {
+  filter: brightness(75%) blur(0.2rem);
+  transform: scale(1.1);
+}
 
-  a,
-  a:hover {
-    color: inherit;
-  }
+.white {
+  color: white;
+}
 
-  .white a:hover {
-    filter: brightness(75%);
-  }
+a,
+a:hover {
+  color: inherit;
+}
 
-  .parallax {
-    background-image: url(img/braden.jpg);
-    min-height: 40rem;
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.white a:hover {
+  filter: brightness(75%);
+}
 
-  .white-logo {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(293deg) brightness(102%) contrast(101%);
-  }
+.parallax {
+  background-image: url(img/braden.jpg);
+  min-height: 40rem;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .blue-logo {
-    filter: brightness(0) saturate(100%) invert(46%) sepia(44%) saturate(463%) hue-rotate(173deg) brightness(92%) contrast(96%);
-  }
+.white-logo {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(293deg) brightness(102%) contrast(101%);
+}
 
-  a.nav-link {
-    font-size: 1.1rem;
-    white-space: nowrap;
-  }
+.blue-logo {
+  filter: brightness(0) saturate(100%) invert(46%) sepia(44%) saturate(463%) hue-rotate(173deg) brightness(92%) contrast(96%);
+}
 
-  .navbar-collapse {
-    margin-top: 2.563rem;
-  }
+a.nav-link {
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
 
-  .navbar-toggler {
-    margin-top: 3.75rem;
-  }
+.navbar-collapse {
+  margin-top: 2.563rem;
+}
 
-  .braden {
-    background-color: grey;
-    padding: 1rem;
-    border-radius: 2rem;
-  }
+.navbar-toggler {
+  margin-top: 3.75rem;
+}
 
-  .carousel-inner {
-    color: #fff;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  }
+.braden {
+  background-color: grey;
+  padding: 1rem;
+  border-radius: 2rem;
+}
 
-  .fas.help-icons {
-    border-radius: 100%;
-    background-color: lightgray;
-    padding: 1.25rem;
-  }
+.carousel-inner {
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
 
-  .navbar-dark .navbar-nav .nav-link {
-    color: white;
-  }
+.fas.help-icons {
+  border-radius: 100%;
+  background-color: lightgray;
+  padding: 1.25rem;
+}
 
-  a.nav-link.active,
-  a.nav-link:hover,
-  a.dropdown-item:hover {
-    text-decoration: underline;
-    text-decoration-color: #527aad;
-    text-underline-offset: 3px;
-  }
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
 
-  a.nav-link.active,
-  a.nav-link:hover {
-    text-decoration-thickness: 4px;
-  }
+a.nav-link.active,
+a.nav-link:hover,
+a.dropdown-item:hover {
+  text-decoration: underline;
+  text-decoration-color: #527aad;
+  text-underline-offset: 3px;
+}
 
-  a.dropdown-item:hover {
-    text-decoration-thickness: 2px;
-  }
+a.nav-link.active,
+a.nav-link:hover {
+  text-decoration-thickness: 4px;
+}
 
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
+a.dropdown-item:hover {
+  text-decoration-thickness: 2px;
+}
 
-  .dropdown-menu {
-    transition: all 0.4s ease-in;
-  }
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
-  .dropdown {}
+.dropdown-menu {
+  transition: all 0.4s ease-in;
+}
 
-  .navbar-bg-hover:hover,
-  .active {
-    background-color: #314968;
-  }
+.dropdown {}
 
-  .hero {
-    position: relative;
-    filter: brightness(60%);
-    background-image: url(img/subwai.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-  }
+.navbar-bg-hover:hover,
+.active {
+  background-color: #314968;
+}
 
-  .primary-bg {
-    background-color: #7595bd;
-  }
+.hero {
+  position: relative;
+  filter: brightness(60%);
+  background-image: url(img/subwai.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 
-  .absolute-top {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-  }
+.primary-bg {
+  background-color: #7595bd;
+}
 
-  #myBtn {
-    display: none;
-    z-index: 99;
-  }
+.absolute-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 
-  .carousel.slide.carousel-fade.pointer-event {
-    height: 100vh;
-  }
+#myBtn {
+  display: none;
+  z-index: 99;
+}
 
-  /* !!!I need to change to style for F layout!!! */
-  .carousel-caption {
-    margin-bottom: 25vh;
-  }
+.carousel.slide.carousel-fade.pointer-event {
+  height: 100vh;
+}
 
-  nav {
+/* !!!I need to change to style for F layout!!! */
+.carousel-caption {
+  margin-bottom: 25vh;
+}
+
+nav {
+  transition: all 0.35s ease-in-out;
+}
+
+.bg-none {
+  background: none;
+}
+
+@media (max-width: 1199px) {
+  .toggler-bg {
+    background-color: #97afce;
     transition: all 0.35s ease-in-out;
   }
 
-  @media (max-width: 1199px) {
-    .toggler-bg {
-      background-color: #97afce;
-      transition: all 0.35s ease-in-out;
-    }
-
-    .navbar-collapse {
-      margin-top: 0;
-    }
+  .navbar-collapse {
+    margin-top: 0;
   }
+}
 
-  
+#galleryCarousel {
+  height: 90vh;
+  overflow: hidden;
+}
+
+#galleryCarousel .carousel-item img {
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  height: 90vh;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.vh-90 {
+  height: 90vh;
+}
+
+.modal-header,
+.modal-footer {
+  height: 5vh;
+}
+
+.fas.lightbox {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+
+
+/* * {
+  transition: 0.3s;
+  } */
