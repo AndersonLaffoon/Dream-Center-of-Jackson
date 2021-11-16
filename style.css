@@ -2,16 +2,11 @@ html {
   font-size: 1em;
 }
 
-/* utility */
-html.sr .load-hidden {
-  visibility: hidden;
-}
-
 .carousel img.main-carousel {
   object-fit: cover;
   object-position: center;
   overflow: hidden;
-  height: 100vh;
+  height: 75vh;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -130,7 +125,7 @@ a.dropdown-item:hover {
   transition: all 0.4s ease-in;
 }
 
-.dropdown {}
+/* .dropdown {} */
 
 .navbar-bg-hover:hover,
 .active {
@@ -144,7 +139,7 @@ a.dropdown-item:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 75vh;
 }
 
 .primary-bg {
@@ -183,7 +178,7 @@ nav {
 
 @media (max-width: 1199px) {
   .toggler-bg {
-    background-color: #97afce;
+    background-color: #97afce !important;
     transition: all 0.35s ease-in-out;
   }
 
@@ -208,7 +203,7 @@ nav {
   flex: 1;
 }
 
-.vh-90 {
+.vh-85 {
   height: 85vh;
 }
 
@@ -221,6 +216,11 @@ nav {
 .fas.lightbox {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
+
+.zoom {
+  transition: transform 0.2s ease-in-out;
+}
+
 
 /* * {
   transition: 0.3s;

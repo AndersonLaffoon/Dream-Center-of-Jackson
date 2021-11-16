@@ -19,7 +19,7 @@
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="../../js/script.js"></script>
+  <script src="../../js/jquery.js"></script>
   <!-- ScrollReveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <!-- CSS Stylesheet -->
@@ -38,7 +38,7 @@
           navbar-scroll
           py-3
         " id="navbar">
-      <div class="container">
+      <div class="container-xxl">
         <div class="d-flex w-100 justify-content-between">
           <a class="navbar-brand ms-md-5 ms-sm-3 ms-1" href="../../index.html">
             <img src="../../img/dreamcenterlogo.png" alt="Dream Center Logo" class="blue-logo img-fluid" />
@@ -119,34 +119,8 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link navbar-bg-hover dropdown-toggle" id="navbarDropdown" role="button"
-                href="../events.html">Events</a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#" class="dropdown-item"> Friendsgiving 5K </a>
-                </li>
-                <li>
-                  <a href="../events.html#" class="dropdown-item">
-                    Night in the Caribbean
-                  </a>
-                </li>
-                <li>
-                  <a href="../events.html#" class="dropdown-item">
-                    Valentine’s Auction
-                  </a>
-                </li>
-                <li>
-                  <a href="../events.html#" class="dropdown-item">
-                    6th Annual Dream Center Golf Tournament
-                  </a>
-                </li>
-                <li>
-                  <a href="../events.html#" class="dropdown-item">
-                    That’s Amore Italian Dinner/Art Auction
-                  </a>
-                </li>
-              </ul>
+            <li class="nav-item">
+              <a href="../../pages/events.html" class="nav-link navbar-bg-hover">Events</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link navbar-bg-hover dropdown-toggle active" id="navbarDropdown" role="button"
@@ -252,7 +226,7 @@
 
   <!-- Gallery -->
   <section>
-    <div class="container-xxl my-5">
+    <div class="container my-5">
       <div class="row my-4 text-center">
         <h1 class="text-primary headline">That's Amore Art Auction</h1>
       </div>
@@ -260,83 +234,83 @@
       <div class="row g-3 mb-3 align-items-center" data-bs-toggle="modal" data-bs-target="#modalGallery">
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/subwai.jpg" alt="6 incher" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="0" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="0" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/staff.jpeg" alt="staff" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="1" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="1" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/help.jpg" alt="help" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="2" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="2" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/dreamcenter.png" alt="dream center" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="3" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="3" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/braden.jpg" alt="Braden." class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="4" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="4" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/subwai.jpg" alt="6 incher" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="5" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="5" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/staff.jpeg" alt="staff" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="6" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="6" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/help.jpg" alt="help" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="7" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="7" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/dreamcenter.png" alt="dream center" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="8" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="8" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/braden.jpg" alt="Braden." class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="9" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="9" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/subwai.jpg" alt="6 incher" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="10" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="10" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/staff.jpeg" alt="staff" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="11" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="11" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/help.jpg" alt="help" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="12" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="12" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/dreamcenter.png" alt="dream center" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="13" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="13" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/braden.jpg" alt="Braden." class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="14" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="14" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/subwai.jpg" alt="6 incher" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="15" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="15" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/staff.jpeg" alt="staff" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="16" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="16" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/help.jpg" alt="help" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="17" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="17" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/dreamcenter.png" alt="dream center" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="18" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="18" onclick="resetZoom();"/>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/braden.jpg" alt="Braden." class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="19" />
+            data-bs-target="#galleryCarousel" data-bs-slide-to="19" onclick="resetZoom();"/>
         </div>
       </div>
       <hr />
@@ -348,21 +322,25 @@
   <div class="modal fade h-auto" id="modalGallery" tabindex="-1">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content border-0 bg-transparent">
-        <div class="modal-header border-0 justify-content-end">
-          <button type="button" class="bg-none border-0" onclick="openFullscreen();">
-            <i class="fas fa-expand fa-lg lightbox"></i>
+        <div class="modal-header border-0 justify-content-end p-0 m-3">
+          <div class="flex-1 vh-85" data-bs-dismiss="modal"></div>
+          <button type="button" class="bg-none border-0 mx-4" onclick="openFullscreen();">
+            <i class="fas fa-expand fa-2x lightbox"></i>
           </button>
-          <button type="button" class="bg-none border-0" onclick="closeFullscreen();">
-            <i class="fas fa-compress fa-lg lightbox"></i>
+          <button type="button" class="bg-none border-0 mx-4" onclick="closeFullscreen();">
+            <i class="fas fa-compress fa-2x lightbox"></i>
           </button>
-          <button type="button" class="bg-none border-0">
-            <i class="fas fa-search-plus fa-lg lightbox"></i>
+          <button type="button" class="bg-none border-0 mx-4" onclick="zoomIn();">
+            <i class="fas fa-search-plus fa-2x lightbox"></i>
           </button>
-          <button type="button" class="bg-none border-0">
-            <i class="fas fa-search-minus fa-lg lightbox"></i>
+          <button type="button" class="bg-none border-0 mx-4" onclick="zoomOut();">
+            <i class="fas fa-search-minus fa-2x lightbox"></i>
           </button>
-          <button type="button" class="bg-none border-0" data-bs-dismiss="modal">
-            <i class="fas fa-times fa-lg lightbox"></i>
+          <button type="button" class="bg-none border-0 mx-4" onclick="resetZoom();">
+            <i class="fas fa-undo-alt fa-2x lightbox"></i>
+          </button>
+          <button type="button" class="bg-none border-0 mx-4" data-bs-dismiss="modal">
+            <i class="fas fa-times fa-2x lightbox"></i>
           </button>
         </div>
         <div class="modal-body p-0 border-0">
@@ -372,191 +350,154 @@
               <div class="carousel-item active bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/subwai.jpg" alt="6 incher"/>
+                  <img src="../../img/large-image.jpg" alt="6 incher" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/staff.jpeg" alt="staff" />
+                  <img src="../../img/staff.jpeg" alt="staff" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/help.jpg" alt="help" />
+                  <img src="../../img/help.jpg" alt="help" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/dreamcenter.png" alt="dream center" />
+                  <img src="../../img/dreamcenter.png" alt="dream center" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/braden.jpg" alt="Braden." />
+                  <img src="../../img/braden.jpg" alt="Braden." class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/subwai.jpg" alt="6 incher" />
+                  <img src="../../img/subwai.jpg" alt="6 incher" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/staff.jpeg" alt="staff" />
+                  <img src="../../img/staff.jpeg" alt="staff" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/help.jpg" alt="help" />
+                  <img src="../../img/help.jpg" alt="help" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/dreamcenter.png" alt="dream center" />
+                  <img src="../../img/dreamcenter.png" alt="dream center" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/braden.jpg" alt="Braden." />
+                  <img src="../../img/braden.jpg" alt="Braden." class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/subwai.jpg" alt="6 incher" />
+                  <img src="../../img/subwai.jpg" alt="6 incher" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/staff.jpeg" alt="staff" />
+                  <img src="../../img/staff.jpeg" alt="staff" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/help.jpg" alt="help" />
+                  <img src="../../img/help.jpg" alt="help" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/dreamcenter.png" alt="dream center" />
+                  <img src="../../img/dreamcenter.png" alt="dream center" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/braden.jpg" alt="Braden." />
+                  <img src="../../img/braden.jpg" alt="Braden." class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/subwai.jpg" alt="6 incher" />
+                  <img src="../../img/subwai.jpg" alt="6 incher" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/staff.jpeg" alt="staff" />
+                  <img src="../../img/staff.jpeg" alt="staff" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/help.jpg" alt="help" />
+                  <img src="../../img/help.jpg" alt="help" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/dreamcenter.png" alt="dream center" />
+                  <img src="../../img/dreamcenter.png" alt="dream center" class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
               <div class="carousel-item bg-transparent">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/braden.jpg" alt="Braden." />
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/subwai.jpg" alt="6 incher" />
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/staff.jpeg" alt="staff" />
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/help.jpg" alt="help" />
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/dreamcenter.png" alt="dream center" />
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/braden.jpg" alt="Braden." />
+                  <img src="../../img/braden.jpg" alt="Braden." class="zoom"/>
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-              <div class="flex-1 vh-90" data-bs-dismiss="modal"></div>
-              <span class="carousel-control-prev-icon"></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev" onclick="resetZoom();">
+              <span class="flex-1 carousel-control-prev-icon"></span>
               <span class="visually-hidden">Previous</span>
-              <div class="flex-1 vh-90" data-bs-dismiss="modal"></div>
+              <div class="flex-1 vh-85" data-bs-dismiss="modal"></div>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-              <div class="flex-1 vh-90" data-bs-dismiss="modal"></div>
-              <span class="carousel-control-next-icon"></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next" onclick="resetZoom();"> 
+              <div class="flex-1 vh-85" data-bs-dismiss="modal"></div>
+              <span class="flex-1 carousel-control-next-icon"></span>
               <span class="visually-hidden">Next</span>
-              <div class="flex-1 vh-90" data-bs-dismiss="modal"></div>
             </button>
           </div>
           <!-- Carousel -->
@@ -656,7 +597,7 @@
       ">
     <i class="fas fa-chevron-up fa-lg"></i>
   </button>
-  <script src="../../js/backtotop.js"></script>
+  <script src="../../js/scripts.js"></script>
   <script src="../../js/ScrollReveal.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
