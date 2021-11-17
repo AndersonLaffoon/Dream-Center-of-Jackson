@@ -6,7 +6,7 @@ html {
   object-fit: cover;
   object-position: center;
   overflow: hidden;
-  height: 75vh;
+  height: 100vh;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -165,7 +165,7 @@ a.dropdown-item:hover {
 
 /* !!!I need to change to style for F layout!!! */
 .carousel-caption {
-  margin-bottom: 25vh;
+  margin-top: 35vh;
 }
 
 nav {
@@ -221,6 +221,9 @@ nav {
   transition: transform 0.2s ease-in-out;
 }
 
+.start-25 {
+  
+}
 
 /* * {
   transition: 0.3s;

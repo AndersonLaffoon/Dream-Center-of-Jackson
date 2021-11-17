@@ -62,19 +62,16 @@
                 role="button">About Us</a>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="#" class="dropdown-item"> Our History </a>
+                  <a href="about_us.html#history" class="dropdown-item"> Our History </a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item"> Our Mission </a>
+                  <a href="about_us.html#mission" class="dropdown-item"> Our Mission </a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item"> Our Services </a>
+                  <a href="about_us.html#staff" class="dropdown-item"> Our Staff </a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item"> Our Staff </a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-item"> Our Board Members </a>
+                  <a href="about_us.html#board" class="dropdown-item"> Our Board Members </a>
                 </li>
               </ul>
             </li>
@@ -175,25 +172,7 @@
             <li class="nav-item">
               <a href="contact.html" class="nav-link navbar-bg-hover">Contact</a>
             </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown"><i class="fas fa-search"></i></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#" class="dropdown-item">
-                    <!-- <form class="d-flex">
-                        <input
-                          class="form-control me-2"
-                          type="search"
-                          placeholder="Search"
-                        />
-                      </form> -->
-                    <script async src="https://cse.google.com/cse.js?cx=fabcc81d58f18389d"></script>
-                    <div class="gcse-search"></div>
-                  </a>
-                </li>
-              </ul>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link"
                 href="https://www.paypal.com/donate?token=TIxK4K0SfCOhuWaZoz4PFrBda0PgUJMvJZI8QodDNIGjVrXIyj7J7aG3tExTGy0TV8w8MEairessjCsz">
@@ -223,8 +202,8 @@
     <!-- Hero -->
   </header>
 
-  <section>
-    <div class="container my-5">
+  <section id="aboutus">
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
           <h1 class="text-center">About Us</h1>
@@ -244,11 +223,16 @@
             every way.
           </p>
         </div>
-
-        <div class="col-md-6">
-          <img src="../img/subwai.jpg" class="img-fluid text-center" />
-        </div>
+          <div class="col-md-6">
+            <img src="../img/subwai.jpg" class="img-fluid text-center" />
+          </div>
       </div>
+      </div>
+    </div>    
+  </section>
+
+  <section id="history">
+    <div class="container">
       <div class="row mt-5">
         <div class="col-md-6">
           <img src="../img/subwai.jpg" class="img-fluid text-center" />
@@ -282,6 +266,11 @@
           </p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="mission">
+    <div class="container">
       <div class="row mt-5">
         <div class="col-md-6">
           <h1 class="text-center">Our Mission</h1>
@@ -292,7 +281,9 @@
         </div>
       </div>
     </div>
+  </section>
 
+  <section id="helping">
     <div class="container">
       <div class="row mt-5">
         <div class="col-md-6">
@@ -335,7 +326,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="staff">
     <div class="container">
       <h1 class="mt-2">Our Staff</h1>
       <div class="row g-4 mb-4">
@@ -424,9 +415,11 @@
         </div>
       </div>
     </div>
+
+  
   </section>
 
-  <section>
+  <section id="board">
     <div class="container">
       <h1>Our Board Members</h1>
       <div class="row mt-4">
@@ -608,7 +601,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dream">
+  <footer class="bg-dream mt-5">
     <div class="container text-center py-4 white">
       <div class="row">
         <div>
