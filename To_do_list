@@ -8,10 +8,6 @@ add companies logo that donated
 
 make pages responsive to mobile devices
 get images of staff and board if possible
-fix searchbar
-make socials rounded circle bg
-change bootstrap icons to fontawesome icons (footer)
-make capitalizations and plurals the same in each page
 
 !!!navbar
 format navbar links to other pages (add ids to sections)
@@ -21,9 +17,6 @@ make a.link margins bigger
 
 !!! gallery pages
 format gallery cards (make responsive)
-format images in gallery (make responsive)
-make zoom in & out buttons work & style colors (.lightbox)
-add numbers to images ie #/20
 
 !!! event page
 modal form for 5K
@@ -32,4 +25,3 @@ modal form for 5K
 make contact form work
 
 ask Mommy Laffoon for FAQS
-style sass accordion & carousel (icons & colors)

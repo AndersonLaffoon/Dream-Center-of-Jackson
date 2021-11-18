@@ -3,7 +3,7 @@ html {
 }
 
 /* Main Carousel Styles */
-#mainCarousel .carousel img.main-carousel {
+#mainCarousel.carousel img.main-carousel {
   object-fit: cover;
   object-position: center;
   overflow: hidden;
