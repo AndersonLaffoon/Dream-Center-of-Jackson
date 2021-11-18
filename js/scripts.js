@@ -1,4 +1,6 @@
-//Get the button
+
+// Back to top button code via W3 Schools (https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
+// Get the button
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -20,6 +22,7 @@ function topFunction() {
 	document.documentElement.scrollTop = 0;
 }
 
+// Fullscreen code via W3 Schools (https://www.w3schools.com/howto/howto_js_fullscreen.asp)
 /* Get the documentElement (<html>) to display the page in fullscreen */
 var elem = document.documentElement;
 
@@ -49,9 +52,9 @@ function closeFullscreen() {
 	}
 }
 
+// Scroll Zoom in & out script via Dotted Squirrel (https://www.dottedsquirrel.com/zoom-scroll-tutorial/)
 // Modal Image Scroll Zoom with Buttons
 const zoomElement = document.querySelectorAll(".zoom");
-console.log(zoomElement)
 let zoom = 1;
 const ZOOM_SPEED = 0.005;
 const WORKPLEASE = 1;
@@ -62,6 +65,7 @@ document.addEventListener("wheel", function (e) {
 		zoomElement.forEach((e) => (e.style.transform = `scale(${(zoom -= ZOOM_SPEED)})`))
 	};
 });
+
 /* Zoom In */
 function zoomIn() {
 	zoomElement.forEach((e) => (e.style.transform = `scale(${(zoom += ZOOM_SPEED)})`));
@@ -78,6 +82,7 @@ function zoomOut() {
 function resetZoom() {
 	zoomElement.forEach((e) => (e.style.transform = `scale(${(zoom = 1)})`));
 }
+
 
 // /*!
 // 	Wheelzoom 4.0.1

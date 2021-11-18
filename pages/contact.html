@@ -57,7 +57,7 @@
                 align-items-center
               ">
               <li class="nav-item dropdown">
-                <a href="about_us.html" class="nav-link dropdown-toggle" id="navbarDropdown"
+                <a href="about_us.html" class="nav-link dropdown-toggle navbar-bg-hover" id="navbarDropdown"
                   role="button">About Us</a>
                 <ul class="dropdown-menu">
                   <li>
@@ -302,21 +302,34 @@
   </section>
 
   <!-- Footer -->
+  <div class="bg-waves">
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(82, 122, 173, 0.7)" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(82, 122, 173, 0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(82, 122, 173, 0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(82, 122, 173, 1)" />
+        </g>
+      </svg>
+    </div>
+  </div>
   <footer class="bg-dream">
-    <div class="container text-center py-4 white">
+    <div class="container text-center py-4 text-white">
       <div class="row">
-        <div>
-          <a href="../index.html">
-            <img src="../img/dreamcenterlogo.png" alt="Dream Center Logo" class="img-fluid white-logo pb-4" />
-          </a>
-        </div>
+        <a href="../index.html">
+          <img src="../img/dreamcenterlogo.png" alt="Dream Center Logo" class="img-fluid white-logo pb-3" />
+        </a>
       </div>
-      <hr class=""/>
-      <div class="row d-flex justify-content-evenly g-lg-0 g-sm-3 g-4 my-4">
+      <hr />
+      <div class="row d-flex justify-content-evenly g-lg-0 g-sm-3 g-4 my-4 footer-text">
         <div class="col-12 col-sm-6 col-lg-3">
           <i class="fas fa-mobile-alt fa-2x"></i>
           <h5 class="m-3">CONNECT WITH US:</h5>
-
           <p class="icons d-flex justify-content-center m-0">
             <a href="https://www.facebook.com/pages/Dream-Center-of-Jackson/268142701317">
               <i class="fab fa-facebook-square fa-2x mx-3"></i>
@@ -332,58 +345,43 @@
             </a>
           </p>
         </div>
-
         <div class="col-12 col-sm-6 col-lg-3">
           <div><i class="fas fa-map-marker-alt fa-2x"></i></div>
           <h5 class="m-3">VISIT US:</h5>
-
           <p class="m-0">
             1970 N Highland Ave, Ste E. <br />
             Jackson, TN 38305
-            <a href="https://www.google.com/maps/dir//Dream+Center+of+Jackson,+1970+N+Highland+Ave,+Jackson,+TN+38305">
-              <br /><b>Get Directions</b>
+            <a href="https://www.google.com/maps/dir//Dream+Center+of+Jackson,+1970+N+Highland+Ave,+Jackson,+TN+38305"
+              class="fw-bold">
+              <br />Get Directions
             </a>
           </p>
         </div>
-
         <div class="col-12 col-sm-6 col-lg-3">
           <div><i class="far fa-clock fa-2x"></i></div>
           <h5 class="m-3">HOURS:</h5>
-
           <p class="m-0">Mon - Sat : 8AM - 5PM</p>
         </div>
-
         <div class="col-12 col-sm-6 col-lg-3">
           <div><i class="fas fa-comments fa-2x"></i></div>
           <h5 class="m-3">CONTACT US:</h5>
-
           <p class="m-0">
-            <a href="mailto:info@dreamcenterjackson.com">
-              <b>info@dreamcenterjackson.com</b>
+            <a href="mailto:info@dreamcenterjackson.com" class="fw-bold">
+              info@dreamcenterjackson.com
             </a>
-            <a href="tel:7315120095"> <br /><b>(731) 512-0095</b></a>
+            <a href="tel:7315120095" class="fw-bold"> <br />(731) 512-0095</a>
           </p>
         </div>
       </div>
       <hr />
     </div>
-    <div class="p-4 text-center text-white fs-6" style="background-color: #314968">
+    <div class="p-4 text-center text-white fs-6 bg-dreamdark">
       © 6 Inch Subway Steak & Cheeses
     </div>
   </footer>
   <!-- Footer -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top" class="
-        text-white
-        p-3
-        rounded-circle
-        bg-primary
-        position-fixed
-        bottom-0
-        end-0
-        mb-4
-        me-4
-        border-0
-      ">
+  <button onclick="topFunction()" id="myBtn" title="Go to top"
+    class="text-white p-3 rounded-circle bg-primary position-fixed bottom-0 end-0 mb-4 me-4 border-0">
     <i class="fas fa-chevron-up fa-lg"></i>
   </button>
   <script src="../js/scripts.js"></script>
