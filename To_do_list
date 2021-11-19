@@ -6,8 +6,11 @@ add impact/stats & services
 add partners
 add companies logo that donated
 
-make pages responsive to mobile devices
+!!!about us
 get images of staff and board if possible
+get facebooks of staff
+get email & phone of main staff
+
 
 !!!navbar
 format navbar links to other pages (add ids to sections)
@@ -16,12 +19,15 @@ add slidedown transition to toggler dropdowns
 make a.link margins bigger
 
 !!! gallery pages
-format gallery cards (make responsive)
+format gallery cards on main page (make responsive)
+add multi item carousel for galleries
 
 !!! event page
 modal form for 5K
 
 !!!contact page
 make contact form work
+format responsiveness
 
 ask Mommy Laffoon for FAQS
+make pages responsive to mobile devices
