@@ -160,8 +160,8 @@ nav {
   height: 85vh;
 }
 
-.modal-header,
-.modal-footer {
+#modalGallery .modal-header,
+#modalGallery .modal-footer {
   height: 5vh;
   overflow: hidden;
 }

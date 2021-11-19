@@ -57,7 +57,6 @@ function closeFullscreen() {
 const zoomElement = document.querySelectorAll(".zoom");
 let zoom = 1;
 const ZOOM_SPEED = 0.005;
-const WORKPLEASE = 1;
 document.addEventListener("wheel", function (e) {
 	if (e.deltaY > 0) {
 		zoomElement.forEach((e) => (e.style.transform = `scale(${(zoom += ZOOM_SPEED)})`))
