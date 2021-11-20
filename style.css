@@ -198,13 +198,45 @@ nav {
 
 .hero {
   position: relative;
-  filter: brightness(60%);
-  background-image: url(img/subwai.jpg);
+  filter: brightness(40%);
+  background-image: url(img/NewDreamCenter.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 75vh;
+  height: 70vh;
 }
+
+.hero-header {
+  z-index: 1;
+  top: 35%;
+  font-size: vh;
+}
+
+@media (min-width: 1200px) {
+  .hero-header {
+    font-size: 10vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-header {
+    font-size: 8vh;
+  }
+}
+
+@media (min-width: 768px) { 
+  .hero-header {
+    font-size: 6vh;
+  }
+ }
+
+@media (min-width: 576px) { 
+  .hero-header {
+    font-size: 4vh;
+  }
+ }
+
+
 
 #myBtn {
   display: none;
