@@ -13,13 +13,9 @@ get email & phone of main staff
 
 !!!navbar
 format navbar links to other pages (add ids to sections)
-fix toggler dropdown hover
-add slidedown transition to toggler dropdowns
 make a.link margins bigger
 
 !!! gallery pages
-format gallery cards on main page (make responsive)
-add multi item carousel for galleries
 
 !!! event page
 modal form for 5K

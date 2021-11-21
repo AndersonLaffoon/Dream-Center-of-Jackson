@@ -49,15 +49,9 @@
         </div>
 
         <div class="collapse navbar-collapse" id="navbarNavCollapse">
-          <ul class="
-                navbar-nav
-                ms-auto
-                navbar-nav-scroll
-                text-end
-                align-items-center
-              ">
+          <ul class="navbar-nav ms-auto navbar-nav-scroll text-center align-items-center">
             <li class="nav-item dropdown">
-              <a href="../about_us.html" class="nav-link dropdown-toggle navbar-bg-hover" id="navbarDropdown"
+              <a href="../about_us.html" class="nav-link dropdown-toggle navbar-bg-hover mx-2" id="navbarDropdown"
                 role="button">About Us</a>
               <ul class="dropdown-menu">
                 <li>
@@ -78,7 +72,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link navbar-bg-hover dropdown-toggle" id="navbarDropdown" role="button"
+              <a class="nav-link navbar-bg-hover dropdown-toggle mx-2" id="navbarDropdown" role="button"
                 href="../reviews.html">Testimonials & Reviews</a>
               <ul class="dropdown-menu">
                 <li>
@@ -99,7 +93,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link navbar-bg-hover dropdown-toggle" id="navbarDropdown" role="button"
+              <a class="nav-link navbar-bg-hover dropdown-toggle mx-2" id="navbarDropdown" role="button"
                 href="../take_action.html">Help</a>
               <ul class="dropdown-menu">
                 <li>
@@ -117,10 +111,10 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a href="../../pages/events.html" class="nav-link navbar-bg-hover">Events</a>
+              <a href="../../pages/events.html" class="nav-link navbar-bg-hover mx-2">Events</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link navbar-bg-hover dropdown-toggle active" id="navbarDropdown" role="button"
+              <a class="nav-link navbar-bg-hover dropdown-toggle active mx-2" id="navbarDropdown" role="button"
                 href="../gallery.html">Gallery</a>
               <ul class="dropdown-menu">
                 <li>
@@ -171,7 +165,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a href="../contact.html" class="nav-link navbar-bg-hover">Contact</a>
+              <a href="../contact.html" class="nav-link navbar-bg-hover mx-2">Contact</a>
             </li>
 
             <li class="nav-item">
@@ -205,12 +199,12 @@
 
   <!-- Gallery -->
   <section>
-    <div class="container my-5">
+    <div class="container mt-5 mb-4">
       <div class="row my-4 text-center">
         <h1 class="text-primary headline">That's Amore Italian Dinner/Art Auction</h1>
       </div>
-      <hr />
-      <div class="row g-3 mb-3 align-items-center" data-bs-toggle="modal" data-bs-target="#modalGallery">
+      <hr class="mb-2" />
+      <div class="row g-3 mb-4 mt-0 align-items-center" data-bs-toggle="modal" data-bs-target="#modalGallery">
         <div class="col-12 col-sm-6 col-lg-3 imgline">
           <img src="../../img/subwai.jpg" alt="6 incher" class="w-100 cursor-zoom-in rounded my-auto"
             data-bs-target="#galleryCarousel" data-bs-slide-to="0" onclick="resetZoom();" />
@@ -296,6 +290,175 @@
     </div>
   </section>
   <!-- Gallery -->
+
+  <!-- Multi-item Carousel -->
+  <section>
+    <div class="container my-4">
+      <h1 class="text-center">Check Out Our Other Galleries!</h1>
+      <div class="d-flex justify-content-center my-4">
+        <button type="button" class="btn btn-dream rounded-circle me-3 btn-lg" data-bs-target="#multi-itemCarousel"
+          data-bs-slide="prev"><i class="fas fa-2x text-white fa-chevron-left me-1"></i></button>
+        <button type="button" class="btn btn-dream rounded-circle ms-3 btn-lg" data-bs-target="#multi-itemCarousel"
+          data-bs-slide="next"><i class="fas fa-2x text-white fa-chevron-right ms-1"></i></button>
+      </div>
+      <div class="row overflow-hidden">
+        <div class="col-12">
+          <div id="multi-itemCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="100000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row g-3 mx-0">
+                  <div class="col-lg-4">
+                    <div class="card h-100">
+                      <div class="ratio ratio-4x3">
+                        <img src="../../img/thats_amore/2021/2021amore19.jpg" alt="That's Amore Photo"
+                          class="card-img-top multi-item-img rounded">
+                      </div>
+                      <div class="card-img-overlay">
+                        <div class="d-flex align-items-center justify-content-end h-100 flex-column">
+                          <button type="button"
+                            class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
+                          <h2 class="card-title text-white text-center mt-2 text-nowrap">That's Amore</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card h-100">
+                      <div class="ratio ratio-4x3">
+                        <img src="../../img/cardboard_boat_regatta/2018/2018cbr12.jpg"
+                          alt="Cardboard Boat Regatta Photo" class="card-img-top multi-item-img rounded">
+                      </div>
+                      <div class="card-img-overlay">
+                        <div class="d-flex align-items-center justify-content-end h-100 flex-column">
+                          <button type="button"
+                            class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
+                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Cardboard Boat Regatta</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card h-100">
+                      <div class="ratio ratio-4x3">
+                        <img src="../../img/night_in_the_caribbean/caribbean1.jpg" alt="Night in the Caribbean Photo"
+                          class="card-img-top multi-item-img rounded">
+                      </div>
+                      <div class="card-img-overlay">
+                        <div class="d-flex align-items-center justify-content-end h-100 flex-column">
+                          <button type="button"
+                            class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
+                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Night in the Caribbean</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-3 mx-0">
+                  <div class="col-lg-4">
+                    <div class="card h-100">
+                      <div class="ratio ratio-4x3">
+                        <img src="../../img/bunny_run/bunnyrun136.jpg" alt="Bunny Run Photo"
+                          class="card-img-top multi-item-img rounded">
+                      </div>
+                      <div class="card-img-overlay">
+                        <div class="d-flex align-items-center justify-content-end h-100 flex-column">
+                          <button type="button"
+                            class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
+                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Bunny Run 5K</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card h-100">
+                      <div class="ratio ratio-4x3">
+                        <img src="../../img/running_for_a_dream/2015/2015rundream29.jpg" alt="Running for a Dream Photo"
+                          class="card-img-top multi-item-img rounded">
+                      </div>
+                      <div class="card-img-overlay">
+                        <div class="d-flex align-items-center justify-content-end h-100 flex-column">
+                          <button type="button"
+                            class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
+                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Running for a Dream 5K</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card h-100">
+                      <div class="ratio ratio-4x3">
+                        <img src="../../img/self_portraits/portraits6.jpg" alt="Self Portraits Photo"
+                          class="card-img-top multi-item-img rounded">
+                      </div>
+                      <div class="card-img-overlay">
+                        <div class="d-flex align-items-center justify-content-end h-100 flex-column">
+                          <button type="button"
+                            class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
+                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Self Portraits of Youth</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-3 mx-0">
+                  <div class="col-lg-4">
+                    <div class="card h-100">
+                      <div class="ratio ratio-4x3">
+                        <img src="../../img/easter/easter22.jpg" alt="Easter Photo"
+                          class="card-img-top multi-item-img rounded">
+                      </div>
+                      <div class="card-img-overlay">
+                        <div class="d-flex align-items-center justify-content-end h-100 flex-column">
+                          <button type="button"
+                            class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
+                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Easter</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card h-100">
+                      <div class="ratio ratio-4x3">
+                        <img src="../../img/subwai.jpg" alt="Volunteer Photo"
+                          class="card-img-top multi-item-img rounded">
+                      </div>
+                      <div class="card-img-overlay">
+                        <div class="d-flex align-items-center justify-content-end h-100 flex-column">
+                          <button type="button"
+                            class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
+                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Volunteer Photos</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card h-100">
+                      <div class="ratio ratio-4x3">
+                        <img src="../../img/golf_tournament/golf21.jpg" alt="Golf Tournament Photo"
+                          class="card-img-top multi-item-img rounded">
+                      </div>
+                      <div class="card-img-overlay">
+                        <div class="d-flex align-items-center justify-content-end h-100 flex-column">
+                          <button type="button"
+                            class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
+                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Annual Golf Tournament</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Multi-item Carousel -->
 
   <!-- Modal -->
   <div class="modal fade h-auto" id="modalGallery" tabindex="-1">
@@ -569,11 +732,9 @@
   </div>
   <footer class="bg-dream">
     <div class="container text-center py-4 text-white">
-      <div class="row">
-        <a href="../../index.html">
-          <img src="../../img/dreamcenterlogo.png" alt="Dream Center Logo" class="img-fluid white-logo pb-3" />
-        </a>
-      </div>
+      <a href="../../index.html">
+        <img src="../../img/dreamcenterlogo.png" alt="Dream Center Logo" class="img-fluid white-logo pb-3" />
+      </a>
       <hr />
       <div class="row d-flex justify-content-evenly g-lg-0 g-sm-3 g-4 my-4 footer-text">
         <div class="col-12 col-sm-6 col-lg-3">

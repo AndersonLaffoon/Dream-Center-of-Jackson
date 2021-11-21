@@ -7,3 +7,9 @@ $(function () {
     }, 350);
   });
 });
+
+$(function(){
+  $(".nav-item.dropdown").hover(function(){
+    $(this).children(".dropdown-menu").stop().slideToggle();
+  })
+})
