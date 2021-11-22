@@ -109,8 +109,16 @@ a.nav-link {
 .navbar-bg-hover:hover,
 .nav-link.active {
   background-color: #314968;
+  border-radius: 0.3rem;
   text-decoration-thickness: 4px;
-  transition: background-color ease-in-out 0.4s;
+  transition: background-color ease-in-out 0.2s;
+}
+
+.dropdown-menu {
+  background-color: #97afce;
+  border-color: #527aad;
+  border-width: 2px;
+  margin-top: 0.25rem;
 }
 
 .absolute-top {
@@ -241,7 +249,8 @@ a:hover {
   color: inherit;
 }
 
-.text-white>.footer-text a:hover {
+.text-white>.footer-text a:hover,
+.text-white a:hover {
   filter: brightness(75%);
 }
 
@@ -307,4 +316,12 @@ a:hover {
 
 .multi-item-img {
   filter: brightness(45%);
+}
+
+.draggable {
+  cursor: grab;
+}
+
+.draggable:active {
+  cursor: grabbing;
 }

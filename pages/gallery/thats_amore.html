@@ -18,6 +18,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="../../js/jquery.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
   <!-- ScrollReveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <!-- CSS Stylesheet -->
@@ -29,25 +30,17 @@
 <body>
   <header>
     <!-- Navbar -->
-    <nav class="
-          navbar navbar-expand-xl navbar-dark
-          absolute-top
-          bg-transparent
-          navbar-scroll
-          py-3
-        " id="navbar">
+    <nav class="navbar navbar-expand-xl navbar-dark absolute-top bg-transparent navbar-scroll py-3" id="navbar">
       <div class="container-xxl">
         <div class="d-flex w-100 justify-content-between">
           <a class="navbar-brand ms-md-5 ms-sm-3 ms-1" href="../../index.html">
             <img src="../../img/dreamcenterlogo.png" alt="Dream Center Logo" class="blue-logo img-fluid" />
           </a>
-
           <button class="navbar-toggler mb-auto text-white border-white" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNavCollapse">
             <i class="fas fa-bars"></i>
           </button>
         </div>
-
         <div class="collapse navbar-collapse" id="navbarNavCollapse">
           <ul class="navbar-nav ms-auto navbar-nav-scroll text-center align-items-center">
             <li class="nav-item dropdown">
@@ -167,10 +160,9 @@
             <li class="nav-item">
               <a href="../contact.html" class="nav-link navbar-bg-hover mx-2">Contact</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link"
-                href="https://www.paypal.com/donate?token=TIxK4K0SfCOhuWaZoz4PFrBda0PgUJMvJZI8QodDNIGjVrXIyj7J7aG3tExTGy0TV8w8MEairessjCsz">
+              <a class="nav-link" href="https://www.paypal.com/fundraiser/charity/2110316" target="_blank"
+                rel="noopener noreferrer">
                 <button type="button" class="btn btn-success text-white">
                   <i class="fab fa-paypal fa-lg"></i>
                   Donate
@@ -184,13 +176,7 @@
 
     <!-- Hero -->
     <section>
-      <h1 class="
-            d-flex
-            justify-content-center
-            align-items-center
-            hero
-            text-primary
-          ">
+      <h1 class="d-flex justify-content-center align-items-center hero text-primary">
         6 Inch Subway Steak & Cheeses.
       </h1>
     </section>
@@ -201,100 +187,310 @@
   <section>
     <div class="container mt-5 mb-4">
       <div class="row my-4 text-center">
-        <h1 class="text-primary headline">That's Amore Italian Dinner/Art Auction</h1>
+        <h1 class="headline">That's Amore Italian Dinner 2021</h1>
       </div>
-      <hr class="mb-2" />
-      <div class="row g-3 mb-4 mt-0 align-items-center" data-bs-toggle="modal" data-bs-target="#modalGallery">
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/subwai.jpg" alt="6 incher" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="0" onclick="resetZoom();" />
+      <hr class="headline">
+      <div class="row g-1 mb-3 mt-0 align-items-center mx-4" data-bs-toggle="modal" data-bs-target="#modalGallery">
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore1.jpeg" alt="That's Amore Italian Dinner 2021 Photo 1"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="0" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/staff.jpeg" alt="staff" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="1" onclick="resetZoom();" />
+        <div class="col-12 col-sm-3 col-xl-2 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%">
+            <img src="../../img/thats_amore/2021/2021amore2.jpg" alt="That's Amore Italian Dinner 2021 Photo 2"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="1" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/help.jpg" alt="help" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="2" onclick="resetZoom();" />
+        <div class="col-12 col-sm-3 col-xl-2 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%">
+            <img src="../../img/thats_amore/2021/2021amore3.jpg" alt="That's Amore Italian Dinner 2021 Photo 3"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="2" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/dreamcenter.png" alt="dream center" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="3" onclick="resetZoom();" />
+        <div class="col-12 col-sm-4 col-xl-2 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%">
+            <img src="../../img/thats_amore/2021/2021amore4.jpg" alt="That's Amore Italian Dinner 2021 Photo 4"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="3" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/braden.jpg" alt="Braden." class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="4" onclick="resetZoom();" />
+        <div class="col-12 col-sm-4 col-xl-2 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%">
+            <img src="../../img/thats_amore/2021/2021amore5.jpg" alt="That's Amore Italian Dinner 2021 Photo 5"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="4" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/subwai.jpg" alt="6 incher" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="5" onclick="resetZoom();" />
+        <div class="col-12 col-sm-4 col-xl-2 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%">
+            <img src="../../img/thats_amore/2021/2021amore6.jpg" alt="That's Amore Italian Dinner 2021 Photo 6"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="5" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/staff.jpeg" alt="staff" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="6" onclick="resetZoom();" />
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore7.jpg" alt="That's Amore Italian Dinner 2021 Photo 7"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="6" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/help.jpg" alt="help" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="7" onclick="resetZoom();" />
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore8.jpg" alt="That's Amore Italian Dinner 2021 Photo 8"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="7" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/dreamcenter.png" alt="dream center" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="8" onclick="resetZoom();" />
+        <div class="col-12 col-sm-4 col-xl-2 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%;">
+            <img src="../../img/thats_amore/2021/2021amore9.jpg" alt="That's Amore Italian Dinner 2021 Photo 9"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="8" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/braden.jpg" alt="Braden." class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="9" onclick="resetZoom();" />
+        <div class="col-12 col-sm-8 col-xl-6 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore10.jpg" alt="That's Amore Italian Dinner 2021 Photo 10"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="9" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/subwai.jpg" alt="6 incher" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="10" onclick="resetZoom();" />
+        <div class="col-12 col-sm-8 col-xl-6 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore11.jpg" alt="That's Amore Italian Dinner 2021 Photo 11"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="10" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/staff.jpeg" alt="staff" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="11" onclick="resetZoom();" />
+        <div class="col-12 col-sm-4 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%;">
+            <img src="../../img/thats_amore/2021/2021amore12.jpg" alt="That's Amore Italian Dinner 2021 Photo 12"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="11" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/help.jpg" alt="help" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="12" onclick="resetZoom();" />
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%;">
+            <img src="../../img/thats_amore/2021/2021amore13.jpg" alt="That's Amore Italian Dinner 2021 Photo 13"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="12" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/dreamcenter.png" alt="dream center" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="13" onclick="resetZoom();" />
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%;">
+            <img src="../../img/thats_amore/2021/2021amore14.jpg" alt="That's Amore Italian Dinner 2021 Photo 14"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="12" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/braden.jpg" alt="Braden." class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="14" onclick="resetZoom();" />
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore15.jpg" alt="That's Amore Italian Dinner 2021 Photo 15"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="14" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/subwai.jpg" alt="6 incher" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="15" onclick="resetZoom();" />
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore16.jpg" alt="That's Amore Italian Dinner 2021 Photo 16"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="15" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/staff.jpeg" alt="staff" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="16" onclick="resetZoom();" />
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore17.jpg" alt="That's Amore Italian Dinner 2021 Photo 17"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="16" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/help.jpg" alt="help" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="17" onclick="resetZoom();" />
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore18.jpg" alt="That's Amore Italian Dinner 2021 Photo 18"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="17" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/dreamcenter.png" alt="dream center" class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="18" onclick="resetZoom();" />
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore19.jpg" alt="That's Amore Italian Dinner 2021 Photo 19"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="18" />
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 imgline">
-          <img src="../../img/braden.jpg" alt="Braden." class="w-100 cursor-zoom-in rounded my-auto"
-            data-bs-target="#galleryCarousel" data-bs-slide-to="19" onclick="resetZoom();" />
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore20.jpg" alt="That's Amore Italian Dinner 2021 Photo 20"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="19" />
+          </div>
         </div>
       </div>
-      <hr />
+      <hr class="headline"/>
+      <div class="row my-4 text-center">
+        <h1 class="headline">That's Amore Art Auction 2020</h1>
+      </div>
+      <hr class="headline"/>
+      <div class="row g-1 mb-3 mt-0 align-items-center mx-4" data-bs-toggle="modal" data-bs-target="#modalGallery">
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore1.jpeg" alt="That's Amore Art Auction 2020 Photo 1"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="20" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-3 col-xl-2 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%">
+            <img src="../../img/thats_amore/2021/2021amore2.jpg" alt="That's Amore Art Auction 2020 Photo 2"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="21" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-3 col-xl-2 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%">
+            <img src="../../img/thats_amore/2021/2021amore3.jpg" alt="That's Amore Art Auction 2020 Photo 3"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="22" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-xl-2 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%">
+            <img src="../../img/thats_amore/2021/2021amore4.jpg" alt="That's Amore Art Auction 2020 Photo 4"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="23" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-xl-2 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%">
+            <img src="../../img/thats_amore/2021/2021amore5.jpg" alt="That's Amore Art Auction 2020 Photo 5"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="24" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-xl-2 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%">
+            <img src="../../img/thats_amore/2021/2021amore6.jpg" alt="That's Amore Art Auction 2020 Photo 6"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="25" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore7.jpg" alt="That's Amore Art Auction 2020 Photo 7"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="26" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore8.jpg" alt="That's Amore Art Auction 2020 Photo 8"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="27" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-xl-2 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%;">
+            <img src="../../img/thats_amore/2021/2021amore9.jpg" alt="That's Amore Art Auction 2020 Photo 9"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="28" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-xl-6 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore10.jpg" alt="That's Amore Art Auction 2020 Photo 10"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="29" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-8 col-xl-6 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore11.jpg" alt="That's Amore Art Auction 2020 Photo 11"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="30" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%;">
+            <img src="../../img/thats_amore/2021/2021amore12.jpg" alt="That's Amore Art Auction 2020 Photo 12"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="31" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%;">
+            <img src="../../img/thats_amore/2021/2021amore13.jpg" alt="That's Amore Art Auction 2020 Photo 13"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="32" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 150%;">
+            <img src="../../img/thats_amore/2021/2021amore14.jpg" alt="That's Amore Art Auction 2020 Photo 14"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="32" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore15.jpg" alt="That's Amore Art Auction 2020 Photo 15"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="34" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore16.jpg" alt="That's Amore Art Auction 2020 Photo 16"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="35" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore17.jpg" alt="That's Amore Art Auction 2020 Photo 17"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="36" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore18.jpg" alt="That's Amore Art Auction 2020 Photo 18"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="37" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore19.jpg" alt="That's Amore Art Auction 2020 Photo 19"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="38" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-4 imgline">
+          <div class="ratio" style="--bs-aspect-ratio: 75%;">
+            <img src="../../img/thats_amore/2021/2021amore20.jpg" alt="That's Amore Art Auction 2020 Photo 20"
+              class="w-100 h-100 cursor-zoom-in my-auto resetPos resetZoom" data-bs-target="#galleryCarousel"
+              data-bs-slide-to="39" />
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- Gallery -->
 
   <!-- Multi-item Carousel -->
-  <section>
-    <div class="container my-4">
-      <h1 class="text-center">Check Out Our Other Galleries!</h1>
+  <section class="multi-item-carousel-reveal">
+    <div class="container-xxl mb-5 mt-3">
+      <hr class="headline"/>
+      <div class="row my-4 text-center">
+        <h1>Check Out Our Other Galleries!</h1>
+      </div>
+      <hr class="headline"/>
       <div class="d-flex justify-content-center my-4">
         <button type="button" class="btn btn-dream rounded-circle me-3 btn-lg" data-bs-target="#multi-itemCarousel"
           data-bs-slide="prev"><i class="fas fa-2x text-white fa-chevron-left me-1"></i></button>
@@ -306,18 +502,18 @@
           <div id="multi-itemCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="100000">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="row g-3 mx-0">
+                <div class="row g-3 mx-lg-0 mx-md-9 mx-sm-7 mx-4">
                   <div class="col-lg-4">
                     <div class="card h-100">
                       <div class="ratio ratio-4x3">
-                        <img src="../../img/thats_amore/2021/2021amore19.jpg" alt="That's Amore Photo"
+                        <img src="../../img/thats_amore/2021/2021amore18.jpg" alt="That's Amore Photo"
                           class="card-img-top multi-item-img rounded">
                       </div>
                       <div class="card-img-overlay">
                         <div class="d-flex align-items-center justify-content-end h-100 flex-column">
                           <button type="button"
                             class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
-                          <h2 class="card-title text-white text-center mt-2 text-nowrap">That's Amore</h2>
+                          <h2 class="card-title text-white text-center mt-2 w-100">That's Amore</h2>
                         </div>
                       </div>
                     </div>
@@ -332,7 +528,7 @@
                         <div class="d-flex align-items-center justify-content-end h-100 flex-column">
                           <button type="button"
                             class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
-                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Cardboard Boat Regatta</h2>
+                          <h2 class="card-title text-white text-center mt-2 w-100">Cardboard Boat Regatta</h2>
                         </div>
                       </div>
                     </div>
@@ -347,7 +543,7 @@
                         <div class="d-flex align-items-center justify-content-end h-100 flex-column">
                           <button type="button"
                             class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
-                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Night in the Caribbean</h2>
+                          <h2 class="card-title text-white text-center mt-2 w-100">Night in the Caribbean</h2>
                         </div>
                       </div>
                     </div>
@@ -366,7 +562,7 @@
                         <div class="d-flex align-items-center justify-content-end h-100 flex-column">
                           <button type="button"
                             class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
-                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Bunny Run 5K</h2>
+                          <h2 class="card-title text-white text-center mt-2 w-100">Bunny Run 5K</h2>
                         </div>
                       </div>
                     </div>
@@ -381,7 +577,7 @@
                         <div class="d-flex align-items-center justify-content-end h-100 flex-column">
                           <button type="button"
                             class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
-                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Running for a Dream 5K</h2>
+                          <h2 class="card-title text-white text-center mt-2 w-100">Running for a Dream 5K</h2>
                         </div>
                       </div>
                     </div>
@@ -396,7 +592,7 @@
                         <div class="d-flex align-items-center justify-content-end h-100 flex-column">
                           <button type="button"
                             class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
-                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Self Portraits of Youth</h2>
+                          <h2 class="card-title text-white text-center mt-2 w-100">Self Portraits of Youth</h2>
                         </div>
                       </div>
                     </div>
@@ -415,7 +611,7 @@
                         <div class="d-flex align-items-center justify-content-end h-100 flex-column">
                           <button type="button"
                             class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
-                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Easter</h2>
+                          <h2 class="card-title text-white text-center mt-2 w-100">Easter</h2>
                         </div>
                       </div>
                     </div>
@@ -430,7 +626,7 @@
                         <div class="d-flex align-items-center justify-content-end h-100 flex-column">
                           <button type="button"
                             class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
-                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Volunteer Photos</h2>
+                          <h2 class="card-title text-white text-center mt-2 w-100">Volunteer Photos</h2>
                         </div>
                       </div>
                     </div>
@@ -445,7 +641,7 @@
                         <div class="d-flex align-items-center justify-content-end h-100 flex-column">
                           <button type="button"
                             class="btn btn-outline-light mt-auto btn-lg stretched-link">View</button>
-                          <h2 class="card-title text-white text-center mt-2 text-nowrap">Annual Golf Tournament</h2>
+                          <h2 class="card-title text-white text-center mt-2 w-100">Annual Golf Tournament</h2>
                         </div>
                       </div>
                     </div>
@@ -465,239 +661,180 @@
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content border-0 bg-transparent">
         <div class="modal-header border-0 justify-content-end p-0 m-3">
+          <h2 class="text-white" id="num"></h2>
           <div class="flex-1 vh-85" data-bs-dismiss="modal"></div>
-          <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="openFullscreen();">
+          <button type="button" class="border-0 mx-md-4 mx-sm-2 mx-auto bg-transparent text-muted"
+            onclick="openFullscreen();" id="Expand">
             <i class="fas fa-expand fa-2x lightboxhover"></i>
           </button>
-          <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="closeFullscreen();">
-            <i class="fas fa-compress fa-2x lightboxhover"></i>
-          </button>
-          <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="zoomIn();">
+          <button type="button" class="border-0 mx-md-4 mx-sm-2 mx-auto bg-transparent text-muted zoomIn">
             <i class="fas fa-search-plus fa-2x lightboxhover"></i>
           </button>
-          <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="zoomOut();">
+          <button type="button" class="border-0 mx-md-4 mx-sm-2 mx-auto bg-transparent text-muted zoomOut">
             <i class="fas fa-search-minus fa-2x lightboxhover"></i>
           </button>
-          <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="resetZoom();">
+          <button type="button" class="border-0 mx-md-4 mx-sm-2 mx-auto bg-transparent text-muted resetPos resetZoom">
             <i class="fas fa-undo-alt fa-2x lightboxhover"></i>
           </button>
-          <button type="button" class="border-0 mx-4 bg-transparent text-muted" data-bs-dismiss="modal">
+          <button type="button" class="border-0 mx-md-4 mx-sm-2 mx-auto bg-transparent text-muted"
+            data-bs-dismiss="modal">
             <i class="fas fa-times fa-2x lightboxhover"></i>
           </button>
         </div>
         <div class="modal-body p-0 border-0">
           <!-- Carousel -->
-          <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"
+            data-bs-touch="false">
             <div class="carousel-inner">
-              <div class="carousel-item active bg-transparent">
+              <div class="carousel-item active bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/large-image.jpg" alt="6 incher" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>1/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore1.jpeg" alt="That's Amore Italian Dinner 2021 Photo 1" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/staff.jpeg" alt="staff" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>2/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore2.jpg" alt="That's Amore Italian Dinner 2021 Photo 2" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/help.jpg" alt="help" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>3/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore3.jpg" alt="That's Amore Italian Dinner 2021 Photo 3" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/dreamcenter.png" alt="dream center" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>4/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore4.jpg" alt="That's Amore Italian Dinner 2021 Photo 4" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/braden.jpg" alt="Braden." class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>5/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore5.jpg" alt="That's Amore Italian Dinner 2021 Photo 5" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/subwai.jpg" alt="6 incher" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>6/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore6.jpg" alt="That's Amore Italian Dinner 2021 Photo 6" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/staff.jpeg" alt="staff" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>7/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore7.jpg" alt="That's Amore Italian Dinner 2021 Photo 7" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/help.jpg" alt="help" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>8/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore8.jpg" alt="That's Amore Italian Dinner 2021 Photo 8" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/dreamcenter.png" alt="dream center" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>9/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore9.jpg" alt="That's Amore Italian Dinner 2021 Photo 9" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/braden.jpg" alt="Braden." class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>10/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore10.jpg" alt="That's Amore Italian Dinner 2021 Photo 10" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/subwai.jpg" alt="6 incher" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>11/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore11.jpg" alt="That's Amore Italian Dinner 2021 Photo 11" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/staff.jpeg" alt="staff" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>12/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore12.jpg" alt="That's Amore Italian Dinner 2021 Photo 12" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/help.jpg" alt="help" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>13/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore13.jpg" alt="That's Amore Italian Dinner 2021 Photo 13" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/dreamcenter.png" alt="dream center" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>14/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore14.jpg" alt="That's Amore Italian Dinner 2021 Photo 14" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/braden.jpg" alt="Braden." class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>15/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore15.jpg" alt="That's Amore Italian Dinner 2021 Photo 15" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/subwai.jpg" alt="6 incher" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>16/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore16.jpg" alt="That's Amore Italian Dinner 2021 Photo 16" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/staff.jpeg" alt="staff" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>17/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore17.jpg" alt="That's Amore Italian Dinner 2021 Photo 17" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/help.jpg" alt="help" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>18/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore18.jpg" alt="That's Amore Italian Dinner 2021 Photo 18" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/dreamcenter.png" alt="dream center" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>19/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore19.jpg" alt="That's Amore Italian Dinner 2021 Photo 19" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
-              <div class="carousel-item bg-transparent">
+              <div class="carousel-item bg-transparent slideNumber">
                 <div class="d-flex">
                   <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/braden.jpg" alt="Braden." class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>20/20</h2>
-                  </div>
+                  <img src="../../img/thats_amore/2021/2021amore20.jpg" alt="That's Amore Italian Dinner 2021 Photo 20" class="zoom draggable" />
                   <div class="flex-1" data-bs-dismiss="modal"></div>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev"
-              onclick="resetZoom();">
+            <button class="carousel-control-prev resetPos resetZoom" type="button" data-bs-target="#galleryCarousel"
+              data-bs-slide="prev">
               <span class="flex-1 carousel-control-prev-icon"></span>
               <span class="visually-hidden">Previous</span>
               <div class="flex-1 vh-85" data-bs-dismiss="modal"></div>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next"
-              onclick="resetZoom();">
+            <button class="carousel-control-next resetPos resetZoom" type="button" data-bs-target="#galleryCarousel"
+              data-bs-slide="next">
               <div class="flex-1 vh-85" data-bs-dismiss="modal"></div>
               <span class="flex-1 carousel-control-next-icon"></span>
               <span class="visually-hidden">Next</span>
@@ -741,16 +878,18 @@
           <i class="fas fa-mobile-alt fa-2x"></i>
           <h5 class="m-3">CONNECT WITH US:</h5>
           <p class="icons d-flex justify-content-center m-0">
-            <a href="https://www.facebook.com/pages/Dream-Center-of-Jackson/268142701317">
+            <a href="https://www.facebook.com/pages/Dream-Center-of-Jackson/268142701317" target="_blank"
+              rel="noopener noreferrer">
               <i class="fab fa-facebook-square fa-2x mx-3"></i>
             </a>
-            <a href="https://www.instagram.com/dreamcenterjackson/?hl=bn">
+            <a href="https://www.instagram.com/dreamcenterjackson/" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-instagram fa-2x mx-3"></i>
             </a>
-            <a href="https://www.youtube.com/channel/UC6GrE0gd3-lmARKtZgfAlkw">
+            <a href="https://www.youtube.com/channel/UC6GrE0gd3-lmARKtZgfAlkw" target="_blank"
+              rel="noopener noreferrer">
               <i class="fab fa-youtube fa-2x mx-3"></i>
             </a>
-            <a href="https://twitter.com/DreamCenter2003">
+            <a href="https://twitter.com/DreamCenter2003" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-twitter fa-2x mx-3"></i>
             </a>
           </p>
@@ -762,7 +901,7 @@
             1970 N Highland Ave, Ste E. <br />
             Jackson, TN 38305
             <a href="https://www.google.com/maps/dir//Dream+Center+of+Jackson,+1970+N+Highland+Ave,+Jackson,+TN+38305"
-              class="fw-bold">
+              class="fw-bold" target="_blank" rel="noopener noreferrer">
               <br />Get Directions
             </a>
           </p>
