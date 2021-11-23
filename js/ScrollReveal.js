@@ -3,11 +3,18 @@ ScrollReveal().reveal(".headline", {
     distance: "-2.5rem",
 });
 
-ScrollReveal().reveal(".imgline", {
-    interval: 150,
+ScrollReveal().reveal(".imgline1", {
+    interval: 125,
     duration: 700,
     easing: "ease-in-out",
     distance: "-2.5rem",
+});
+
+ScrollReveal().reveal(".imgline2", {
+  interval: 100,
+  duration: 700,
+  easing: "ease-in-out",
+  distance: "-2.5rem",
 });
 
 ScrollReveal().reveal(".multi-item-carousel-reveal", {

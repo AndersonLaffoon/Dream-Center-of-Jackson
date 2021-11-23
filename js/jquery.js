@@ -39,7 +39,7 @@ $(function () {
   // Zoom In Button
   $(".zoomIn").on("click", function () {
     $(".zoom").css({
-      transform: `scale(${(zoom += ZOOM_SPEED)})`,
+      transform: `scale(${(zoom += 2*ZOOM_SPEED)})`,
     });
   });
 
@@ -82,7 +82,7 @@ $(function () {
   var totalItems = $(".slideNumber").length;
   var currentIndex = $("div.active").index() + 1;
   $("#num").html("" + currentIndex + "/" + totalItems + "");
-  $("#galleryCarousel").bind("slid.bs.carousel", function () {
+  $("#galleryCarousel").on("slid.bs.carousel", function () {
     currentIndex = $("div.active.slideNumber").index() + 1;
     $("#num").html("" + currentIndex + "/" + totalItems + "");
   });

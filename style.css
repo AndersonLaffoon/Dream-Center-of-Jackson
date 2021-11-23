@@ -161,6 +161,10 @@ nav {
   height: 85vh;
 }
 
+#galleryCarousel .carousel-item {
+  height: clamp(40vh, 85vh, 85vh);
+}
+
 #modalGallery .modal-header,
 #modalGallery .modal-footer {
   height: 5vh;
