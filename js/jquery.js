@@ -1,5 +1,5 @@
-// Prevent Toggle Button from being Pressed until Transition is Finished
 $(function () {
+  // Prevent Navbar Toggler Button from being Pressed until Transition is Finished
   $("button.navbar-toggler").on("click", function () {
     $("nav").toggleClass("toggler-bg");
     $("button.navbar-toggler").addClass("pe-none");
@@ -7,19 +7,17 @@ $(function () {
       $("button.navbar-toggler").removeClass("pe-none");
     }, 350);
   });
-});
 
-// Show Dropdown Menu on Hover
-$(function () {
-  $(".nav-item.dropdown").hover(function () {
-    $(this).children(".dropdown-menu").stop().slideToggle("fast");
-  })
-})
+  // Slide Up/Down Dropdown Menu on Hover
+  $(".nav-item.dropdown").on("mouseenter", function () {
+    $(this).children(".dropdown-menu").stop().slideDown("fast");
+  }).on("mouseleave", function () {
+    $(this).children(".dropdown-menu").stop().slideUp("fast");
+  });
 
-// Scroll Zoom In & Out original script via Dotted Squirrel (https://www.dottedsquirrel.com/zoom-scroll-tutorial/)
-$(function () {
+  // Scroll Zoom In & Out original script via Dotted Squirrel (https://www.dottedsquirrel.com/zoom-scroll-tutorial/)
   let zoom = 1;
-  const ZOOM_SPEED = 0.1;
+  const ZOOM_SPEED = 0.3;
 
   // Zoom In on Mouse Wheel Up & Zoom Out on Mouse Wheel Down
   $(".zoom").on("wheel", function (e) {
@@ -28,7 +26,7 @@ $(function () {
         $(".zoom").css({
           transform: `scale(${(zoom += ZOOM_SPEED)})`,
         });
-      } else if (zoom > 0.11) {
+      } else if (zoom > 0.1) {
         $(".zoom").css({
           transform: `scale(${(zoom -= ZOOM_SPEED)})`,
         });
@@ -39,13 +37,13 @@ $(function () {
   // Zoom In Button
   $(".zoomIn").on("click", function () {
     $(".zoom").css({
-      transform: `scale(${(zoom += 2*ZOOM_SPEED)})`,
+      transform: `scale(${(zoom += ZOOM_SPEED)})`,
     });
   });
 
   // Zoom Out Button
   $(".zoomOut").on("click", function () {
-    if (zoom > 0.11) {
+    if (zoom > 0.1) {
       $(".zoom").css({
         transform: `scale(${(zoom -= ZOOM_SPEED)})`,
       });
@@ -58,10 +56,8 @@ $(function () {
       transform: `scale(${(zoom = 1)})`,
     });
   });
-});
 
-// Make Element Draggable
-$(function () {
+  // Make Element Draggable
   $(".draggable").draggable();
   $(".draggable").data({
     originalLeft: $(".draggable").css("left"),
@@ -75,10 +71,8 @@ $(function () {
       top: $(".draggable").data("origionalTop"),
     });
   });
-});
 
-// Show Current Slide Number out of Total Slides
-$(function () {
+  // Show Current Slide Number out of Total Slides
   var totalItems = $(".slideNumber").length;
   var currentIndex = $("div.active").index() + 1;
   $("#num").html("" + currentIndex + "/" + totalItems + "");
@@ -86,12 +80,17 @@ $(function () {
     currentIndex = $("div.active.slideNumber").index() + 1;
     $("#num").html("" + currentIndex + "/" + totalItems + "");
   });
-});
 
-// Initialize Toast
-$(function() {
+  // Initialize Toast
   $("#toastBtn").on("click", function () {
     $("#toaster").toast("show");
   });
-})
 
+  // FitText
+  $(".amore-header").fitText(2);
+  $(".review-header").fitText(1.2);
+  $(".index-header").fitText(1.4);
+  $(".index-subheader").fitText(3.5);
+  $(".index-button").fitText(0.6);
+  $(".moregalleries").fitText(1.1);
+})

@@ -37,21 +37,16 @@ html {
   transform: scale(1.1);
 }
 
-#mainCarousel .carousel-inner {
-  color: #fff;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-
 #mainCarousel .carousel-caption {
   margin-top: 35vh;
 }
 
 /* Parallax styles */
 .parallax1 {
-  background-image: url(img/braden.jpg);
-  min-height: 40rem;
+  background-image: url(img/NewDreamCenter.jpg);
+  min-height: 30rem;
   background-attachment: fixed;
-  background-position: top;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -149,26 +144,20 @@ nav {
 }
 
 /* gallery carousel styles */
-#galleryCarousel {
+#galleryCarousel,
+#galleryCarousel .carousel-item img,
+.vh-85 {
   height: 85vh;
   overflow: hidden;
 }
 
 #galleryCarousel .carousel-item img {
   object-fit: contain;
-  object-position: center;
-  overflow: hidden;
-  height: 85vh;
-}
-
-#galleryCarousel .carousel-item {
-  height: clamp(40vh, 85vh, 85vh);
 }
 
 #modalGallery .modal-header,
 #modalGallery .modal-footer {
-  height: 5vh;
-  overflow: hidden;
+  height: 3rem;
 }
 
 .zoom {
@@ -179,10 +168,13 @@ nav {
   flex: 1;
 }
 
-.vh-85 {
-  height: 85vh;
+.draggable {
+  cursor: grab;
 }
 
+.draggable:active {
+  cursor: grabbing;
+}
 /* icons styles */
 
 .fas.help-icons {
@@ -208,37 +200,12 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 35rem;
 }
 
 .hero-header {
   z-index: 1;
-  top: 35%;
-  font-size: vh;
-}
-
-@media (min-width: 1200px) {
-  .hero-header {
-    font-size: 10vh;
-  }
-}
-
-@media (min-width: 992px) {
-  .hero-header {
-    font-size: 8vh;
-  }
-}
-
-@media (min-width: 768px) {
-  .hero-header {
-    font-size: 6vh;
-  }
-}
-
-@media (min-width: 576px) {
-  .hero-header {
-    font-size: 4vh;
-  }
+  top: 30%;
 }
 
 #myBtn {
@@ -305,7 +272,7 @@ a:hover {
 }
 
 .bg-braden {
-  background-image: url(img/braden.jpg);
+  background-image: url(img/NewDreamCenter.jpg);
 }
 
 .waves {
@@ -322,10 +289,3 @@ a:hover {
   filter: brightness(45%);
 }
 
-.draggable {
-  cursor: grab;
-}
-
-.draggable:active {
-  cursor: grabbing;
-}

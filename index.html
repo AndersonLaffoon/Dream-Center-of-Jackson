@@ -18,7 +18,9 @@
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
   <script src="js/jquery.js"></script>
+  <script src="js/jquery.fittext.js"></script>
   <!-- ScrollReveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <!-- CSS Stylesheet -->
@@ -184,39 +186,21 @@
           <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
         </div>
         <div class="carousel-inner">
+          <div class="carousel-caption text-white text-start top-0 d-block mb-5" style="z-index: 2;">
+              <h1 class="index-header">The Dream Center of Jackson</h1>
+              <h4 class="index-subheader">
+                Building Lives, Restoring Hope, Renewing Dreams.
+              </h4>
+              <a href="pages/take_action.html" class="btn btn-lg btn-dream mt-7 text-white p-5 9 index-button">Make Dreams Come True</a>
+            </div>
           <div class="carousel-item active" data-bs-interval="10000">
             <img src="img/NewDreamCenter.jpg" class="d-block w-100 main-carousel" alt="Dream Center" />
-            <div class="carousel-caption text-white text-start d-block top-0">
-              <h1>The Dream Center of Jackson</h1>
-              <p class="fs-3">
-                Building Lives, Restoring Hope, Renewing Dreams.
-              </p>
-            </div>
           </div>
           <div class="carousel-item" data-bs-interval="10000">
             <img src="img/help.jpg" class="d-block w-100 main-carousel" alt="Help" />
-            <div class="carousel-caption d-block text-white text-start top-0">
-              <h1>Ways to Give</h1>
-              <p class="fs-3">
-                Giving to the Dream Center is easy and rewarding! <br />
-                Find out more about giving here!
-              </p>
-              <a href="pages/take_action.html">
-                <button type="button" class="btn btn-primary">
-                  Learn More
-                </button>
-              </a>
-            </div>
           </div>
           <div class="carousel-item" data-bs-interval="10000">
             <img src="img/staff.jpeg" class="d-block w-100 main-carousel" alt="Staff" />
-            <div class="carousel-caption d-block text-white text-start top-0">
-              <h1>Visit Our Gallery</h1>
-              <p class="fs-3">See what we've been up to!</p>
-              <a href="pages/gallery.html">
-                <button type="button" class="btn btn-primary">Explore</button>
-              </a>
-            </div>
           </div>
         </div>
       </div>
