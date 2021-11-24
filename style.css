@@ -33,8 +33,7 @@ html {
 }
 
 #mainCarousel .carousel-item>img.main-carousel {
-  filter: brightness(75%) blur(0.2rem);
-  transform: scale(1.1);
+  filter: brightness(40%);
 }
 
 #mainCarousel .carousel-caption {
@@ -175,6 +174,7 @@ nav {
 .draggable:active {
   cursor: grabbing;
 }
+
 /* icons styles */
 
 .fas.help-icons {
@@ -207,6 +207,10 @@ nav {
   z-index: 1;
   top: 30%;
 }
+
+/* .moregalleries {
+  font-size: 1.4rem;
+} */
 
 #myBtn {
   display: none;
@@ -289,3 +293,37 @@ a:hover {
   filter: brightness(45%);
 }
 
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .moregalleries {
+    font-size: 1.4rem !important;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .moregalleries {
+    font-size: 2.4rem !important;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .moregalleries {
+    font-size: 3.4rem !important;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .moregalleries {
+    font-size: 4.4rem !important;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .moregalleries {
+    font-size: 5.4rem !important;
+  }
+} */

@@ -91,6 +91,4 @@ $(function () {
   $(".review-header").fitText(1.2);
   $(".index-header").fitText(1.4);
   $(".index-subheader").fitText(3.5);
-  $(".index-button").fitText(0.6);
-  $(".moregalleries").fitText(1.1);
-})
+});
