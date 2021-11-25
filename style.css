@@ -208,10 +208,6 @@ nav {
   top: 30%;
 }
 
-/* .moregalleries {
-  font-size: 1.4rem;
-} */
-
 #myBtn {
   display: none;
   z-index: 99;
@@ -293,37 +289,42 @@ a:hover {
   filter: brightness(45%);
 }
 
-/* // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .moregalleries {
-    font-size: 1.4rem !important;
-  }
+
+.moregalleries {
+  font-size: 1.7rem;
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
   .moregalleries {
     font-size: 2.4rem !important;
   }
 }
 
-// Large devices (desktops, 992px and up)
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .moregalleries {
+    font-size: 3.3rem !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .moregalleries {
-    font-size: 3.4rem !important;
+    font-size: 1.3rem !important;
   }
 }
 
-// X-Large devices (large desktops, 1200px and up)
+/* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .moregalleries {
-    font-size: 4.4rem !important;
+    font-size: 1.7rem !important;
   }
 }
 
-// XX-Large devices (larger desktops, 1400px and up)
+/* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   .moregalleries {
-    font-size: 5.4rem !important;
+    font-size: 2rem !important;
   }
-} */
+}

@@ -283,257 +283,259 @@
   <!-- Gallery -->
 
   <!-- Modal -->
-  <div class="modal fade h-auto" id="modalGallery" tabindex="-1">
-    <div class="modal-dialog modal-fullscreen">
-      <div class="modal-content border-0 bg-transparent">
-        <div class="modal-header border-0 justify-content-end p-0 m-3">
-          <div class="flex-1 vh-85" data-bs-dismiss="modal"></div>
-          <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="openFullscreen();">
-            <i class="fas fa-expand fa-2x lightboxhover"></i>
-          </button>
-          <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="closeFullscreen();">
-            <i class="fas fa-compress fa-2x lightboxhover"></i>
-          </button>
-          <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="zoomIn();">
-            <i class="fas fa-search-plus fa-2x lightboxhover"></i>
-          </button>
-          <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="zoomOut();">
-            <i class="fas fa-search-minus fa-2x lightboxhover"></i>
-          </button>
-          <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="resetZoom();">
-            <i class="fas fa-undo-alt fa-2x lightboxhover"></i>
-          </button>
-          <button type="button" class="border-0 mx-4 bg-transparent text-muted" data-bs-dismiss="modal">
-            <i class="fas fa-times fa-2x lightboxhover"></i>
-          </button>
-        </div>
-        <div class="modal-body p-0 border-0">
-          <!-- Carousel -->
-          <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/large-image.jpg" alt="6 incher" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>1/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/staff.jpeg" alt="staff" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>2/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/help.jpg" alt="help" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>3/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/dreamcenter.png" alt="dream center" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>4/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/braden.jpg" alt="Braden." class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>5/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/subwai.jpg" alt="6 incher" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>6/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/staff.jpeg" alt="staff" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>7/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/help.jpg" alt="help" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>8/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/dreamcenter.png" alt="dream center" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>9/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/braden.jpg" alt="Braden." class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>10/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/subwai.jpg" alt="6 incher" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>11/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/staff.jpeg" alt="staff" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>12/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/help.jpg" alt="help" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>13/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/dreamcenter.png" alt="dream center" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>14/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/braden.jpg" alt="Braden." class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>15/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/subwai.jpg" alt="6 incher" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>16/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/staff.jpeg" alt="staff" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>17/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/help.jpg" alt="help" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>18/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/dreamcenter.png" alt="dream center" class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>19/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-              <div class="carousel-item bg-transparent">
-                <div class="d-flex">
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                  <img src="../../img/braden.jpg" alt="Braden." class="zoom" />
-                  <div class="carousel-caption top-0 start-50 translate-middle-x">
-                    <h2>20/20</h2>
-                  </div>
-                  <div class="flex-1" data-bs-dismiss="modal"></div>
-                </div>
-              </div>
-
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev"
-              onclick="resetZoom();">
-              <span class="flex-1 carousel-control-prev-icon"></span>
-              <span class="visually-hidden">Previous</span>
-              <div class="flex-1 vh-85" data-bs-dismiss="modal"></div>
+  <section>
+    <div class="modal fade h-auto" id="modalGallery" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content border-0 bg-transparent">
+          <div class="modal-header border-0 justify-content-end p-0 m-3">
+            <div class="flex-1 vh-85" data-bs-dismiss="modal"></div>
+            <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="openFullscreen();">
+              <i class="fas fa-expand fa-2x lightboxhover"></i>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next"
-              onclick="resetZoom();">
-              <div class="flex-1 vh-85" data-bs-dismiss="modal"></div>
-              <span class="flex-1 carousel-control-next-icon"></span>
-              <span class="visually-hidden">Next</span>
+            <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="closeFullscreen();">
+              <i class="fas fa-compress fa-2x lightboxhover"></i>
+            </button>
+            <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="zoomIn();">
+              <i class="fas fa-search-plus fa-2x lightboxhover"></i>
+            </button>
+            <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="zoomOut();">
+              <i class="fas fa-search-minus fa-2x lightboxhover"></i>
+            </button>
+            <button type="button" class="border-0 mx-4 bg-transparent text-muted" onclick="resetZoom();">
+              <i class="fas fa-undo-alt fa-2x lightboxhover"></i>
+            </button>
+            <button type="button" class="border-0 mx-4 bg-transparent text-muted" data-bs-dismiss="modal">
+              <i class="fas fa-times fa-2x lightboxhover"></i>
             </button>
           </div>
-          <!-- Carousel -->
-        </div>
-        <div class="modal-footer border-0 m-0 p-0 justify-content-center text-light" data-bs-dismiss="modal">
-          <h2>Running for a Dream 5K</h2>
+          <div class="modal-body p-0 border-0">
+            <!-- Carousel -->
+            <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/large-image.jpg" alt="6 incher" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>1/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/staff.jpeg" alt="staff" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>2/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/help.jpg" alt="help" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>3/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/dreamcenter.png" alt="dream center" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>4/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/braden.jpg" alt="Braden." class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>5/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/subwai.jpg" alt="6 incher" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>6/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/staff.jpeg" alt="staff" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>7/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/help.jpg" alt="help" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>8/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/dreamcenter.png" alt="dream center" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>9/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/braden.jpg" alt="Braden." class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>10/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/subwai.jpg" alt="6 incher" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>11/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/staff.jpeg" alt="staff" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>12/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/help.jpg" alt="help" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>13/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/dreamcenter.png" alt="dream center" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>14/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/braden.jpg" alt="Braden." class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>15/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/subwai.jpg" alt="6 incher" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>16/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/staff.jpeg" alt="staff" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>17/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/help.jpg" alt="help" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>18/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/dreamcenter.png" alt="dream center" class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>19/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-transparent">
+                  <div class="d-flex">
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                    <img src="../../img/braden.jpg" alt="Braden." class="zoom" />
+                    <div class="carousel-caption top-0 start-50 translate-middle-x">
+                      <h2>20/20</h2>
+                    </div>
+                    <div class="flex-1" data-bs-dismiss="modal"></div>
+                  </div>
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev"
+                onclick="resetZoom();">
+                <span class="flex-1 carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+                <div class="flex-1 vh-85" data-bs-dismiss="modal"></div>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next"
+                onclick="resetZoom();">
+                <div class="flex-1 vh-85" data-bs-dismiss="modal"></div>
+                <span class="flex-1 carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- Carousel -->
+          </div>
+          <div class="modal-footer border-0 m-0 p-0 justify-content-center text-light" data-bs-dismiss="modal">
+            <h2>Running for a Dream 5K</h2>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- Modal -->
 
   <!-- Footer -->
