@@ -179,6 +179,11 @@
 
     <!-- Hero -->
     <section>
+      <!-- <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="progressbar"></div>
+        </div>
+      </div> -->
       <h1 class="hero-header position-absolute start-50 translate-middle text-white w-100 text-center amore-header">
         That's Amore
         Italian Dinner/Art Auction</h1>
@@ -946,23 +951,23 @@
     <div class="modal fade h-auto" id="modalGallery" tabindex="-1">
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content border-0 bg-transparent">
-          <div class="modal-header border-0 justify-content-end p-0 m-3">
-            <h2 class="text-white" id="num"></h2>
-            <div class="flex-1 vh-85" data-bs-dismiss="modal"></div>
-            <button type="button" class="border-0 mx-md-4 mx-sm-2 mx-auto bg-transparent text-muted"
+          <div class="modal-header border-0 justify-content-end m-0 p-3">
+            <h1 class="text-white" id="num"></h1>
+            <div class="flex-1 modal-header-spacer" data-bs-dismiss="modal"></div>
+            <button type="button" class="border-0 mx-md-4 mx-sm-3 mx-0 bg-transparent text-muted"
               onclick="openFullscreen();" id="Expand">
               <i class="fas fa-expand fa-2x lightboxhover"></i>
             </button>
-            <button type="button" class="border-0 mx-md-4 mx-sm-2 mx-auto bg-transparent text-muted zoomIn">
+            <button type="button" class="border-0 mx-md-4 mx-sm-3 mx-0 bg-transparent text-muted zoomIn">
               <i class="fas fa-search-plus fa-2x lightboxhover"></i>
             </button>
-            <button type="button" class="border-0 mx-md-4 mx-sm-2 mx-auto bg-transparent text-muted zoomOut">
+            <button type="button" class="border-0 mx-md-4 mx-sm-3 mx-0 bg-transparent text-muted zoomOut">
               <i class="fas fa-search-minus fa-2x lightboxhover"></i>
             </button>
-            <button type="button" class="border-0 mx-md-4 mx-sm-2 mx-auto bg-transparent text-muted resetPos resetZoom">
+            <button type="button" class="border-0 mx-md-4 mx-sm-3 mx-0 bg-transparent text-muted resetPos resetZoom">
               <i class="fas fa-undo-alt fa-2x lightboxhover"></i>
             </button>
-            <button type="button" class="border-0 mx-md-4 mx-sm-2 mx-auto bg-transparent text-muted"
+            <button type="button" class="border-0 mx-md-4 mx-sm-3 mx-0 bg-transparent text-muted"
               data-bs-dismiss="modal">
               <i class="fas fa-times fa-2x lightboxhover"></i>
             </button>
@@ -973,10 +978,10 @@
               data-bs-touch="false">
               <div class="carousel-inner">
                 <div class="carousel-item active bg-transparent slideNumber">
-                  <div class="d-flex">
+                  <div class="d-flex" id="test">
                     <div class="flex-1" data-bs-dismiss="modal"></div>
                     <img src="../../img/thats_amore/2021/2021amore1.jpeg" alt="That's Amore Italian Dinner 2021 Photo 1"
-                      class="zoom draggable" />
+                      class="zoom draggable"/>
                     <div class="flex-1" data-bs-dismiss="modal"></div>
                   </div>
                 </div>
@@ -1595,12 +1600,13 @@
               </div>
               <!-- Carousel -->
             </div>
-            <div class="modal-footer border-0 mb-5 p-0 justify-content-center text-light" data-bs-dismiss="modal">
-              <h2 class="m-0">That's Amore Italian Dinner/Art Auction</h2>
-            </div>
+          </div>
+          <div class="modal-footer border-0 mb-5 p-0 text-white mx-3" data-bs-dismiss="modal">
+            <h2 class="m-0 w-100 text-center">That's Amore Italian Dinner/Art Auction</h2>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
   <!-- Modal -->

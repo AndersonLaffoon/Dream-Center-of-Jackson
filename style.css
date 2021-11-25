@@ -62,12 +62,12 @@ html {
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(293deg) brightness(102%) contrast(101%);
 }
 
-.white-logo:hover {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(293deg) brightness(102%) contrast(101%) brightness(75%);
-}
-
 .blue-logo {
   filter: brightness(0) saturate(100%) invert(46%) sepia(44%) saturate(463%) hue-rotate(173deg) brightness(92%) contrast(96%);
+}
+
+.blue-logo:hover {
+  filter: brightness(0) saturate(100%) invert(46%) sepia(44%) saturate(463%) hue-rotate(173deg) brightness(92%) contrast(96%) brightness(90%);
 }
 
 /* Navbar styles  */
@@ -155,8 +155,9 @@ nav {
 }
 
 #modalGallery .modal-header,
+#modalGallery .modal-header-spacer,
 #modalGallery .modal-footer {
-  height: 3rem;
+  height: 7.5vh;
 }
 
 .zoom {
@@ -327,4 +328,28 @@ a:hover {
   .moregalleries {
     font-size: 2rem !important;
   }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #527aad;
+  width: 0%;
+}
+
+#test {
+  transform-origin: 0px 0px;
 }
