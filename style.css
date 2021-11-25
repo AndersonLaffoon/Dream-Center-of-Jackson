@@ -161,7 +161,8 @@ nav {
 }
 
 .zoom {
-  transition: transform 0.2s ease-in-out;
+  transform-origin: 0px 0px;
+  transform: scale(1) translate(0px, 0px);
 }
 
 .flex-1 {
@@ -348,8 +349,4 @@ a:hover {
   height: 8px;
   background: #527aad;
   width: 0%;
-}
-
-#test {
-  transform-origin: 0px 0px;
 }

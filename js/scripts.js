@@ -99,7 +99,7 @@ document.addEventListener("gestureend", function (e) {
 // 		x: 0,
 // 		y: 0
 // 	},
-// 	doc = document.querySelectorAll(".zoom");
+// 	doc = document.querySelectorAll.bind(document);
 	
 // function setTransform() {
 // 	doc.style.transform =

@@ -102,11 +102,6 @@ $(function () {
 
 
 
-
-
-
-
-
   var scale = 1,
     panning = false,
     xoff = 0,
@@ -122,7 +117,7 @@ $(function () {
     });
   }
 
-  $(".zoom").mousedown(function (e) {
+  $(".zoom").on("mousedown", function (e) {
     e.preventDefault();
     start = {
       x: e.clientX - xoff,
@@ -131,33 +126,31 @@ $(function () {
     panning = true;
   })
 
-  $(".zoom").mouseup(function (e) {
+  $(".zoom").on("mouseup", function (e) {
     panning = false;
   })
 
-  $(".zoom").mousemove(function (e) {
+  $(".zoom").on("mousemove", function (e) {
     e.preventDefault();
     if (!panning) {
       return;
     }
     xoff = e.clientX - start.x;
     yoff = e.clientY - start.y;
-    $.setTransform();
+    $.fn.setTransform();
   })
 
-  $(".zoom").on("wheel", function (e) {
-    if (e.originalEvent.deltaY !== 0) {
-      e.preventDefault();
-      var xs = (e.clientX - xoff) / scale,
-        ys = (e.clientY - yoff) / scale,
-        delta = e.wheelDelta ? e.wheelDelta : -e.deltaY;
+  // $(".zoom").on("wheel", function (e) {
+  //   e.preventDefault();
+  //   var xs = (e.clientX - xoff) / scale,
+  //     ys = (e.clientY - yoff) / scale,
+  //     delta = e.wheelDelta ? e.wheelDelta : -e.deltaY;
 
-      delta > 0 ? (scale *= 1.2) : (scale /= 1.2);
+  //   delta > 0 ? (scale *= 1.2) : (scale /= 1.2);
 
-      xoff = e.clientX - xs * scale;
-      yoff = e.clientY - ys * scale;
+  //   xoff = e.clientX - xs * scale;
+  //   yoff = e.clientY - ys * scale;
 
-      $.fn.setTransform();
-    }
-  })
+  //   $.fn.setTransform();
+  // })
 });
