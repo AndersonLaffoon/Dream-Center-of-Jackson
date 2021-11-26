@@ -92,16 +92,7 @@ $(function () {
   $(".index-header").fitText(1.4);
   $(".index-subheader").fitText(3.5);
 
-
-
-
-
-
-
-
-
-
-
+  // Zoom In on Cursor
   var scale = 1,
     panning = false,
     xoff = 0,
@@ -142,15 +133,41 @@ $(function () {
 
   // $(".zoom").on("wheel", function (e) {
   //   e.preventDefault();
+	// // take the scale into account with the offset
   //   var xs = (e.clientX - xoff) / scale,
-  //     ys = (e.clientY - yoff) / scale,
-  //     delta = e.wheelDelta ? e.wheelDelta : -e.deltaY;
+  //     ys = (e.clientY - yoff) / scale;
+  //   if (e.originalEvent.deltaY !== 0) {
+  //     if (e.originalEvent.deltaY < 0) {
+  //       // wheeled up
+  //       scale *= 1.2;
+  //       delta = e.deltaY;
+  //     } else {
+  //       // wheeled down
+  //       scale /= 1.2;
+  //       delta = -e.deltaY;
 
-  //   delta > 0 ? (scale *= 1.2) : (scale /= 1.2);
+  //     }
+  //  // reverse the offset amount with the new scale
+  //     xoff = e.clientX - xs * scale;
+  //     yoff = e.clientY - ys * scale;
 
-  //   xoff = e.clientX - xs * scale;
-  //   yoff = e.clientY - ys * scale;
-
-  //   $.fn.setTransform();
+  //     $.fn.setTransform();
+  //   }
   // })
+
+  // Reset Zoom Button
+  $(".resetZoom").on("click", function () {
+    $(".zoom").css({
+      transform: "translate(" + (xoff=0) + "px, " + (yoff=0) + "px) scale(" + (scale=1) + ")"
+    });
+
+    $(".zoom").on("mousedown", function (e) {
+      e.preventDefault();
+      start = {
+        x: e.clientX - (xoff=0),
+        y: e.clientY - (yoff=0),
+      };
+      panning = true;
+    })
+  });
 });

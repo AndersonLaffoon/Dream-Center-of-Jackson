@@ -162,7 +162,6 @@ nav {
 
 .zoom {
   transform-origin: 0px 0px;
-  transform: scale(1) translate(0px, 0px);
 }
 
 .flex-1 {
