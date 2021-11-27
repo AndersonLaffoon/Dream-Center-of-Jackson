@@ -11,7 +11,7 @@ ScrollReveal().reveal(".imgline1", {
 });
 
 ScrollReveal().reveal(".imgline2", {
-  interval: 100,
+  interval: 75,
   duration: 700,
   easing: "ease-in-out",
   distance: "-2.5rem",

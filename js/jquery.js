@@ -29,12 +29,6 @@ $(function () {
     $("#toaster").toast("show");
   });
 
-  // FitText
-  $(".amore-header").fitText(2);
-  $(".review-header").fitText(1.2);
-  $(".index-header").fitText(1.4);
-  $(".index-subheader").fitText(3.5);
-
   var scale = 1,
     panning = false,
     xoff = 0,
@@ -166,4 +160,10 @@ $(function () {
 
     $.fn.setTransform();
   });
+
+  // FitText
+  $(".amore-header").fitText(2);
+  $(".review-header").fitText(1.2);
+  // $(".index-header").fitText(3);
+  $(".index-subheader").fitText(3.5);
 });
