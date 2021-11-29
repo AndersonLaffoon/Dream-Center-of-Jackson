@@ -33,7 +33,7 @@ html {
 }
 
 #mainCarousel .carousel-item>img.main-carousel {
-  filter: brightness(30%);
+  filter: brightness(25%);
 }
 
 /* Parallax styles */
