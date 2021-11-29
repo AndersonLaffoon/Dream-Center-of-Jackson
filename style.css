@@ -172,6 +172,10 @@ nav {
   cursor: grabbing;
 }
 
+.multi-item-img {
+  filter: brightness(45%);
+}
+
 /* icons styles */
 
 .fas.help-icons {
@@ -189,21 +193,6 @@ nav {
 }
 
 /* misc */
-
-.hero {
-  position: relative;
-  filter: brightness(40%);
-  background-image: url(img/NewDreamCenter.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 35rem;
-}
-
-.hero-header {
-  z-index: 1;
-  top: 30%;
-}
 
 #myBtn {
   display: none;
@@ -282,11 +271,6 @@ a:hover {
   max-height: 150px;
 }
 
-.multi-item-img {
-  filter: brightness(45%);
-}
-
-
 .moregalleries {
   font-size: 1.7rem;
 }
@@ -299,7 +283,6 @@ a:hover {
 .main-title {
   font-size: 3rem;
 }
-
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
