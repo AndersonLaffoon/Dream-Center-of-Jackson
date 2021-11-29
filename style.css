@@ -5,9 +5,9 @@ html {
 /* Main Carousel Styles */
 #mainCarousel.carousel img.main-carousel {
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   overflow: hidden;
-  height: 70vh;
+  height: 100vh;
 }
 
 #mainCarousel .carousel-indicators [data-bs-target] {
@@ -33,11 +33,7 @@ html {
 }
 
 #mainCarousel .carousel-item>img.main-carousel {
-  filter: brightness(40%);
-}
-
-#mainCarousel .carousel-caption {
-  margin-top: 35vh;
+  filter: brightness(30%);
 }
 
 /* Parallax styles */
@@ -300,6 +296,11 @@ a:hover {
   vertical-align: -25%;
 }
 
+.main-title {
+  font-size: 3rem;
+}
+
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .moregalleries {
@@ -309,12 +310,20 @@ a:hover {
   .fa-sm-2x {
     font-size: 2rem;
   }
+
+  .main-title {
+    font-size: 3.7rem;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .moregalleries {
     font-size: 3.3rem !important;
+  }
+
+  .main-title {
+    font-size: 4.5rem;
   }
 }
 
@@ -323,6 +332,10 @@ a:hover {
   .moregalleries {
     font-size: 1.3rem !important;
   }
+
+  .main-title {
+    font-size: 5rem;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -330,6 +343,7 @@ a:hover {
   .moregalleries {
     font-size: 1.7rem !important;
   }
+
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
