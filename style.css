@@ -211,6 +211,10 @@ a:hover {
   filter: brightness(75%);
 }
 
+.badge {
+  background-color: #42ed37;
+}
+
 /* Waves styles */
 /* Code via @GoodKatz (https://codepen.io/goodkatz/pen/LYPGxQz) */
 .parallax>use {
