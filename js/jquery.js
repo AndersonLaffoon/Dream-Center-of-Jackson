@@ -160,10 +160,4 @@ $(function () {
 
     $.fn.setTransform();
   });
-
-  // FitText
-  $(".amore-header").fitText(2);
-  $(".review-header").fitText(1.2);
-  // $(".index-header").fitText(3);
-  $(".index-subheader").fitText(3.5);
 });
