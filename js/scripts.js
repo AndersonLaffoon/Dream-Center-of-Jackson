@@ -58,33 +58,3 @@ function closeFullscreen() {
 	compress.innerHTML = "<i class='fas fa-expand fa-2x lightboxhover'></i>";
 	compress.id = "Expand";
 }
-
-// When the user scrolls the page, execute myFunction 
-// window.onscroll = function () {
-// 	progressScrollBar()
-// };
-
-// function progressScrollBar() {
-// 	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-// 	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-// 	var scrolled = (winScroll / height) * 100;
-// 	document.getElementById("progressbar").style.width = scrolled + "%";
-// }
-
-document.addEventListener("gesturestart", function (e) {
-	e.preventDefault();
-	// special hack to prevent zoom-to-tabs gesture in safari
-	document.body.style.zoom = 0.99;
-});
-
-document.addEventListener("gesturechange", function (e) {
-	e.preventDefault();
-	// special hack to prevent zoom-to-tabs gesture in safari
-	document.body.style.zoom = 0.99;
-});
-
-document.addEventListener("gestureend", function (e) {
-	e.preventDefault();
-	// special hack to prevent zoom-to-tabs gesture in safari
-	document.body.style.zoom = 0.99;
-});

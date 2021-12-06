@@ -127,17 +127,6 @@ nav {
   transition: all 0.35s ease-in-out;
 }
 
-@media (max-width: 1199px) {
-  .toggler-bg {
-    background-color: #97afce !important;
-    transition: all 0.35s ease-in-out;
-  }
-
-  .navbar-collapse {
-    margin-top: 0;
-  }
-}
-
 .navbar-dark .navbar-nav .nav-link {
   color: white;
 }
@@ -196,7 +185,7 @@ nav {
   height: 2em;
 }
 
-/* misc */
+/* button */
 
 #myBtn {
   display: none;
@@ -220,7 +209,6 @@ a:hover {
 }
 
 /* Waves styles */
-/* Code via @GoodKatz (https://codepen.io/goodkatz/pen/LYPGxQz) */
 .parallax>use {
   animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }
@@ -265,10 +253,6 @@ a:hover {
   color: white;
 }
 
-.bg-braden {
-  background-image: url(img/NewDreamCenter.jpg);
-}
-
 .waves {
   position: relative;
   width: 100%;
@@ -278,6 +262,8 @@ a:hover {
   min-height: 100px;
   max-height: 150px;
 }
+
+/* font-sizes */
 
 .moregalleries {
   font-size: 1.7rem;
@@ -341,5 +327,16 @@ a:hover {
 @media (min-width: 1400px) {
   .moregalleries {
     font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .toggler-bg {
+    background-color: #97afce !important;
+    transition: all 0.35s ease-in-out;
+  }
+
+  .navbar-collapse {
+    margin-top: 0;
   }
 }
