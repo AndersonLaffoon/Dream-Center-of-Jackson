@@ -105,10 +105,14 @@ a.nav-link {
 }
 
 .dropdown-menu {
-  background-color: #97afce;
-  border-color: #527aad;
+  background-color: #527aad;
+  border-color: #314968;
   border-width: 2px;
   margin-top: 0.25rem;
+}
+
+.dropdown-item {
+  color: white;
 }
 
 .absolute-top {
