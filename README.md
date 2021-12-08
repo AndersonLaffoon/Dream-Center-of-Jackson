@@ -27,6 +27,7 @@ My role on the team was as the Team Leader. I helped create the bulk of the layo
 * Added Back To Top Button
 * Fixed Minor Bugs
 * Adjusted Design Details
+* Created/Added all Javascript, Jquery, and ScrollReveals
 
 # Vraj Patel
 ### My Role
