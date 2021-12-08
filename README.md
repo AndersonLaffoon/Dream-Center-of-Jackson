@@ -56,7 +56,9 @@ My role on the team was as the Page Manager. I helped ensure consistency through
 My role on the team was as the Lead Client Consultant. I helped give my team important details and descriptions about the Dream Center that is not easily known to new guests to create an improved user experience.
 
 ### My Contributions:
-* Added Content to Review Page
+* Added content to Review Page
 * Added Contact Form
-* Added Content to Event Cards
-* Added Images to Multiple Gallery Pages
+* Added content to Event Cards
+* Added images to multiple Gallery Pages
+* Debugging
+* Added conntent to About Us Page
