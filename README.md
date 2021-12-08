@@ -33,7 +33,7 @@ My role on the team was as the Team Leader. I helped create the bulk of the layo
 
 # Vraj Patel
 ### My Role
-My role on the team was as the Page Manager. I helped ensure consistency throughout each page by either finding bugs or by making decisions to enhance the design. I informed about various problems to the team to help focus our efforts.
+My role on the team was as the Page Manager. I helped ensure consistency throughout each page by either finding bugs or by making small changes to enhance the website. I informed about various problems to the team to help focus our efforts.
 
 ### My Contributions:
 * Created Event Cards
