@@ -62,3 +62,4 @@ My role on the team was as the Lead Client Consultant. I helped give my team imp
 * Added images to multiple Gallery Pages
 * Debugging
 * Added content to About Us Page
+* Added images to Main Page
