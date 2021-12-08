@@ -40,10 +40,13 @@ My role on the team was as the Page Manager. I helped ensure consistency through
 
 ### My Contributions:
 * Created Event Cards
-* Added Sign Up & Add to Event Functionality
-* Added Content to Index, About Us, & Help Pages
+* Added Sign Up button & Add to Calendar Function
+* Edited time and dates for Add to Calendar buttons
+* Added Content such as text to Index, About Us, & Help Pages
+* Added Staff and Board member names
+* Added Google Map and contact information to Contact page
 * Added Accordion in Help Page
-* Added Content to Hero
+* Added Content to Hero on all pages
 * Debugged
 * Created Initial Designs
 * Added Functionality to Dropdown Menus in Navbar
