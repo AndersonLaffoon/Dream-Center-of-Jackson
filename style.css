@@ -42,23 +42,6 @@ body {
   filter: brightness(25%);
 }
 
-/* Parallax styles */
-.parallax1 {
-  background-image: url(img/NewDreamCenter.jpg);
-  min-height: 30rem;
-  background-attachment: fixed;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.braden {
-  background-color: grey;
-  padding: 1rem;
-  border-radius: 2rem;
-  color: white;
-}
-
 /* logo styles */
 .white-logo {
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(293deg) brightness(102%) contrast(101%);
