@@ -20,19 +20,16 @@ My role on the team was as the Team Leader. I helped create the bulk of the layo
 
 * Created Navbar, Footer, Hero, Carousels, Gallery, & Gallery Pages
 * Ensured Responsiveness
-* Created Gallery Functionality
-* Added Color Scheme to Pages
+* Added Functionality for Gallery Pages & Contact Form
+* Added Color Scheme to All Pages
 * Added All Images to the Repository
-* Added Images to Multiple Gallery Pages and Main Pages
-* Added Contact Form Functionality
-* Added Toast
+* Added Images & Text Content to Multiple Gallery Pages and Main Pages
+* Added Toast, Back To Top Button, & Font
 * Added Favicon and Icons Throughout All Pages
 * Added Functionality to Links & Buttons
-* Added Font
-* Added Back To Top Button
-* Fixed Minor Bugs
 * Adjusted Design Details
 * Created/Added all Javascript, Jquery, and ScrollReveals
+* Debugged
 
 # Vraj Patel
 ### My Role
@@ -40,26 +37,29 @@ My role on the team was as the Page Manager. I helped ensure consistency through
 
 ### My Contributions:
 * Created Event Cards
-* Added Sign Up button & Add to Calendar Function
-* Edited time and dates for Add to Calendar buttons
-* Added Content such as text to Index, About Us, & Help Pages
-* Added Staff and Board member names
-* Added Google Map and contact information to Contact page
+* Added Sign Up Button & Add to Calendar Function
+* Edited Time and Dates for Add to Calendar Buttons
+* Added Text Content to Index, About Us, & Help Pages
+* Added Staff and Board Member Names
+* Added Google Map and Contact Information to Contact page
 * Added Accordion in Help Page
-* Added Content to Hero on all pages
-* Debugged
+* Added Text Content to Hero on All pages
 * Created Initial Designs
-* Added Functionality to Dropdown Menus in Navbar
+* Added Functionality to Dropdown Menus in Navbar, Links, & Buttons
+* Added Titles To Gallery Pages
+* Debugged
 
 # Anderson Laffoon
 ### My Role
-My role on the team was as the Lead Client Consultant. I helped give my team important details and descriptions about the Dream Center that is not easily known to new guests to create an improved user experience.
+My role on the team was as the Lead Client Consultant. My mother, Stephanie Laffon, has worked at the Dream Center for over a decade. This has given me firsthand experience and knowledge that was vital for the website's development. I helped give my team important details and descriptions about the Dream Center that was not convenient to new guests to create an improved user experience.
 
 ### My Contributions:
-* Added content to Testimonies and Reviews Page
+* Added Text Content to Testimonies and Reviews Page
 * Added Contact Form
-* Added content to Event Cards
-* Added images to multiple Gallery Pages
-* Debugging
-* Added content to About Us Page
-* Added images to Main Page
+* Added Content to Event Cards
+* Added Images to Multiple Gallery Pages
+* Added Text Content to About Us Page
+* Added Images to Main Page
+* Modeled in Various Images
+* Gatherered Resuources from The Client
+* Debugged
