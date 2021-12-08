@@ -1,12 +1,17 @@
 
 # About Our Team!
-We are the 6 Inch Subway Steak & Cheeses! Our team consists of Corwin Bridges, Vraj Patel, and Anderson Laffoon from Madison Academic High School in Jackson. We created a website for the Dream Center of Jackson, a homeless shelter for women and children seeking chnage. We feel our website has made vast improvements to the Dream Center's website.
-### Our Website Includes:
+We are the 6 Inch Subway Steak & Cheeses! Our team consists of Corwin Bridges, Vraj Patel, and Anderson Laffoon from Madison Academic High School in Jackson. We created a website for the Dream Center of Jackson, a homeless shelter for women and children seeking change. We feel our website has made vast improvements to the Dream Center's website.
+### Our Website's Improvements:
 
-* 9 Interactive Image Galleries
+* Clear Website Design
 * Consistent Color Scheme
+* Improved Navigation
 * Welcoming And Friendly Aesthetic
-* Events Page
+* 9 Interactive Image Galleries
+* Improved Visual Imagery
+* Logical Events Page
+* Reviews from Online Sources
+* The Impacts of the Dream Center
 
 # Corwin Bridges
 ### My Role
@@ -41,6 +46,7 @@ My role on the team was as the Page Manager. I helped ensure consistency through
 * Added Content to Hero
 * Debugged
 * Created Initial Designs
+* Added Functionality to Dropdown Menus in Navbar
 
 # Anderson Laffoon
 ### My Role
